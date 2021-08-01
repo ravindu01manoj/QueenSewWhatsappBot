@@ -1,0 +1,194 @@
+{
+    "name": "SewQueen",
+    "description": "SewQueen - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
+    "logo": "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg",
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "",
+    "website":   "https://t.me/RavinduManoj",
+    "success_url": "https://t.me/AsenaSupport",
+    "stack": "container",
+    "env": {
+        "_SEW_QUEEN_SESSION": {
+            "description": "Type here yours SEW_QUEEN Session.QR කෝඩය ස්කෑන් කර ලබා ගන්නා කේතය ඇතුලත් කරන්න",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 94xxxxxxxx (USA number +94)",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot language.English => en, භාශාව තේරීම සදහා",
+            "required": true,
+            "value": "en"
+        },
+        "ANTİ_LİNK": {
+            "description": "Link Blocking System.ගෲපයට කෙනෙකු ලින්ක් එකක් ඇතුලත් කලහොත් ඔහුව ගෲපයෙන් නෙරපා දමයිල්",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "BAD_KICK": {
+            "description": "It's true, kick the member who using bad word.අසභ්‍ය වචන පාවිච්චි කරන පුද්ගලයන් ගෲපයෙන් ඉවත් කරයි ",
+            "required": true,
+            "value": "true"
+        },
+        "SPAM_KICK": {
+            "description": "It's true, kick the member who using spam.ස්පෑම් දමන පුද්ගලයන් ගෲපයෙන් ඉවත් කරයි ",
+            "required": true,
+            "value": "true"
+        },
+         "BGM_FILTER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false.ගැහැනුලමයෙකුගේ කටහඩින් auto voice රිප්ලයි යැවීම සදහා",
+            "required": false,
+            "value": "true"
+        },
+         "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
+            "required": false,
+            "value": "true"
+        },
+        "OWNER_SHIP": {
+            "description": "බොට් අයිතිකරුගේ නාමය වෙනස් කරයි",
+            "required": false,
+            "value": "RAVINDU MANOJ"
+        },
+        
+        "YOUR_BOT_NAME": {
+            "description": "බොට්ගේ නාමය වෙනස් කරයි.",
+            "required": false,
+            "value": "❄💘sew💓❄bot(💗සූටික්කි💗)R💌S"
+        },
+        "FULL_EVA": {
+            "description": "Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Customizable Mute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 94xxxxxxx && 94xxxxxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Customizable Unmute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "Sew Bot Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "required": true,
+            "value": "public"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "Geliştiricilere özeldir.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "Get API Key. https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable Ban Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable Kickme Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": "Type image link for Gan Style plugin.",
+            "required": true,
+            "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "Type true if you don't want to appear online.",
+            "required": false,
+            "value": "false"
+        },
+        "COFFEEHOUSE_API_KEY": {
+            "description": "Pass This Step!",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
