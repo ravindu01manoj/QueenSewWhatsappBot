@@ -7,14 +7,12 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
-
-This Plugins For Hackers 😈
 */
 
 const config = require('../../config');
 const { DataTypes } = require('sequelize');
 
-const CrashDB = config.DATABASE.define('Crash', {
+const GreetingsDB = config.DATABASE.define('Greeting', {
     chat: {
       type: DataTypes.STRING,
       allowNull: false
@@ -29,8 +27,8 @@ const CrashDB = config.DATABASE.define('Crash', {
     }
 });
 
-async function sewMessage(jid = null, tip = 'addingcrash') {
-    var Msg = await CrashDB.findAll({
+async function getMessage(jid = null, tip = 'welcome') {
+    var Msg = await GreetingsDB.findAll({
         where: {
             chat: jid,
             type: tip
@@ -44,8 +42,8 @@ async function sewMessage(jid = null, tip = 'addingcrash') {
     }
 }
 
-async function setCrashMessage(jid = null, tip = 'addingcrash', text = null) {
-    var Msg = await CrashDB.findAll({
+async function setMessage(jid = null, tip = 'welcome', text = null) {
+    var Msg = await GreetingsDB.findAll({
         where: {
             chat: jid,
             type: tip
@@ -53,14 +51,14 @@ async function setCrashMessage(jid = null, tip = 'addingcrash', text = null) {
     });
 
     if (Msg.length < 1) {
-        return await CrashDB.create({ chat: jid, type: tip, message:text });
+        return await GreetingsDB.create({ chat: jid, type: tip, message:text });
     } else {
         return await Msg[0].update({ chat: jid, type: tip, message:text });
     }
 }
 
-async function deleteCrashMessage(jid = null, tip = 'addingcrash') {
-    var Msg = await CrashDB.findAll({
+async function deleteMessage(jid = null, tip = 'welcome') {
+    var Msg = await GreetingsDB.findAll({
         where: {
             chat: jid,
             type: tip
@@ -71,8 +69,8 @@ async function deleteCrashMessage(jid = null, tip = 'addingcrash') {
 }
 
 module.exports = {
-    CrashDB: CrashDB,
-    sewMessage: sewMessage,
-    setCrashMessage: setCrashMessage,
-    deleteCrashMessage: deleteCrashMessage
+    GreetingsDB: GreetingsDB,
+    getMessage: getMessage,
+    setMessage: setMessage,
+    deleteMessage: deleteMessage
 };
