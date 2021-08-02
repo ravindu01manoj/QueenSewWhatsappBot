@@ -22,12 +22,12 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'sewmedia', fromSew: true, desc: Lang.XMEDİA_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'sewmedia', fromMe: true, desc: Lang.XMEDİA_DESC}, (async (message, match) => {    
        await message.sendMessage('\n 💗MEDIA EDITING💗\n\n\n💻Usage: *.mp4enhance*\nℹ️Desc: 🇱🇰 Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: 🇱🇰 Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: 🇱🇰 Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: 🇱🇰 Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: 🇱🇰 Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: 🇱🇰 Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: 🇱🇰 Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: 🇱🇰 Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: 🇱🇰 Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: 🇱🇰 Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: 🇱🇰 Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: 🇱🇰 Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: 🇱🇰 Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: 🇱🇰 Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: 🇱🇰 Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: 🇱🇰 Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: 🇱🇰 Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: 🇱🇰 Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: 🇱🇰 Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: 🇱🇰 Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: 🇱🇰 Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3bass* \nℹ️Desc: 🇱🇰 Adds crystal bass without distorting the sound.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: 🇱🇰 Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: 🇱🇰 Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: 🇱🇰 Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: 🇱🇰 Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: 🇱🇰 Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: 🇱🇰 Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: 🇱🇰 Applies a vinatge effect to photo.\n\n💻Usage: *.edgeimage*\nℹ️Desc: 🇹🇷 Fotoğrafa edge efekti uygular.\n🇱🇰 Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: 🇹🇷 Fotoğrafı daha net hale getirir.\n🇱🇰 Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: 🇹🇷 Fotoğrafın arka planını bulanıklaştırır.\n🇱🇰 Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: 🇹🇷 Fotoğrafa gren efekti uygular.\n🇱🇰 Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: 🇱🇰 Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: 🇱🇰 It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: 🇱🇰 Applies a art effect to the photo.');
 
    }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text)
@@ -46,10 +46,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -68,10 +68,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.image) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -92,10 +92,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -113,10 +113,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waves', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'waves', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -134,10 +134,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'frequency', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'frequency', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -155,10 +155,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'avec', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'avec', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -176,10 +176,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -197,10 +197,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -218,10 +218,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -239,10 +239,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -260,10 +260,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -281,10 +281,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -303,10 +303,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -326,10 +326,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -348,10 +348,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -369,10 +369,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
         });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -390,10 +390,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -412,10 +412,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -433,10 +433,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -454,10 +454,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -475,10 +475,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
@@ -497,10 +497,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -518,10 +518,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -539,10 +539,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Image..```',MessageType.text);
@@ -560,10 +560,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -581,10 +581,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromSew: true, dontAdCommandList: true}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromMe: true, dontAdCommandList: true}, (async (message, match) => { 
    
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -602,10 +602,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     })); 
 
-    QueenSew.newcmdaddtosew({pattern: 'gif', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'gif', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -625,10 +625,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'agif', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'agif', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -647,10 +647,10 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.sendMessage('Need Photo!');
         var downloading = await message.client.sendMessage(message.jid,'```Adding Gren..```',MessageType.text);
@@ -668,10 +668,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video and FPS Value!*\nEx: ```.interp 100```');
         if (message.reply_message.video && match[1] <= 10) return await message.sendMessage('*Low FPS Value ⚠️*\n*Please, type over 10*');
@@ -694,10 +694,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: `*Coded By t.me/RavinduManoj*\n_Interpolated to ${match[1]} FPS_`});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -716,10 +716,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromSew: true, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromMe: true, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -738,10 +738,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -759,10 +759,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -781,10 +781,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -803,10 +803,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'artimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'artimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -824,10 +824,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -846,10 +846,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -868,10 +868,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -889,10 +889,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Motion Render Interpolating..```',MessageType.text);
@@ -915,18 +915,18 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion By t.me/RavinduManoj'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'xmedia', fromSew: false, desc: Lang.XMEDİA_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'xmedia', fromMe: false, desc: Lang.XMEDİA_DESC}, (async (message, match) => {    
 
        await message.sendMessage('\n 💗MEDIA EDITING💗\n\n\n💻Usage: *.mp4enhance*\nℹ️Desc: 🇱🇰 Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: 🇱🇰 Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: 🇱🇰 Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: 🇱🇰 Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: 🇱🇰 Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: 🇱🇰 Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: 🇱🇰 Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: 🇱🇰 Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: 🇱🇰 Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: 🇱🇰 Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: 🇱🇰 Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: 🇱🇰 Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: 🇱🇰 Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: 🇱🇰 Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: 🇱🇰 Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: 🇱🇰 Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: 🇱🇰 Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: 🇱🇰 Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: 🇱🇰 Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: 🇱🇰 Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: 🇱🇰 Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3bass* \nℹ️Desc: 🇱🇰 Adds crystal bass without distorting the sound.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: 🇱🇰 Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: 🇱🇰 Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: 🇱🇰 Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: 🇱🇰 Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: 🇱🇰 Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: 🇱🇰 Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: 🇱🇰 Applies a vinatge effect to photo.\n\n💻Usage: *.edgeimage*\nℹ️Desc: 🇹🇷 Fotoğrafa edge efekti uygular.\n🇱🇰 Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: 🇹🇷 Fotoğrafı daha net hale getirir.\n🇱🇰 Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: 🇹🇷 Fotoğrafın arka planını bulanıklaştırır.\n🇱🇰 Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: 🇹🇷 Fotoğrafa gren efekti uygular.\n🇱🇰 Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: 🇱🇰 Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: 🇱🇰 It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: 🇱🇰 Applies a art effect to the photo.');
 
    }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -945,10 +945,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -967,10 +967,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -991,10 +991,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1012,10 +1012,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waves', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'waves', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1033,10 +1033,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'frequency', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'frequency', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1054,10 +1054,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'avec', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'avec', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1075,10 +1075,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1096,10 +1096,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1117,10 +1117,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1138,10 +1138,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1159,10 +1159,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1180,10 +1180,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1202,10 +1202,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1225,10 +1225,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1247,10 +1247,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1268,10 +1268,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
         });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1289,10 +1289,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1311,10 +1311,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1332,10 +1332,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1353,10 +1353,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1374,10 +1374,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
@@ -1396,10 +1396,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1417,10 +1417,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1438,10 +1438,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Image..```',MessageType.text);
@@ -1459,10 +1459,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1480,10 +1480,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromSew: false, dontAdCommandList: true}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromMe: false, dontAdCommandList: true}, (async (message, match) => { 
    
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1501,10 +1501,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     })); 
 
-    QueenSew.newcmdaddtosew({pattern: 'gif', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'gif', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -1524,10 +1524,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'agif', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'agif', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -1546,10 +1546,10 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.sendMessage('Need Photo!');
         var downloading = await message.client.sendMessage(message.jid,'```Adding Gren..```',MessageType.text);
@@ -1567,10 +1567,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video and FPS Value!*\nEx: ```.interp 100```');
         if (message.reply_message.video && match[1] <= 10) return await message.sendMessage('*Low FPS Value ⚠️*\n*Please, type over 10*');
@@ -1593,10 +1593,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: `*Coded By t.me/RavinduManoj*\n_Interpolated to ${match[1]} FPS_`});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1615,10 +1615,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromSew: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromMe: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1637,10 +1637,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1658,10 +1658,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromSew: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromMe: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1680,10 +1680,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1702,10 +1702,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'artimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'artimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1723,10 +1723,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1745,10 +1745,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1767,10 +1767,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1788,10 +1788,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message.video === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Motion Render Interpolating..```',MessageType.text);
@@ -1814,15 +1814,15 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion By t.me/RavinduManoj'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-    QueenSew.newcmdaddtosew({pattern: 'xmedia', fromSew: true, desc: Lang.XMEDİA_DESC, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'xmedia', fromMe: true, desc: Lang.XMEDİA_DESC, dontAdCommandList: true}, (async (message, match) => {    
 
           await message.sendMessage('\n 💗MEDIA EDITING💗\n\n\n💻Usage: *.mp4enhance*\nℹ️Desc: 🇱🇰 Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: 🇱🇰 Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: 🇱🇰 Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: 🇱🇰 Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: 🇱🇰 Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: 🇱🇰 Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: 🇱🇰 Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: 🇱🇰 Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: 🇱🇰 Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: 🇱🇰 Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: 🇱🇰 Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: 🇱🇰 Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: 🇱🇰 Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: 🇱🇰 Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: 🇱🇰 Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: 🇱🇰 Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: 🇱🇰 Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: 🇱🇰 Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: 🇱🇰 Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: 🇱🇰 Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: 🇱🇰 Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: 🇱🇰 Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3bass* \nℹ️Desc: 🇱🇰 Adds crystal bass without distorting the sound.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: 🇱🇰 Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: 🇱🇰 Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: 🇱🇰 Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: 🇱🇰 Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: 🇱🇰 Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: 🇱🇰 Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: 🇱🇰 Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: 🇱🇰 Applies a vinatge effect to photo.\n\n💻Usage: *.edgeimage*\nℹ️Desc: 🇹🇷 Fotoğrafa edge efekti uygular.\n🇱🇰 Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: 🇹🇷 Fotoğrafı daha net hale getirir.\n🇱🇰 Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: 🇹🇷 Fotoğrafın arka planını bulanıklaştırır.\n🇱🇰 Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: 🇹🇷 Fotoğrafa gren efekti uygular.\n🇱🇰 Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: 🇱🇰 Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: 🇱🇰 Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: 🇱🇰 It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: 🇱🇰 Applies a art effect to the photo.');
 
    }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x4mp4', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1841,10 +1841,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp4', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -1863,10 +1863,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4image', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.image) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1887,10 +1887,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'spectrum', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1908,10 +1908,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waves', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'waves', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1929,10 +1929,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'frequency', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'frequency', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1950,10 +1950,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'avec', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'avec', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1971,10 +1971,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'volumeaudio', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -1992,10 +1992,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'cqtaudio', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -2013,10 +2013,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3eq', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2034,10 +2034,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3crusher', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2055,10 +2055,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3reverse', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -2076,10 +2076,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4vintage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2098,10 +2098,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4reverse', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2121,10 +2121,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4bw', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2143,10 +2143,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'bwimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2164,10 +2164,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
         });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'vintageimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2185,10 +2185,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4enhance', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2207,10 +2207,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'blurimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -2228,10 +2228,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4blur', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2249,10 +2249,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3pitch', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2270,10 +2270,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4edge', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Video..```',MessageType.text);
@@ -2292,10 +2292,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3low', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2313,10 +2313,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'x2mp3', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2334,10 +2334,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'edgeimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo*');
         var downloading = await message.client.sendMessage(message.jid,'```Edging Image..```',MessageType.text);
@@ -2355,10 +2355,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'enhanceimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Converting..```',MessageType.text);
@@ -2376,10 +2376,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromSew: true, dontAdCommandList: true}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'mp3volume', fromMe: true, dontAdCommandList: true}, (async (message, match) => { 
    
         if (message.reply_message === false) return await message.sendMessage('*Need Audio!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2397,10 +2397,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     })); 
 
-    QueenSew.newcmdaddtosew({pattern: 'gif', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'gif', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -2420,10 +2420,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'agif', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'agif', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('Need Video!');
         var downloading = await message.client.sendMessage(message.jid,'```Converting to Gif..```',MessageType.text);
@@ -2442,10 +2442,10 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, {mimetype: Mimetype.gif, caption: '*Coded By t.me/RavinduManoj*'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'grenimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.sendMessage('Need Photo!');
         var downloading = await message.client.sendMessage(message.jid,'```Adding Gren..```',MessageType.text);
@@ -2463,10 +2463,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'interp ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video and FPS Value!*\nEx: ```.interp 100```');
         if (message.reply_message.video && match[1] <= 10) return await message.sendMessage('*Low FPS Value ⚠️*\n*Please, type over 10*');
@@ -2489,10 +2489,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: `*Coded By t.me/RavinduManoj*\n_Interpolated to ${match[1]} FPS_`});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'rainbowimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2511,10 +2511,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromSew: true, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'mp4rainbow', fromMe: true, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2533,10 +2533,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'negativeimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2554,10 +2554,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromSew: true, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'mp4negative', fromMe: true, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2576,10 +2576,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4art', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2598,10 +2598,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'artimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'artimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2619,10 +2619,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4stab', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2641,10 +2641,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4color', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2663,10 +2663,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorimage', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo!*');
         var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
@@ -2684,10 +2684,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromSew: true, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp4slowmo', fromMe: true, dontAdCommandList: true}, (async (message, match) => {    
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video!*');
         var downloading = await message.client.sendMessage(message.jid,'```Motion Render Interpolating..```',MessageType.text);
@@ -2710,6 +2710,6 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('slowmo.mp4'), MessageType.video, {caption: 'True Slow-Motion By t.me/RavinduManoj'});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }

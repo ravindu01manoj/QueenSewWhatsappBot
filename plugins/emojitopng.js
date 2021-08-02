@@ -21,7 +21,7 @@ const iii = "Only work with emoji\n ඉමොජි පමණක් එවන්
 
 if (Config.WORKTYPE == 'private') {
 
-    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromSew: true, desc: des}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromMe: true, desc: des}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(iii);
 
@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromSew: false, desc: des}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromMe: false, desc: des}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(iii);
 
@@ -44,7 +44,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
 
-    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromSew: true,dontAddCMDList: true}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromMe: true,dontAddCMDList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(iii);
 

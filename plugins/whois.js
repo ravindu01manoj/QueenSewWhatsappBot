@@ -11,7 +11,7 @@ const Lang = Language.getString('whois'); // Language Support
 
 if (CON.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'whois', fromSew: true, desc: Lang.PL_DESC }, async (message, match) => { 
+    QueenSew.newcmdaddtosew({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
@@ -48,7 +48,7 @@ if (CON.WORKTYPE == 'private') {
 }
 else if (CON.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'whois', fromSew: false, desc: Lang.PL_DESC }, async (message, match) => { 
+    QueenSew.newcmdaddtosew({ pattern: 'whois', fromMe: false, desc: Lang.PL_DESC }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 
@@ -82,7 +82,7 @@ else if (CON.WORKTYPE == 'public') {
             );
         }
     });
-    QueenSew.newcmdaddtosew({ pattern: 'whois', fromSew: true, desc: Lang.PL_DESC, dontAdCommandList: true }, async (message, match) => { 
+    QueenSew.newcmdaddtosew({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC, dontAdCommandList: true }, async (message, match) => { 
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid) 

@@ -8,7 +8,7 @@ const cwebp = require('cwebp-bin');
 const Language = require('../language');
 const Lang = Language.getString('spammer');
 
-QueenSew.newcmdaddtosew({pattern: 'foto spam$', fromSew: true, desc: Lang.FOTO_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'foto spam$', fromMe: true, desc: Lang.FOTO_DESC}, (async (message, match) => {
     
     if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.FOTO_FOT, MessageType.text);
 

@@ -14,7 +14,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const SEW = "*Codded by https://t.me/RavinduManoj*\n ඔබේ පෙම්වතිය හෝ පෙම්වතා වෙත සොදුරු ඇමතුමක්.\n💻Usage: *.msglv*"
 
 
-QueenSew.newcmdaddtosew({pattern: 'msglv', fromSew: false, desc: SEW }, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'msglv', fromMe: false, desc: SEW }, (async (message, match) => {
     
     var r_text = new Array ();
 r_text [0] = "*ඔබ මා සෙවූ දෙයක් නොවේ. මම ආදරයෙන් බැඳුනේ මම මගේ මනසින් බැහැරව සිටියදී ය.*";

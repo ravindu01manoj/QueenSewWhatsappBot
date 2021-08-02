@@ -15,7 +15,7 @@ const sql = require('./sql/crash');
 
 SSSEW = "☣😈☣ ❆ᴰᵃʳᵏ qᵘᵉᵉⁿ❆ ☣😈☣\n═══════════════════"
 
-Queensew.newcmdaddtosew({pattern: 'darkqueen$', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'darkqueen$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var hg = await sql.sewMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid, SSSEW ,MessageType.text);
@@ -24,7 +24,7 @@ Queensew.newcmdaddtosew({pattern: 'darkqueen$', fromSew: true, dontAdCommandList
     }
 }));
 
-Queensew.newcmdaddtosew({pattern: 'darkqueen (.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'darkqueen (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid, SSSEW );
     } else {
@@ -34,7 +34,7 @@ Queensew.newcmdaddtosew({pattern: 'darkqueen (.*)', fromSew: true, dontAdCommand
     }
 }));
 
-Queensew.newcmdaddtosew({pattern: 'Darkquee$', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'Darkquee$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var hg = await sql.sewMessage(message.jid, 'leftcrash');
     if (hg === false) {
         await message.client.sendMessage(message.jid, SSSEW ,MessageType.text)
@@ -43,7 +43,7 @@ Queensew.newcmdaddtosew({pattern: 'Darkquee$', fromSew: true, dontAdCommandList:
     }
 }));
 
-Queensew.newcmdaddtosew({pattern: 'Darkqueen (.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'Darkqueen (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid, SSSEW ,MessageType.text);
     } else {

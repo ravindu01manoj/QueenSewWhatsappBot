@@ -13,7 +13,7 @@ const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 
-QueenSew.newcmdaddtosew({pattern: 'gaymeter', fromSew: false, desc: 'Share Anyone\'s Gayness!'}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'gaymeter', fromMe: false, desc: 'Share Anyone\'s Gayness!'}, (async (message, match) => {
 
     if (message.reply_message === false) return await message.sendMessage('```Need Reply!```');
 
@@ -137,7 +137,7 @@ r_text[100] = "%100";
     )
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'gaymeter', fromSew: true, desc: 'Share Anyone\'s Gayness!'}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'gaymeter', fromMe: true, desc: 'Share Anyone\'s Gayness!'}, (async (message, match) => {
 
     if (message.reply_message === false) return await message.sendMessage('```Need Reply!```');
 

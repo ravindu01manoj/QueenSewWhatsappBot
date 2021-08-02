@@ -30,7 +30,7 @@ const SEWF = "\n╠           *👆👆Group Admins👆👆*                    
 
 if (Config.WORKTYPE == 'private') {
 
-QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromSew: true, desc: REPORT_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromMe: true, desc: REPORT_DESC}, (async (message, match) => {    
         if (message.reply_message !== false, match[1] === '') {
         var SewRep;{
         SewRep = match[1];
@@ -85,7 +85,7 @@ QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromSew: true, desc: REPORT_DE
 
 }
 else if (Config.WORKTYPE == 'public') {
-QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromSew: false, desc: REPORT_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromMe: false, desc: REPORT_DESC}, (async (message, match) => {    
         if (message.reply_message !== false, match[1] === '') {
         var SewRep;{
         SewRep = match[1];
@@ -137,7 +137,7 @@ QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromSew: false, desc: REPORT_D
         
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromSew: true, desc: REPORT_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'report ?(.*)', fromMe: true, desc: REPORT_DESC}, (async (message, match) => {    
         if (message.reply_message !== false, match[1] === '') {
         var SewRep;{
         SewRep = match[1];

@@ -16,7 +16,7 @@ const sql = require('./sql/greetings');
 const Language = require('../language');
 const Lang = Language.getString('greetings');
 
-QueenSew.newcmdaddtosew({pattern: 'welcome$', fromSew: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_WELCOME,MessageType.text);
@@ -25,7 +25,7 @@ QueenSew.newcmdaddtosew({pattern: 'welcome$', fromSew: true, desc: Lang.WELCOME_
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'welcome (.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'welcome (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_WELCOME_TEXT);
     } else {
@@ -35,7 +35,7 @@ QueenSew.newcmdaddtosew({pattern: 'welcome (.*)', fromSew: true, dontAdCommandLi
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'goodbye$', fromSew: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC}, (async (message, match) => {
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.client.sendMessage(message.jid,Lang.NOT_SET_GOODBYE,MessageType.text)
@@ -44,7 +44,7 @@ QueenSew.newcmdaddtosew({pattern: 'goodbye$', fromSew: true, desc: Lang.GOODBYE_
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'goodbye (.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'goodbye (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid,Lang.NEED_GOODBYE_TEXT,MessageType.text);
     } else {

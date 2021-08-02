@@ -23,7 +23,7 @@ const Lang = Language.getString('unvoice'); // Language support
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'unvoice ?(.*)', fromSew: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'unvoice ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
@@ -40,7 +40,7 @@ let id = match[1];
             await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
 
-    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromSew: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
         var downloading = await message.client.sendMessage(message.jid,Lang.UV_PROC,MessageType.text);
@@ -58,12 +58,12 @@ let id = match[1];
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromSew: false, desc: Lang.UV_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromMe: false, desc: Lang.UV_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
         var downloading = await message.client.sendMessage(message.jid,Lang.UV_PROC,MessageType.text);
@@ -81,10 +81,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'a ?(.*)', fromSew: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'a ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
@@ -101,7 +101,7 @@ let id = match[1];
             await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
 
-    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromSew: true, desc: Lang.UV_DESC, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
         var downloading = await message.client.sendMessage(message.jid,Lang.UV_PROC,MessageType.text);
@@ -119,7 +119,7 @@ let id = match[1];
             .on('end', async () => {
                 await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
             });
-        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 }
 

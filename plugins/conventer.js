@@ -71,7 +71,7 @@ function webp2mp4File(path) {
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3$', fromSew: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -88,10 +88,10 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.client.sendMessage(mid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'photo$', fromSew: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'photo$', fromMe: true, desc: Lang.STİCKER_DESC}, (async (message, match) => {   
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -109,9 +109,9 @@ if (Config.WORKTYPE == 'private') {
             .on('end', async () => {
                 await message.client.sendMessage(mid, fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg});
             });
-        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-    QueenSew.newcmdaddtosew({pattern: 'vsticker$', desc: Lang.ANİM_STİCK, fromSew: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'vsticker$', desc: Lang.ANİM_STİCK, fromMe: true}, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
         await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)
@@ -136,7 +136,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'mp3$', fromSew: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.MP4TOAUDİO,MessageType.text);
@@ -153,10 +153,10 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.client.sendMessage(mid, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: false});
             });
-        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'photo$', fromSew: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC}, (async (message, match) => {    
         const mid = message.jid
         if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
         var downloading = await message.client.sendMessage(mid,Lang.STİCKER,MessageType.text);
@@ -174,9 +174,9 @@ else if (Config.WORKTYPE == 'public') {
             .on('end', async () => {
                 await message.client.sendMessage(mid, fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg});
             });
-        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+        return await message.client.deleteMessage(mid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-    QueenSew.newcmdaddtosew({pattern: 'vsticker$', desc: Lang.ANİM_STİCK, fromSew: false}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'vsticker$', desc: Lang.ANİM_STİCK, fromMe: false}, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
         await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)

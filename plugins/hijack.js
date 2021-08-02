@@ -52,7 +52,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 
-QueenSew.newcmdaddtosew({pattern: 'endspam', fromSew: false, desc: 'High Power Full SPAM.... Turn off command'}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'endspam', fromMe: false, desc: 'High Power Full SPAM.... Turn off command'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, 'Spam successfully Stoped😈', MessageType.text);
 
@@ -63,7 +63,7 @@ QueenSew.newcmdaddtosew({pattern: 'endspam', fromSew: false, desc: 'High Power F
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'endspam', fromSew: true, desc: 'High Power Full SPAM.... Turn off command'}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'endspam', fromMe: true, desc: 'High Power Full SPAM.... Turn off command'}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, 'Spam successfully Stoped😈', MessageType.text);
 
@@ -76,7 +76,7 @@ QueenSew.newcmdaddtosew({pattern: 'endspam', fromSew: true, desc: 'High Power Fu
 
 
 
-QueenSew.newcmdaddtosew({pattern: 'darkspam', fromSew: true, delownsewcmd: false, desc: SEW,}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'darkspam', fromMe: true, delownsewcmd: false, desc: SEW,}, (async (message, match) => {
 
   var msg = await message.reply('```Running Script....```');
   

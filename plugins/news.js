@@ -16,7 +16,7 @@ const got = require('got');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-QueenSew.newcmdaddtosew({pattern: 'news ?(.*)', fromSew: false, desc: Lang.NEWS_DESC}, async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_CATEGORY);
 	const url = `https://inshortsapi.vercel.app/news?category=${match[1]}`;
 	try {

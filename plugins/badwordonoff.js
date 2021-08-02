@@ -40,7 +40,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     }
     
    
-    QueenSew.newcmdaddtosew({pattern: 'bad ?(.*)', fromSew: true, desc: l_dsc, usage: '.bad off / on' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bad ?(.*)', fromMe: true, desc: l_dsc, usage: '.bad off / on' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 

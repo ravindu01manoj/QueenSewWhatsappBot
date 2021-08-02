@@ -42,7 +42,7 @@ var r_text = new Array ();
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         if (Raviya.WORKTYPE == 'private') {
 
-QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -52,7 +52,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -62,7 +62,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -72,7 +72,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -82,7 +82,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -92,7 +92,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -102,7 +102,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -112,7 +112,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -122,7 +122,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -132,7 +132,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -142,7 +142,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -152,7 +152,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -162,7 +162,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -172,7 +172,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -182,7 +182,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -192,7 +192,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -202,7 +202,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -212,7 +212,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -222,7 +222,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -232,7 +232,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -242,7 +242,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -252,7 +252,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -262,7 +262,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -272,7 +272,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -282,7 +282,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -292,7 +292,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -302,7 +302,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -312,7 +312,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -322,7 +322,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -332,7 +332,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -342,7 +342,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -352,7 +352,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -362,7 +362,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -372,7 +372,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -382,7 +382,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -392,7 +392,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -402,7 +402,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -412,7 +412,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -422,7 +422,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -432,7 +432,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -442,7 +442,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -452,7 +452,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -462,7 +462,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -472,7 +472,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -482,7 +482,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -492,7 +492,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -502,7 +502,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -512,7 +512,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
    
-    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -522,7 +522,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -532,7 +532,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -542,7 +542,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -552,7 +552,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -562,7 +562,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -572,7 +572,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -582,7 +582,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -592,7 +592,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -602,7 +602,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -613,7 +613,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     }));
     
 
-    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -623,7 +623,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -633,7 +633,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -643,7 +643,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -653,7 +653,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -663,7 +663,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -673,7 +673,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -683,7 +683,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -693,7 +693,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -703,7 +703,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -713,7 +713,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -723,7 +723,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -733,7 +733,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -743,7 +743,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -753,7 +753,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -763,7 +763,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -773,7 +773,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -783,7 +783,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -793,7 +793,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -803,7 +803,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -813,7 +813,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -823,7 +823,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -833,7 +833,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -843,7 +843,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -853,7 +853,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -863,7 +863,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -873,7 +873,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -891,7 +891,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         else if (Raviya.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -901,7 +901,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -911,7 +911,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -921,7 +921,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -931,7 +931,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -941,7 +941,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -951,7 +951,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -961,7 +961,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -971,7 +971,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -981,7 +981,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -991,7 +991,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1001,7 +1001,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1011,7 +1011,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1021,7 +1021,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1031,7 +1031,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1041,7 +1041,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1051,7 +1051,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1061,7 +1061,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1071,7 +1071,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1081,7 +1081,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1091,7 +1091,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1101,7 +1101,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1111,7 +1111,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1121,7 +1121,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1131,7 +1131,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1141,7 +1141,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1151,7 +1151,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1161,7 +1161,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1171,7 +1171,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1181,7 +1181,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1191,7 +1191,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1201,7 +1201,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1211,7 +1211,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1221,7 +1221,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1231,7 +1231,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1241,7 +1241,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1251,7 +1251,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1261,7 +1261,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1271,7 +1271,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1281,7 +1281,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1291,7 +1291,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1301,7 +1301,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1311,7 +1311,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1321,7 +1321,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1331,7 +1331,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1341,7 +1341,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1351,7 +1351,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1361,7 +1361,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
    
-    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1371,7 +1371,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1381,7 +1381,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1391,7 +1391,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1401,7 +1401,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1411,7 +1411,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1421,7 +1421,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1431,7 +1431,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1441,7 +1441,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1451,7 +1451,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1462,7 +1462,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     }));
     
 
-    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1472,7 +1472,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1482,7 +1482,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1492,7 +1492,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1502,7 +1502,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1512,7 +1512,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1522,7 +1522,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1532,7 +1532,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1542,7 +1542,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1552,7 +1552,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1562,7 +1562,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1572,7 +1572,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1582,7 +1582,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1592,7 +1592,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1602,7 +1602,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1612,7 +1612,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1622,7 +1622,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1632,7 +1632,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1642,7 +1642,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1652,7 +1652,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1662,7 +1662,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1672,7 +1672,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1682,7 +1682,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1692,7 +1692,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1702,7 +1702,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1712,7 +1712,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1722,7 +1722,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1734,7 +1734,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
 
 
-    QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1744,7 +1744,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'cloudsky ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1754,7 +1754,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3dluxury ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1764,7 +1764,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1sandwriting ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1774,7 +1774,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'darkgold ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1784,7 +1784,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neongalaxy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1794,7 +1794,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'minion3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1804,7 +1804,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'holo3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1814,7 +1814,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'purpul ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1824,7 +1824,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'esilver ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1834,7 +1834,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glossy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1844,7 +1844,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1fabric ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1854,7 +1854,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'new1y ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1864,7 +1864,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'neon1s ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1874,7 +1874,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'helloween ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1884,7 +1884,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'xmas3d ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1894,7 +1894,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'joker ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1904,7 +1904,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wicker ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1914,7 +1914,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'skeleton ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1924,7 +1924,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1934,7 +1934,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1944,7 +1944,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1954,7 +1954,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1964,7 +1964,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1974,7 +1974,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1984,7 +1984,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7foil ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -1994,7 +1994,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2004,7 +2004,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glossy ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2014,7 +2014,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'denim ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2024,7 +2024,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2034,7 +2034,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2044,7 +2044,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3decora ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2054,7 +2054,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rock ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2064,7 +2064,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2074,7 +2074,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glass ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2084,7 +2084,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'berry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2094,7 +2094,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2blood ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2104,7 +2104,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3blood ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2114,7 +2114,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1gem ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2124,7 +2124,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bagel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2134,7 +2134,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'captain ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2144,7 +2144,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3cake ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2154,7 +2154,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fish ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2164,7 +2164,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'rainbow ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2174,7 +2174,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'honny ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2184,7 +2184,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1candi ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2194,7 +2194,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bluemetal ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2204,7 +2204,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
    
-    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fruit ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2214,7 +2214,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2carbon ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2224,7 +2224,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2metal ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2234,7 +2234,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2244,7 +2244,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2254,7 +2254,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2264,7 +2264,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2274,7 +2274,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2284,7 +2284,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2294,7 +2294,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7glitter ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2305,7 +2305,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     }));
     
 
-    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2315,7 +2315,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2325,7 +2325,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2335,7 +2335,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2345,7 +2345,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2355,7 +2355,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '6jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2365,7 +2365,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '7jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2375,7 +2375,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '8jewelry ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2385,7 +2385,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'biscuit ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2395,7 +2395,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2405,7 +2405,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2415,7 +2415,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2425,7 +2425,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '4spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2435,7 +2435,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '5spark ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2445,7 +2445,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'grad ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2455,7 +2455,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2465,7 +2465,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2475,7 +2475,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'stars ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2485,7 +2485,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'fur ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2495,7 +2495,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'gerbang ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2505,7 +2505,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '3lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2515,7 +2515,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'aov ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2525,7 +2525,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dota2 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2535,7 +2535,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'vtext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2545,7 +2545,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ptext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2555,7 +2555,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'colortext ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2565,7 +2565,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '1917 ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2575,7 +2575,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-        QueenSew.newcmdaddtosew({pattern: 'sesuni', fromSew: true, dontAdCommandList: true}, (async (message) => {
+        QueenSew.newcmdaddtosew({pattern: 'sesuni', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/uniform?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2583,7 +2583,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sestent', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sestent', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/tentacles?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2591,7 +2591,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sespussy', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sespussy', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/pussy?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2599,7 +2599,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sespanti', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sespanti', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/panties?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2607,7 +2607,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
  
-    QueenSew.newcmdaddtosew({pattern: 'sesmstrb', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesmstrb', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/mstrb?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2615,7 +2615,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sesmanga', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesmanga', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/manga?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2623,7 +2623,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sesglass', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesglass', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/glasses?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2631,7 +2631,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sescuck', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sescuck', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/cuckold?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2639,7 +2639,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sesero', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesero', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/ero?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2647,7 +2647,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sesbdsm', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesbdsm', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/bdsm?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2655,7 +2655,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'sesass', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sesass', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/ass?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2663,7 +2663,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'sessf', fromSew: true, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'sessf', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/sfwneko?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2671,7 +2671,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'iwallpaper', fromSew: false, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'iwallpaper', fromMe: false, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/wallpaper?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2679,7 +2679,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'imeme', fromSew: false, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'imeme', fromMe: false, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/meme?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2687,7 +2687,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'iexo', fromSew: false, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'iexo', fromMe: false, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/exo?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2695,7 +2695,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'iblackpink', fromSew: false, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'iblackpink', fromMe: false, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/blackpink?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2703,7 +2703,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ibts', fromSew: false, dontAdCommandList: true}, (async (message) => {
+    QueenSew.newcmdaddtosew({pattern: 'ibts', fromMe: false, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/bts?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
@@ -2712,7 +2712,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     }));
 
 
-    QueenSew.newcmdaddtosew({pattern: 'shine ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'shine ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2721,7 +2721,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2730,7 +2730,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2739,7 +2739,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2748,7 +2748,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2757,7 +2757,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2766,7 +2766,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2775,7 +2775,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2784,7 +2784,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2793,7 +2793,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2802,7 +2802,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2812,7 +2812,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
 
     }));
     
-    QueenSew.newcmdaddtosew({pattern: 'shine ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'shine ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2821,7 +2821,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2830,7 +2830,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2839,7 +2839,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2848,7 +2848,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2857,7 +2857,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2866,7 +2866,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2875,7 +2875,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2884,7 +2884,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2893,7 +2893,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 
@@ -2902,7 +2902,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromSew: true, dontAdCommandL
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
 

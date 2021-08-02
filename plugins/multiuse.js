@@ -11,7 +11,7 @@ const LOADING = "Downloading the Video..."
 const NOT_FOUNDFB = "Video Not Found"
 const CAPTION = "Caption"
 
-QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromSew: false, desc: IG_DESC}, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
 
     const userName = match[1]
 
@@ -50,7 +50,7 @@ QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromSew: false, desc: IG_DESC}
 
 
 
-QueenSew.newcmdaddtosew({ pattern: 'fb ?(.*)', fromSew: false, desc: FBDESC }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
 
     const userName = match[1]
 

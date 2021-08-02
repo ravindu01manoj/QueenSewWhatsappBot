@@ -15,7 +15,7 @@ const Config = require('../config');
 const axios = require('axios');
 const Sr = "Search on Google."
 
-QueenSew.newcmdaddtosew({pattern: 'search ?(.*)', fromSew: false, desc: Sr}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'search ?(.*)', fromMe: false, desc: Sr}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,'```type some text```', MessageType.text);
  

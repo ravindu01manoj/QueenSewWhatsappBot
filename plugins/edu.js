@@ -19,7 +19,7 @@ const Lang = Language.getString('eddu');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'edu', fromSew: true, desc: Lang.ADU}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'edu', fromMe: true, desc: Lang.ADU}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -42,7 +42,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'edu', fromSew: false, desc: Lang.ADU}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'edu', fromMe: false, desc: Lang.ADU}, (async (message, match) => {
 
     var r_text = new Array ();
 

@@ -8,7 +8,7 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'public') {
 
-QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromSew: false, desc: Lang.TIN_DESC}, async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromMe: false, desc: Lang.TIN_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_LINK);
 	const url = `https://tobz-api.herokuapp.com/api/tinyurl?url=${match[1]}&apikey=BotWeA`;
 	try {
@@ -23,7 +23,7 @@ QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromSew: false, desc: Lang.TIN_D
 }
 else if (Config.WORKTYPE == 'private') {
 
-QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromSew: true, desc: Lang.TIN_DESC}, async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromMe: true, desc: Lang.TIN_DESC}, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_LINK);
 	const url = `https://tobz-api.herokuapp.com/api/tinyurl?url=${match[1]}&apikey=BotWeA`;
 	try {

@@ -2,7 +2,7 @@ const SewQueen = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 //LyFE
-SewQueen.newcmdaddtosew({ pattern: 'movie ?(.*)', fromSew: false, desc: "Shows movie info." }, (async (message, match) => {
+SewQueen.newcmdaddtosew({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
 	if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
 	let url = `http://www.omdbapi.com/?i=tt3896198&apikey=a6ad5056&t=${match[1]}&plot=full`
 	const response = await got(url);

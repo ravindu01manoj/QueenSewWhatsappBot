@@ -25,7 +25,7 @@ const SEWC = "```Dice Rolled:``` "
 
     if (con.WORKTYPE === 'private') {
 
-        QueenSew.newcmdaddtosew({pattern: 'roll', fromSew: true, desc: SEWA}, (async (message, match) => {
+        QueenSew.newcmdaddtosew({pattern: 'roll', fromMe: true, desc: SEWA}, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, SEWB, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -47,7 +47,7 @@ const SEWC = "```Dice Rolled:``` "
     }
     else if (con.WORKTYPE === 'public') {
 
-        QueenSew.newcmdaddtosew({pattern: 'roll', fromSew: false, desc: SEWA}, (async (message, match) => {
+        QueenSew.newcmdaddtosew({pattern: 'roll', fromMe: false, desc: SEWA}, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, SEWB, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));

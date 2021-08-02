@@ -5,7 +5,7 @@ const axios = require('axios');
 
 
 
-QueenSew.newcmdaddtosew({ pattern: 'random ?(.*)', fromSew: false, desc: 'word image' }, (async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' }, (async (message, match) => {
 
     var r_text = new Array ();
 

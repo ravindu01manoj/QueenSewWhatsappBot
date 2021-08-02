@@ -20,7 +20,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromSew: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -58,7 +58,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromSew: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -93,7 +93,7 @@ else if (Config.WORKTYPE == 'public') {
             await info.delete();    
         });
     }));
-    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromSew: true, desc: Lang.MEMES_DESC, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAdCommandList: true}, (async (message, match) => {   
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;

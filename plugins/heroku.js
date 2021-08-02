@@ -27,7 +27,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-QueenSew.newcmdaddtosew({pattern: 'degis ?(.*)', fromSew: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '' && message.reply_message) {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -157,7 +157,7 @@ QueenSew.newcmdaddtosew({pattern: 'degis ?(.*)', fromSew: true, desc: Lang.DEGİ
 }));
 
 
-QueenSew.newcmdaddtosew({pattern: 'restart', fromSew: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -166,7 +166,7 @@ QueenSew.newcmdaddtosew({pattern: 'restart', fromSew: true, desc: Lang.RESTART_D
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'shutdown', fromSew: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -184,7 +184,7 @@ QueenSew.newcmdaddtosew({pattern: 'shutdown', fromSew: true, desc: Lang.SHUTDOWN
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'dyno', fromSew: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -217,7 +217,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'dyno', fromSew: false, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dyno', fromMe: false, desc: Lang.DYNO_DESC}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -247,7 +247,7 @@ else if (Config.WORKTYPE == 'public') {
             });        
         });
     }));
-    QueenSew.newcmdaddtosew({pattern: 'dyno', fromSew: true, desc: Lang.DYNO_DESC, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAdCommandList: true}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -279,7 +279,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-QueenSew.newcmdaddtosew({pattern: 'setvar ?(.*)', fromSew: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
@@ -695,7 +695,7 @@ QueenSew.newcmdaddtosew({pattern: 'setvar ?(.*)', fromSew: true, desc: Lang.SETV
 }));
 
 
-QueenSew.newcmdaddtosew({pattern: 'delvar ?(.*)', fromSew: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -717,7 +717,7 @@ QueenSew.newcmdaddtosew({pattern: 'delvar ?(.*)', fromSew: true, desc: Lang.DELV
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'getvar ?(.*)', fromSew: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {

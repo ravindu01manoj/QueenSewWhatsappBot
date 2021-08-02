@@ -37,7 +37,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BGM_on = 'bgm option turned on'
         BGM_off = 'bgm option turned off'
     }
-    QueenSew.newcmdaddtosew({pattern: 'bgm ?(.*)', fromSew: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 

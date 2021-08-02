@@ -16,7 +16,7 @@ const Lang = Language.getString('webss');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromSew: true, desc: Lang.SS_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromSew: false, desc: Lang.SS_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made By t.me/RavinduManoj'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromSew: true, desc: Lang.SS_DESC, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 

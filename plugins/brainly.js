@@ -9,7 +9,7 @@ const usage = ".brainly <Question>"
 
 const butuh = "```Enter the Question!```"
 
-QueenSew.newcmdaddtosew({ pattern: 'brainly ?(.*)', fromSew: false, desc: brainly, usage: usage }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage: usage }, async (message, match) => {
 
         const Soal = match[1]
         

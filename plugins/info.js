@@ -42,11 +42,11 @@ if (Config.LANG == 'SI') ADMİN_USER = '✪\n✨➢ *පරිපාලකවර
 if (Config.WORKTYPE == 'private') {
 
 
-    SewRavi.newcmdaddtosew({pattern: 'details', fromSew: true, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'details', fromMe: true, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
        
         await message.sendMessage(I_PACK);
       }));
-    SewRavi.newcmdaddtosew({ pattern: 'info$', fromSew: true, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
+    SewRavi.newcmdaddtosew({ pattern: 'info$', fromMe: true, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
         if (message.jid.includes('-')) {
             var lasijson = await message.client.groupMetadataMinimal(message.jid) 
             var code = await message.client.groupInviteCode(message.jid)
@@ -112,7 +112,7 @@ if (Config.WORKTYPE == 'private') {
         }
     });
 
-    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromSew: true, desc: LP.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
+    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromMe: true, desc: LP.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, LP.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -137,13 +137,13 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
 
-    SewRavi.newcmdaddtosew({pattern: 'details', fromSew: false, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'details', fromMe: false, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
        
         await message.sendMessage(I_PACK);
       }));
 
 
-    SewRavi.newcmdaddtosew({ pattern: 'info$', fromSew: false, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
+    SewRavi.newcmdaddtosew({ pattern: 'info$', fromMe: false, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
         if (message.jid.includes('-')) {
             var lasijson = await message.client.groupMetadataMinimal(message.jid) 
             var code = await message.client.groupInviteCode(message.jid)
@@ -209,7 +209,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     });
 
-    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromSew: false, desc: Lang.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
+    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromMe: false, desc: Lang.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -224,7 +224,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text);
         }
     }));
-    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromSew: true, desc: LP.JID_DESC , dontAddCMDList: true}, (async (message, match) => {    
+    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromMe: true, desc: LP.JID_DESC , dontAddCMDList: true}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, LP.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -245,14 +245,14 @@ else if (Config.WORKTYPE == 'public') {
     //==============================================================================================================================================================================================================
 
 
-    SewRavi.newcmdaddtosew({pattern: 'details', fromSew: true, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
+    SewRavi.newcmdaddtosew({pattern: 'details', fromMe: true, delownsewcmd: false, desc: I_DESC}, (async (message, match) => {
        
         await message.sendMessage(I_PACK);
       }));
 
 
 
-    SewRavi.newcmdaddtosew({ pattern: 'info$', fromSew: true, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
+    SewRavi.newcmdaddtosew({ pattern: 'info$', fromMe: true, desc: LW.PL_DESC, dontAddCMDList: true }, async (message, match) => { 
         if (message.jid.includes('-')) {
             var lasijson = await message.client.groupMetadataMinimal(message.jid) 
             var code = await message.client.groupInviteCode(message.jid)
@@ -318,7 +318,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     });
 
-    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromSew: true, desc: LP.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
+    SewRavi.newcmdaddtosew({pattern: 'id ?(.*)', fromMe: true, desc: LP.JID_DESC, dontAddCMDList: true}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, LP.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}

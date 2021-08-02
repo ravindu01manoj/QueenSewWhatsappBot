@@ -22,7 +22,7 @@ const Lang = Language.getString('qrgenerator');
 
 if (Config.WORKTYPE == 'private') {
 
-QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromSew: true, desc: Lang.QR_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromMe: true, desc: Lang.QR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -34,7 +34,7 @@ QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromSew: true, desc: Lang.QR_DESC}
 }
 if (Config.WORKTYPE == 'public') {
 
-QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromSew: false, desc: Lang.QR_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromMe: false, desc: Lang.QR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 

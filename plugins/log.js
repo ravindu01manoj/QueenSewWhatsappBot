@@ -8,7 +8,7 @@ const {execFile} = require('child_process');
 const Language = require('../language'); 
 const Lang = Language.getString('log'); 
 
-QueenSew.newcmdaddtosew({ pattern: 'log', fromSew: true, desc: Lang.LOG, warn: Lang.ANIM, onlyGrpSew: true}, (async (message, match) => { 
+QueenSew.newcmdaddtosew({ pattern: 'log', fromMe: true, desc: Lang.LOG, warn: Lang.ANIM, onlyGrpSew: true}, (async (message, match) => { 
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)

@@ -9,7 +9,7 @@ const Language = require('../language');
 const Lang = Language.getString('spammer');
     
 
-QueenSew.newcmdaddtosew({pattern: 'vid spam$', fromSew: true, desc: Lang.VİD_DESC }, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'vid spam$', fromMe: true, desc: Lang.VİD_DESC }, (async (message, match) => {
     
     if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.VİD_NEED, MessageType.text);
 

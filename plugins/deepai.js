@@ -27,13 +27,13 @@ const Lang = Language.getString('deepai'); // Language Support
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'deepai', fromSew: true, delownsewcmd: false, desc: Lang.DEEPAI_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'deepai', fromMe: true, delownsewcmd: false, desc: Lang.DEEPAI_DESC}, (async (message, match) => {
 
 
         await message.sendMessage('😈 Usage: *.moodai <text>*\n💗 Desc: 🇹🇷 Yazdığınız yazıdan ruh halinizi bulur.\n🇱🇰 It finds your mood from the article you wrote.\n\n😈 Usage: *.colorai*\n💗 Desc: 🇹🇷 Siyah beyaz fotoğrafları renklendirir.\n🇱🇰 It colorize bw photos.\n\n😈 Usage: *.faceai*\n💗 Desc: 🇹🇷 Yapay zeka ile daha önce hiç var olmamış insan yüzleri üretir.\n🇱🇰 Generates human faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.animai*\n💗 Desc: Yapay zeka ile daha önce hiç var olmayan anime yüzleri üretir.\n🇱🇰 Generates anime faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.superai*\n💗 Desc: 🇹🇷 Fotoğrafın kalitesini yapay zeka ile arttırır.\n🇱🇰 Improves the quality of photos with Neural AI.\n\n😈 Usage: *.waifuai*\n💗 Desc: 🇹🇷 Fotoğrafların renk paletlerini yapay zeka ile birleştirir.\n🇱🇰 Combines the color palettes of photos with artificial intelligence.\n\n😈 Usage: *.dreamai*\n💗 Desc: 🇹🇷 Fotoğrafa deepdream efekti uygular.\n🇱🇰 Applies deepdream effect to the photo.\n\n😈 Usage: *.neuraltalkai*\n💗 Desc: 🇹🇷 Fotoğrafki olan şeyi yapay zeka ile açıklar.\n🇱🇰 Explain the phenomenon in the photo with artificial intelligence.\n\n😈 Usage: *.ttiai <text>*\n💗 Desc: 🇹🇷 Yazıyı resme dönüştürür.\n🇱🇰 Converts text to a picture. (Text-to-Image)\n\n😈 Usage: *.toonai*\n💗 Desc: 🇹🇷 Fotoğraftaki yüzü çizgi film karakterine çevirir.\n🇱🇰 Turns the face in the photo into a cartoon character.\n\n😈 Usage: *.textai <text>*\n💗 Desc: 🇹🇷 Yazdığınız cümleden size yapay bir hikaye yaratır.\n🇱🇰 It creates an artificial story for you from your sentence.\n\n😈 Usage: *.nudityai*\n💗 Desc: 🇹🇷 Fotoğraftaki NSFW değerini 1 ve 0 arasında gösterir. \n🇱🇰 It shows the NSFW value between 1 and 0 in the photo.\n\n😈 Usage: *.ganstyle*\n💗 Desc: 🇹🇷 Yanıtladığınız fotoğrafı seçili olan resim ile birleştirir.\n🇱🇰 Combines the photo you answered with the selected picture.\n\n⚠️ 🇹🇷 *Bütün bu yapay zeka araçlarını derin öğrenme ile çalışır. Ne kadar fazla kullanırsanız o kadar fazla bilgiyi depolar.* ```Sadece ingilizce karakter kullanın!```\n\n⚠️ 🇱🇰 *All the tools here work with deep learning. The more you use it, the more information it stores.* ```Use only english characters!```');
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'faceai', fromSew: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'faceai', fromMe: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://thispersondoesnotexist.com/&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'animai', fromSew: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'animai', fromMe: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var min = 10000; 
         var max = 50000;  
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'private') {
         )
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'colorai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -83,11 +83,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -114,11 +114,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'superai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'superai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -145,11 +145,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -162,7 +162,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -189,11 +189,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -218,11 +218,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -237,7 +237,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'toonai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'toonai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -264,11 +264,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -293,11 +293,11 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -310,7 +310,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -338,19 +338,19 @@ if (Config.WORKTYPE == 'private') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'deepai', fromSew: false, delownsewcmd: false, desc: Lang.DEEPAI_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'deepai', fromMe: false, delownsewcmd: false, desc: Lang.DEEPAI_DESC}, (async (message, match) => {
 
         await message.sendMessage('😈 Usage: *.moodai <text>*\n💗 Desc: 🇹🇷 Yazdığınız yazıdan ruh halinizi bulur.\n🇱🇰 It finds your mood from the article you wrote.\n\n😈 Usage: *.colorai*\n💗 Desc: 🇹🇷 Siyah beyaz fotoğrafları renklendirir.\n🇱🇰 It colorize bw photos.\n\n😈 Usage: *.faceai*\n💗 Desc: 🇹🇷 Yapay zeka ile daha önce hiç var olmamış insan yüzleri üretir.\n🇱🇰 Generates human faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.animai*\n💗 Desc: Yapay zeka ile daha önce hiç var olmayan anime yüzleri üretir.\n🇱🇰 Generates anime faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.superai*\n💗 Desc: 🇹🇷 Fotoğrafın kalitesini yapay zeka ile arttırır.\n🇱🇰 Improves the quality of photos with Neural AI.\n\n😈 Usage: *.waifuai*\n💗 Desc: 🇹🇷 Fotoğrafların renk paletlerini yapay zeka ile birleştirir.\n🇱🇰 Combines the color palettes of photos with artificial intelligence.\n\n😈 Usage: *.dreamai*\n💗 Desc: 🇹🇷 Fotoğrafa deepdream efekti uygular.\n🇱🇰 Applies deepdream effect to the photo.\n\n😈 Usage: *.neuraltalkai*\n💗 Desc: 🇹🇷 Fotoğrafki olan şeyi yapay zeka ile açıklar.\n🇱🇰 Explain the phenomenon in the photo with artificial intelligence.\n\n😈 Usage: *.ttiai <text>*\n💗 Desc: 🇹🇷 Yazıyı resme dönüştürür.\n🇱🇰 Converts text to a picture. (Text-to-Image)\n\n😈 Usage: *.toonai*\n💗 Desc: 🇹🇷 Fotoğraftaki yüzü çizgi film karakterine çevirir.\n🇱🇰 Turns the face in the photo into a cartoon character.\n\n😈 Usage: *.textai <text>*\n💗 Desc: 🇹🇷 Yazdığınız cümleden size yapay bir hikaye yaratır.\n🇱🇰 It creates an artificial story for you from your sentence.\n\n😈 Usage: *.nudityai*\n💗 Desc: 🇹🇷 Fotoğraftaki NSFW değerini 1 ve 0 arasında gösterir. \n🇱🇰 It shows the NSFW value between 1 and 0 in the photo.\n\n😈 Usage: *.ganstyle*\n💗 Desc: 🇹🇷 Yanıtladığınız fotoğrafı seçili olan resim ile birleştirir.\n🇱🇰 Combines the photo you answered with the selected picture.\n\n⚠️ 🇹🇷 *Bütün bu yapay zeka araçlarını derin öğrenme ile çalışır. Ne kadar fazla kullanırsanız o kadar fazla bilgiyi depolar.* ```Sadece ingilizce karakter kullanın!```\n\n⚠️ 🇱🇰 *All the tools here work with deep learning. The more you use it, the more information it stores.* ```Use only english characters!```');
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'faceai', fromSew: false, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'faceai', fromMe: false, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://thispersondoesnotexist.com/&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
@@ -358,7 +358,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'animai', fromSew: false, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'animai', fromMe: false, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var min = 10000; 
         var max = 50000;  
@@ -373,7 +373,7 @@ else if (Config.WORKTYPE == 'public') {
         )
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'faceai', fromSew: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'faceai', fromMe: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get('https://screenshotapi.net/api/v1/screenshot?url=https://thispersondoesnotexist.com/&output=image&width=1000&height=1000', { responseType: 'arraybuffer' })
 
@@ -381,7 +381,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'animai', fromSew: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'animai', fromMe: true, delownsewcmd: false, dontAdCommandList: true }, (async (message, match) => {
 
         var min = 10000; 
         var max = 50000;  
@@ -396,7 +396,7 @@ else if (Config.WORKTYPE == 'public') {
         )
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'colorai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -423,11 +423,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -454,11 +454,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'superai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'superai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -485,11 +485,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -502,7 +502,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -529,11 +529,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -558,11 +558,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -577,7 +577,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'toonai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'toonai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -604,11 +604,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -633,11 +633,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -650,7 +650,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromSew: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromMe: false, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -678,17 +678,17 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'deepai', fromSew: true, delownsewcmd: false, desc: Lang.DEEPAI_DESC, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'deepai', fromMe: true, delownsewcmd: false, desc: Lang.DEEPAI_DESC, dontAdCommandList: true}, (async (message, match) => {
 
 
         await message.sendMessage('😈 Usage: *.moodai <text>*\n💗 Desc: 🇹🇷 Yazdığınız yazıdan ruh halinizi bulur.\n🇱🇰 It finds your mood from the article you wrote.\n\n😈 Usage: *.colorai*\n💗 Desc: 🇹🇷 Siyah beyaz fotoğrafları renklendirir.\n🇱🇰 It colorize bw photos.\n\n😈 Usage: *.faceai*\n💗 Desc: 🇹🇷 Yapay zeka ile daha önce hiç var olmamış insan yüzleri üretir.\n🇱🇰 Generates human faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.animai*\n💗 Desc: Yapay zeka ile daha önce hiç var olmayan anime yüzleri üretir.\n🇱🇰 Generates anime faces with artificial intelligence, that never existed before.\n\n😈 Usage: *.superai*\n💗 Desc: 🇹🇷 Fotoğrafın kalitesini yapay zeka ile arttırır.\n🇱🇰 Improves the quality of photos with Neural AI.\n\n😈 Usage: *.waifuai*\n💗 Desc: 🇹🇷 Fotoğrafların renk paletlerini yapay zeka ile birleştirir.\n🇱🇰 Combines the color palettes of photos with artificial intelligence.\n\n😈 Usage: *.dreamai*\n💗 Desc: 🇹🇷 Fotoğrafa deepdream efekti uygular.\n🇱🇰 Applies deepdream effect to the photo.\n\n😈 Usage: *.neuraltalkai*\n💗 Desc: 🇹🇷 Fotoğrafki olan şeyi yapay zeka ile açıklar.\n🇱🇰 Explain the phenomenon in the photo with artificial intelligence.\n\n😈 Usage: *.ttiai <text>*\n💗 Desc: 🇹🇷 Yazıyı resme dönüştürür.\n🇱🇰 Converts text to a picture. (Text-to-Image)\n\n😈 Usage: *.toonai*\n💗 Desc: 🇹🇷 Fotoğraftaki yüzü çizgi film karakterine çevirir.\n🇱🇰 Turns the face in the photo into a cartoon character.\n\n😈 Usage: *.textai <text>*\n💗 Desc: 🇹🇷 Yazdığınız cümleden size yapay bir hikaye yaratır.\n🇱🇰 It creates an artificial story for you from your sentence.\n\n😈 Usage: *.nudityai*\n💗 Desc: 🇹🇷 Fotoğraftaki NSFW değerini 1 ve 0 arasında gösterir. \n🇱🇰 It shows the NSFW value between 1 and 0 in the photo.\n\n😈 Usage: *.ganstyle*\n💗 Desc: 🇹🇷 Yanıtladığınız fotoğrafı seçili olan resim ile birleştirir.\n🇱🇰 Combines the photo you answered with the selected picture.\n\n⚠️ 🇹🇷 *Bütün bu yapay zeka araçlarını derin öğrenme ile çalışır. Ne kadar fazla kullanırsanız o kadar fazla bilgiyi depolar.* ```Sadece ingilizce karakter kullanın!```\n\n⚠️ 🇱🇰 *All the tools here work with deep learning. The more you use it, the more information it stores.* ```Use only english characters!```');
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'colorai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'colorai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -715,11 +715,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'waifuai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -746,11 +746,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'superai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'superai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -777,11 +777,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'moodai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -794,7 +794,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'dreamai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -821,11 +821,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'neuraltalkai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -850,11 +850,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ttiai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -869,7 +869,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'toonai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'toonai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -896,11 +896,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
+    QueenSew.newcmdaddtosew({pattern: 'nudityai', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {  
   
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -925,11 +925,11 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'textai ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.TEXT);
 
@@ -942,7 +942,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromSew: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
+    QueenSew.newcmdaddtosew({pattern: 'ganstyle', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {   
  
         if (message.reply_message === false) return await message.sendMessage('```Need Photo!```');
 
@@ -970,7 +970,7 @@ else if (Config.WORKTYPE == 'public') {
 
             });
 
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
     }));
 }

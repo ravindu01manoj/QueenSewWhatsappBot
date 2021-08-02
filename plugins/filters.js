@@ -20,7 +20,7 @@ const jkd = Config.DISSTICKER != false ? Config.DISSTICKER.split(',') : [];
 const Language = require('../language');
 const Lang = Language.getString('filters');
 
-QueenSew.newcmdaddtosew({pattern: 'filter ?(.*)', fromSew: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
 
     if (match === null) {
@@ -41,7 +41,7 @@ QueenSew.newcmdaddtosew({pattern: 'filter ?(.*)', fromSew: true, desc: Lang.FILT
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'stop ?(.*)', fromSew: true, desc: Lang.STOP_DESC, dontAddCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontAddCommandList: true}, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
     if (match === null) {
         return await message.client.sendMessage(message.jid,Lang.NEED_REPLY + '\n*Example:* ```.stop "hello"```',MessageType.text)
@@ -57,7 +57,7 @@ QueenSew.newcmdaddtosew({pattern: 'stop ?(.*)', fromSew: true, desc: Lang.STOP_D
 }));
 
 
-QueenSew.newcmdaddtosew({on: 'text', fromSew: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
@@ -84,7 +84,7 @@ if(pattern.test(message.message)){
     );
 }));
 
-QueenSew.newcmdaddtosew({on: 'text', fromSew: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.AUTOSTICKER){
     let banned = jkd.find( Jid => Jid === message.jid);
     if(banned !== undefined) return

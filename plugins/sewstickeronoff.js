@@ -34,7 +34,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         STK_on = 'Auto sticker option turned on'
         STK_off = 'Auto sticker option turned off'
     }
-    QueenSew.newcmdaddtosew({pattern: 'autostic ?(.*)', fromSew: true, desc: l_dsc, usage: '.autosticker on / off' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'autostic ?(.*)', fromMe: true, desc: l_dsc, usage: '.autosticker on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 

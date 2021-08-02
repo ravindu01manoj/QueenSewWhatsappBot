@@ -18,7 +18,7 @@ const Language = require('../language');
 const Lang = Language.getString('admincont');
 
 if (Config.WORKTYPE == 'private') {
-    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromSew: true, desc: Lang.CONTADMİN}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromMe: true, desc: Lang.CONTADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -32,7 +32,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromSew: false, desc: Lang.CONTADMİN}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromMe: false, desc: Lang.CONTADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -44,7 +44,7 @@ else if (Config.WORKTYPE == 'public') {
         });
         await message.client.sendMessage(message.jid,'◻    🔱    *👑 Group Admins 👑*    🔱    ◻\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }));
-    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromSew: true, desc: Lang.CONTADMİN, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromMe: true, desc: Lang.CONTADMİN, dontAdCommandList: true}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';

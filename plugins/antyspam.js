@@ -21,7 +21,7 @@ const MuteSew = "Trying to close group for one day,\n😍ᴮʸ ˢᵉʷ😍"
 const MUT = ".mute 1d"
 const TAG = ".tag"
 const SCRIPTBYSEW = "Running Clear Reban Script....000001"
-QueenSew.newcmdaddtosew({pattern: 'antispam', fromSew: true, delownsewcmd: false, desc: sew,}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'antispam', fromMe: true, delownsewcmd: false, desc: sew,}, (async (message, match) => {
 
   var msg = await message.reply('❉Safe Mode Activating....');
 
@@ -82,7 +82,7 @@ QueenSew.newcmdaddtosew({pattern: 'antispam', fromSew: true, delownsewcmd: false
   }));
   
   
-QueenSew.newcmdaddtosew({pattern: 'antispambysew', fromSew: false, delownsewcmd: false, desc: sew,}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'antispambysew', fromMe: false, delownsewcmd: false, desc: sew,}, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
 

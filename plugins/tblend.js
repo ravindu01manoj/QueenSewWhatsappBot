@@ -22,7 +22,7 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromSew: true, desc: Lang.T_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Dodge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'or') {
 
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Or TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'multiply') {
 
@@ -86,7 +86,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Multiply TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainmerge') {
 
@@ -106,7 +106,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainmerge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'and') {
 
@@ -126,7 +126,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - And TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'burn') {
 
@@ -146,7 +146,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Burn TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'difference') {
 
@@ -166,7 +166,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Difference TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainextract') {
 
@@ -186,7 +186,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainextract TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'divide') {
 
@@ -206,7 +206,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Divide TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'xor') {
 
@@ -226,7 +226,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Xor TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'hardmix') {
 
@@ -246,7 +246,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Hardmix TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'negation') {
 
@@ -266,7 +266,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Negation TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
         }
         else {
@@ -276,7 +276,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromSew: false, desc: Lang.T_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
@@ -300,7 +300,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Dodge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'or') {
 
@@ -320,7 +320,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Or TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'multiply') {
 
@@ -340,7 +340,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Multiply TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainmerge') {
 
@@ -360,7 +360,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainmerge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'and') {
 
@@ -380,7 +380,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - And TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'burn') {
 
@@ -400,7 +400,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Burn TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'difference') {
 
@@ -420,7 +420,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Difference TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainextract') {
 
@@ -440,7 +440,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainextract TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'divide') {
 
@@ -460,7 +460,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Divide TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'xor') {
 
@@ -480,7 +480,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Xor TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'hardmix') {
 
@@ -500,7 +500,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Hardmix TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'negation') {
 
@@ -520,14 +520,14 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Negation TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
         }
         else {
             return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
         }
     }));
-    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromSew: true, desc: Lang.T_DESC, dontAdCommandList: true}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAdCommandList: true}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
@@ -551,7 +551,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Dodge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'or') {
 
@@ -571,7 +571,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Or TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'multiply') {
 
@@ -591,7 +591,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Multiply TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainmerge') {
 
@@ -611,7 +611,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainmerge TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'and') {
 
@@ -631,7 +631,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - And TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'burn') {
 
@@ -651,7 +651,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Burn TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'difference') {
 
@@ -671,7 +671,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Difference TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'grainextract') {
 
@@ -691,7 +691,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Grainextract TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'divide') {
 
@@ -711,7 +711,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Divide TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'xor') {
 
@@ -731,7 +731,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Xor TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'hardmix') {
 
@@ -751,7 +751,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Hardmix TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (match[1] === 'negation') {
 
@@ -771,7 +771,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made By t.me/RavinduManoj - Negation TBlend'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
 
         }
         else {

@@ -18,7 +18,7 @@ const Lang = Language.getString('sewshow');
 const { errorMessage, infoMessage } = require('../helpers');
 
 
-SewQueen.newcmdaddtosew({ pattern: 'joox ?(.*)', fromSew: false, dontAdCommandList: true}, async (message, match) => {
+SewQueen.newcmdaddtosew({ pattern: 'joox ?(.*)', fromMe: false, dontAdCommandList: true}, async (message, match) => {
 
     const userName = match[1]
 
@@ -56,7 +56,7 @@ SewQueen.newcmdaddtosew({ pattern: 'joox ?(.*)', fromSew: false, dontAdCommandLi
 
 
 
- SewQueen.newcmdaddtosew({ pattern: 'rest ?(.*)', fromSew: true,  dontAdCommandList: true, desc: 'downoad video from instargrame link' }, (async (message, match) => {
+ SewQueen.newcmdaddtosew({ pattern: 'rest ?(.*)', fromMe: true,  dontAdCommandList: true, desc: 'downoad video from instargrame link' }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, 'need insta link', MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, 'need insta link', MessageType.text, { quoted: message.data });
@@ -83,7 +83,7 @@ SewQueen.newcmdaddtosew({ pattern: 'joox ?(.*)', fromSew: false, dontAdCommandLi
 
 
 
-SewQueen.newcmdaddtosew({ pattern: 'twt ?(.*)', fromSew: false,  dontAdCommandList: true, desc: "download from twitter links" }, async (message, match) => {
+SewQueen.newcmdaddtosew({ pattern: 'twt ?(.*)', fromMe: false,  dontAdCommandList: true, desc: "download from twitter links" }, async (message, match) => {
 
     const userName = match[1]
 
@@ -124,7 +124,7 @@ SewQueen.newcmdaddtosew({ pattern: 'twt ?(.*)', fromSew: false,  dontAdCommandLi
 
 
 
-SewQueen.newcmdaddtosew({ pattern: 'show ?(.*)', fromSew: false , desc: "Get info related to tv series and shows"}, async (message, match) => {
+SewQueen.newcmdaddtosew({ pattern: 'show ?(.*)', fromMe: false , desc: "Get info related to tv series and shows"}, async (message, match) => {
 
     const userName = match[1]
 
@@ -155,7 +155,7 @@ SewQueen.newcmdaddtosew({ pattern: 'show ?(.*)', fromSew: false , desc: "Get inf
   },
 )
 
-SewQueen.newcmdaddtosew({ pattern: 'show ?(.*)', fromSew: false , dontAdCommandList: true}, async (message, match) => {
+SewQueen.newcmdaddtosew({ pattern: 'show ?(.*)', fromMe: false , dontAdCommandList: true}, async (message, match) => {
 
  const userName = match[1]
     

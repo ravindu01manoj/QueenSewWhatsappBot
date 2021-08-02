@@ -15,7 +15,7 @@ const SEW = "Its Clear Your Chat History"
 
 
 
- QueenSew.newcmdaddtosew({pattern: 'clear', fromSew: true, desc: SEW}, (async (message, match) => {
+ QueenSew.newcmdaddtosew({pattern: 'clear', fromMe: true, desc: SEW}, (async (message, match) => {
 
     await message.sendMessage('```Deleting all Msg...☯```');
             await message.client.modifyChat (message.jid, ChatModification.delete);

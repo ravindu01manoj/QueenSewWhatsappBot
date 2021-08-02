@@ -103,7 +103,7 @@ var OYUN = {
         }
     }
 }
-QueenSew.newcmdaddtosew({pattern: 'wordgame$', fromSew: false, desc: OYUN.description, warn: OYUN.caution}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'wordgame$', fromMe: false, desc: OYUN.description, warn: OYUN.caution}, (async (message, match) => {
     const id = message.jid
     const txt = MessageType.text
     if (OYUN.inGame) return await message.client.sendMessage(id,OYUN.words.alreadyinGame,txt)
@@ -353,7 +353,7 @@ QueenSew.newcmdaddtosew({pattern: 'wordgame$', fromSew: false, desc: OYUN.descri
         return await message.client.sendMessage(id,OYUN.words.unsuccessguess,txt)
     } else { return }
 }));
-QueenSew.newcmdaddtosew({on: 'text', fromSew: false, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
     const gid = OYUN.identify
     const counter = OYUN.reamingTime
     var guessing = await gametimerai(OYUN.words.msg, message.message)
@@ -365,7 +365,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromSew: false, dontAdCommandList: true, de
         return await message.client.sendMessage(message.jid,OYUN.words.successguess, MessageType.text, { quoted: message.data })
     }
 }));
-QueenSew.newcmdaddtosew({on: 'text', fromSew: true, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: true, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
     const gid = OYUN.identify
     const counter = OYUN.reamingTime
     if (message.jid == gid && OYUN.inGame) {

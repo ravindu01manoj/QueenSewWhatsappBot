@@ -19,7 +19,7 @@ const Language = require('../language')
 const Lang = Language.getString('notes')
 const SAVED = " *The Owner MSG👇*"
 
-QueenSew.newcmdaddtosew({ pattern: 'notes', fromSew: false, desc: Lang.NOTES_USAGE }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'notes', fromMe: false, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -48,7 +48,7 @@ QueenSew.newcmdaddtosew({ pattern: 'notes', fromSew: false, desc: Lang.NOTES_USA
 
 
 
-QueenSew.newcmdaddtosew({ pattern: 'save ?(.*)', fromSew: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -96,7 +96,7 @@ QueenSew.newcmdaddtosew({ pattern: 'save ?(.*)', fromSew: true, desc: Lang.SAVE_
     }
 })
 
-QueenSew.newcmdaddtosew({ pattern: 'deleteNotes', fromSew: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 

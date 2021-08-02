@@ -38,7 +38,7 @@ const convertToWav = file => {
 
 if (conf.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromSew: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -77,7 +77,7 @@ if (conf.WORKTYPE == 'private') {
 }
 if (conf.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromSew: false }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -113,7 +113,7 @@ if (conf.WORKTYPE == 'public') {
 
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromSew: true, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true, dontAdCommandList: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {

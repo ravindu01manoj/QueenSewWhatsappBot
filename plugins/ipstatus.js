@@ -22,7 +22,7 @@ const NOT_FOUNDIP = "```Sorry,I could not your IP 😖```"
 
 if (Config.WORKTYPE == 'private') {
 
-  QueenSew.newcmdaddtosew({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromSew: true}, async (message, match) => {
+  QueenSew.newcmdaddtosew({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromMe: true}, async (message, match) => {
 	
     if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'private') {
 }	
 else if (Config.WORKTYPE == 'public') {
 
-  QueenSew.newcmdaddtosew({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromSew: false}, async (message, match) => {
+  QueenSew.newcmdaddtosew({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromMe: false}, async (message, match) => {
 	
     if (message.jid === '905524317852-1612300121@g.us') {
 

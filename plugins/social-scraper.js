@@ -21,7 +21,7 @@ const Tlang = Language.getString('tiktok')
 
 if (cn.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromSew: true, desc: Lang.DESC }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -47,7 +47,7 @@ if (cn.WORKTYPE == 'private') {
     }));
 
     /*
-    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromSew: true, desc: Tlang.TİKTOK }, async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
         const userName = match[1]
 
@@ -79,7 +79,7 @@ if (cn.WORKTYPE == 'private') {
 }
 else if (cn.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromSew: false, desc: Lang.DESC }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromMe: false, desc: Lang.DESC }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -103,7 +103,7 @@ else if (cn.WORKTYPE == 'public') {
         });
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromSew: true, desc: Lang.DESC, dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'insta ?(.*)', fromMe: true, desc: Lang.DESC, dontAdCommandList: true }, (async (message, match) => {
         if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -128,7 +128,7 @@ else if (cn.WORKTYPE == 'public') {
 
     }));
     /*
-    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromSew: false, desc: Tlang.TİKTOK }, async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
 
         const userName = match[1]
 
@@ -156,7 +156,7 @@ else if (cn.WORKTYPE == 'public') {
           )
       },
     )
-    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromSew: true, desc: Tlang.TİKTOK }, async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
         const userName = match[1]
 

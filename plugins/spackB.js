@@ -12,223 +12,223 @@ Whats bot - Ravindu Manoj
 const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
-QueenSew.newcmdaddtosew({pattern: 'a robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'a robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔══██╗\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'b robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'b robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n██╔══██╗\n██████╦╝\n██╔══██╗\n██████╦╝\n╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'c robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'c robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔══██╗\n██║░░╚═╝\n██║░░██╗\n╚█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'd robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'd robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n██╔══██╗\n██║░░██║\n██║░░██║\n██████╔╝\n╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'e robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'e robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███████╗\n██╔════╝\n█████╗░░\n██╔══╝░░\n███████╗\n╚══════╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'f robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'f robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███████╗\n██╔════╝\n█████╗░░\n██╔══╝░░\n██║░░░░░\n╚═╝░░░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'g robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'g robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░██████╗░\n██╔════╝░\n██║░░██╗░\n██║░░╚██╗\n╚██████╔╝\n░╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'h robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'h robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░██╗\n██║░░██║\n███████║\n██╔══██║\n██║░░██║\n╚═╝░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'ı robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'ı robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗\n██║\n██║\n██║\n██║\n╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'i robo', fromSew: false, dontAdCommandList: true,}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'i robo', fromMe: false, dontAdCommandList: true,}, (async (message, match) => {
 
     await message.sendMessage('██╗\n╚═╝\n██╗\n██║\n██║\n██║\n██║\n╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'j robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'j robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░░░░░██╗\n░░░░░██║\n░░░░░██║\n██╗░░██║\n╚█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'k robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'k robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░██╗\n██║░██╔╝\n█████═╝░\n██╔═██╗░\n██║░╚██╗\n╚═╝░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'l robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'l robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░░░░\n██║░░░░░\n██║░░░░░\n██║░░░░░\n███████╗\n╚══════╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'm robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'm robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███╗░░░███╗\n████╗░████║\n██╔████╔██║\n██║╚██╔╝██║\n██║░╚═╝░██║\n╚═╝░░░░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'n robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'n robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███╗░░██╗\n████╗░██║\n██╔██╗██║\n██║╚████║\n██║░╚███║\n╚═╝░░╚══╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'o robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'o robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔══██╗\n██║░░██║\n██║░░██║\n╚█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'p robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'p robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n██╔══██╗\n██████╔╝\n██╔═══╝░\n██║░░░░░\n╚═╝░░░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'q robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'q robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░██████╗░\n██╔═══██╗\n██║██╗██║\n╚██████╔╝\n░╚═██╔═╝░\n░░░╚═╝░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'r robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'r robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n██╔══██╗\n██████╔╝\n██╔══██╗\n██║░░██║\n╚═╝░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 's robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 's robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░██████╗\n██╔════╝\n╚█████╗░\n░╚═══██╗\n██████╔╝\n╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 't robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 't robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('████████╗\n╚══██╔══╝\n░░░██║░░░\n░░░██║░░░\n░░░██║░░░\n░░░╚═╝░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'u robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'u robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░░██╗\n██║░░░██║\n██║░░░██║\n██║░░░██║\n╚██████╔╝\n░╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'w robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'w robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░██╗░░░░░░░██╗\n░██║░░██╗░░██║\n░╚██╗████╗██╔╝\n░░████╔═████║░\n░░╚██╔╝░╚██╔╝░\n░░░╚═╝░░░╚═╝░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'v robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'v robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░░██╗\n██║░░░██║\n╚██╗░██╔╝\n░╚████╔╝░\n░░╚██╔╝░░\n░░░╚═╝░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'x robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'x robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░██╗\n╚██╗██╔╝\n░╚███╔╝░\n░██╔██╗░\n██╔╝╚██╗\n╚═╝░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'y robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'y robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██╗░░░██╗\n╚██╗░██╔╝\n░╚████╔╝░\n░░╚██╔╝░░\n░░░██║░░░\n░░░╚═╝░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'z robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'z robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███████╗\n╚════██║\n░░███╔═╝\n██╔══╝░░\n███████╗\n╚══════╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '1 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '1 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░░███╗░░\n░████║░░\n██╔██║░░\n╚═╝██║░░\n███████╗\n╚══════╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '2 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '2 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n╚════██╗\n░░███╔═╝\n██╔══╝░░\n███████╗\n╚══════╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '3 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '3 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('██████╗░\n╚════██╗\n░█████╔╝\n░╚═══██╗\n██████╔╝\n╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '4 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '4 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░░██╗██╗\n░██╔╝██║\n██╔╝░██║\n███████║\n╚════██║\n░░░░░╚═╝');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '5 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '5 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███████╗\n██╔════╝\n██████╗░\n╚════██╗\n██████╔╝\n╚═════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '6 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '6 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔═══╝░\n██████╗░\n██╔══██╗\n╚█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '7 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '7 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('███████╗\n╚════██║\n░░░░██╔╝\n░░░██╔╝░\n░░██╔╝░░\n░░╚═╝░░░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '8 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '8 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔══██╗\n╚█████╔╝\n██╔══██╗\n╚█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: '9 robo', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '9 robo', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     await message.sendMessage('░█████╗░\n██╔══██╗\n╚██████║\n░╚═══██║\n░█████╔╝\n░╚════╝░');
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'cry', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'cry', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -273,7 +273,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'run', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'run', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -304,7 +304,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'slap ?(.*)', fromSew: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'slap ?(.*)', fromMe: false}, (async (message, match) => {
 
     if (message.reply_message === false) {
 
@@ -342,7 +342,7 @@ await message.sendMessage(`${r_text[i]}`);
 }));
 
 
-QueenSew.newcmdaddtosew({pattern: 'spack', fromSew: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'spack', fromMe: false}, (async (message, match) => {
 
     await message.sendMessage('*Codded by t.me/RavinduManoj*\n💻Usage: *. robo*\nℹ️Desc:Translate any word to Robo text.\n⌨️Ex: *.a robo*, *.e robo*, *2 robo* etc.\n\n💻Usage: *.cry*\nℹ️Desc:It sends crying emoji texs.\n\n💻Usage: *.run*\nℹ️Desc:It sends run emojis texts.\n\n💻Usage: *.slap <reply>*\nℹ️Desc: sew, beats whoever you replied messages.\n\n');
 

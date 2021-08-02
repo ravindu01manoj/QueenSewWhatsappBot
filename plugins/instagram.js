@@ -23,7 +23,7 @@ const Lang = Language.getString('instagram') ;
 
 if (Config.WORKTYPE == 'private') {
 
-QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromSew: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 
@@ -63,7 +63,7 @@ QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromSew: true, usage: Lang
 }
 else if (Config.WORKTYPE == 'public') {
 
-QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromSew: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 

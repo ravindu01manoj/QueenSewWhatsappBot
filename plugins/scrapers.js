@@ -137,7 +137,7 @@ if (config.LANG == 'RU') {
 
 if (config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromSew: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text);
@@ -220,7 +220,7 @@ if (config.WORKTYPE == 'private') {
         succ_on = 'Antilink Berhasil Dibuka!'
         succ_off = 'Antilink Berhasil Ditutup!'
     }
-    QueenSew.newcmdaddtosew({pattern: 'antilink ?(.*)', fromSew: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
@@ -317,7 +317,7 @@ if (config.WORKTYPE == 'private') {
         succ_on_bio = 'Autobio Berhasil Dibuka!'
         succ_off_bio = 'Autobio Berhasil Ditutup!'
     }
-    QueenSew.newcmdaddtosew({pattern: 'autobio ?(.*)', fromSew: true, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'autobio ?(.*)', fromMe: true, desc: auto_dsc, usage: '.autobio on / off' }, (async (message, match) => {
         const bio_status = `${config.AUTOBİO}`
         if (match[1] == 'on') {
             if (bio_status == 'true') {
@@ -346,7 +346,7 @@ if (config.WORKTYPE == 'private') {
             }
         }
     }));
-    QueenSew.newcmdaddtosew({pattern: 'detectlang$', fromSew: true, desc: dlang_dsc}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'detectlang$', fromMe: true, desc: dlang_dsc}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text)
         const msg = message.reply_message.text
@@ -371,7 +371,7 @@ if (config.WORKTYPE == 'private') {
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
         await message.client.sendMessage(message.jid,rep_7,MessageType.text);
     }));
-    QueenSew.newcmdaddtosew({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromSew: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
             return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
@@ -398,7 +398,7 @@ if (config.WORKTYPE == 'private') {
 
     if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
-        QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromSew: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+        QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
             if(match[1] === undefined || match[1] == "")
                 return;
@@ -425,7 +425,7 @@ if (config.WORKTYPE == 'private') {
         }));
     }
     else {
-        QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromSew: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+        QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
             if(match[1] === undefined || match[1] == "")
                 return;
@@ -451,7 +451,7 @@ if (config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
         }));
     }
-    QueenSew.newcmdaddtosew({pattern: 'song ?(.*)', fromSew: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'song ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -484,7 +484,7 @@ if (config.WORKTYPE == 'private') {
             });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'video ?(.*)', fromSew: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -511,7 +511,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromSew: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
@@ -531,7 +531,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'wiki ?(.*)', fromSew: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text);
@@ -544,7 +544,7 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'img ?(.*)', fromSew: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
@@ -561,7 +561,7 @@ if (config.WORKTYPE == 'private') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({ pattern: 'github ?(.*)', fromSew: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         const userName = match[1]
  
@@ -606,7 +606,7 @@ if (config.WORKTYPE == 'private') {
       },
     )
 
-    QueenSew.newcmdaddtosew({pattern: 'lyric ?(.*)', fromSew: true, desc: Slang.LY_DESC }, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'lyric ?(.*)', fromMe: true, desc: Slang.LY_DESC }, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
 
@@ -621,7 +621,7 @@ if (config.WORKTYPE == 'private') {
 
     }));
 
-    QueenSew.newcmdaddtosew({pattern: "covid ?(.*)", fromSew: true, desc: Clang.COV_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: "covid ?(.*)", fromMe: true, desc: Clang.COV_DESC}, (async (message, match) => {
         if (match[1] === "") {
             try{
                 //const resp = await fetch("https://coronavirus-19-api.herokuapp.com/all").then(r => r.json());
@@ -827,7 +827,7 @@ if (config.WORKTYPE == 'private') {
 }
 else if (config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromSew: false}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false}, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid,Lang.NEED_REPLY,MessageType.text);
@@ -842,7 +842,7 @@ else if (config.WORKTYPE == 'public') {
             return await message.client.sendMessage(message.jid,Lang.TRANSLATE_ERROR,MessageType.text)
         }
     }));
-    QueenSew.newcmdaddtosew({pattern: 'detectlang$', fromSew: false, desc: dlang_dsc}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'detectlang$', fromMe: false, desc: dlang_dsc}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text)
         const msg = message.reply_message.text
@@ -867,7 +867,7 @@ else if (config.WORKTYPE == 'public') {
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
         await message.client.sendMessage(message.jid,rep_7,MessageType.text, { quoted: message.data });
     }));
-    QueenSew.newcmdaddtosew({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromSew: false}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false}, (async (message, match) => {
 
         if(match[1] === undefined || match[2] == undefined || match[3] == undefined) {
             return await message.client.sendMessage(message.jid,Lang.CURRENCY_ERROR,MessageType.text);
@@ -892,13 +892,13 @@ else if (config.WORKTYPE == 'public') {
         }
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromSew: false, desc: Lang.TTS_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if(match[1] === undefined || match[1] == "")
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'en',
             ttsMessage = match[1],
             SPEED = 1.0
 
@@ -918,7 +918,7 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'song ?(.*)', fromSew: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -951,7 +951,7 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'video ?(.*)', fromSew: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -978,7 +978,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromSew: false, desc: Lang.YT_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
@@ -998,7 +998,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'wiki ?(.*)', fromSew: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text);
@@ -1011,7 +1011,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'img ?(.*)', fromSew: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
@@ -1028,7 +1028,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({ pattern: 'github ?(.*)', fromSew: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'github ?(.*)', fromMe: true, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
         const userName = match[1]
  
@@ -1073,7 +1073,7 @@ else if (config.WORKTYPE == 'public') {
       },
     ) 
 
-    QueenSew.newcmdaddtosew({pattern: 'lyric ?(.*)', fromSew: false, desc: Slang.LY_DESC }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
 
@@ -1087,13 +1087,13 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer.from(buffer.data),  MessageType.image, {caption: `*${Slang.ARAT}* ` + '```' + `${match[1]}` + '```' + `\n*${Slang.BUL}* ` + '```' + tit + '```' + `\n*${Slang.AUT}* ` + '```' + son + '```' + `\n*${Slang.SLY}*\n\n` + aut });
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'ptts (.*)', fromSew: true, desc: Lang.TTS_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ptts (.*)', fromMe: true, desc: Lang.TTS_DESC}, (async (message, match) => {
 
         if(match[1] === undefined || match[1] == "")
             return;
     
         let 
-            LANG = 'ml',
+            LANG = 'en',
             ttsMessage = match[1],
             SPEED = 1.0
 
@@ -1113,7 +1113,7 @@ else if (config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,buffer, MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'psong ?(.*)', fromSew: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'psong ?(.*)', fromMe: true, desc: Lang.SONG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
@@ -1146,7 +1146,7 @@ else if (config.WORKTYPE == 'public') {
             });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'pvideo ?(.*)', fromSew: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'pvideo ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_VIDEO,MessageType.text);    
     
@@ -1173,7 +1173,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'pyt ?(.*)', fromSew: true, desc: Lang.YT_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'pyt ?(.*)', fromMe: true, desc: Lang.YT_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.GETTING_VIDEOS,MessageType.text);
@@ -1193,7 +1193,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'pwiki ?(.*)', fromSew: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'pwiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);    
         var reply = await message.client.sendMessage(message.jid,Lang.SEARCHING,MessageType.text);
@@ -1206,7 +1206,7 @@ else if (config.WORKTYPE == 'public') {
         await reply.delete();
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'pimg ?(.*)', fromSew: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'pimg ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
@@ -1223,7 +1223,7 @@ else if (config.WORKTYPE == 'public') {
         });
     }));
 
-    QueenSew.newcmdaddtosew({pattern: "covid ?(.*)", fromSew: false, desc: Clang.COV_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: "covid ?(.*)", fromMe: false, desc: Clang.COV_DESC}, (async (message, match) => {
         if (match[1] === "") {
             try{
                 //const resp = await fetch("https://coronavirus-19-api.herokuapp.com/all").then(r => r.json());

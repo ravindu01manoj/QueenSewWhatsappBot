@@ -17,7 +17,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-QueenSew.newcmdaddtosew({pattern: 'happymod ?(.*)', fromSew: false, desc: Lang.HMODD_DESC, dontAdCommandList: true }, async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DESC, dontAdCommandList: true }, async (message, match) => {
 	if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
 	const url = `https://api.zeks.xyz/api/happymod?apikey=&q=${match[1]}&apikey=cjxJIn9eDletRHac3CG6CdvGxFH`;
 	try {

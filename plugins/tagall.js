@@ -17,7 +17,7 @@ const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 
-QueenSew.newcmdaddtosew({pattern: 'tag ?(.*)', fromSew: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'tag ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     if (match[1] !== '') {
         grup = await message.client.groupMetadata(message.jid);

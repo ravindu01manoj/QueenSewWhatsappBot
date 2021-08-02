@@ -19,7 +19,7 @@ const Lang = Language.getString('anime');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'anime', fromSew: true, desc: Lang.AN}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'anime', fromMe: true, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -113,7 +113,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'anime', fromSew: false, desc: Lang.AN}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'anime', fromMe: false, desc: Lang.AN}, (async (message, match) => {
 
     var r_text = new Array ();
 

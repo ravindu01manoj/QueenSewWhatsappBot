@@ -12,7 +12,7 @@ const Language = require('../language');
 const Lang = Language.getString('instagram')
 
 
-QueenSew.newcmdaddtosew({ pattern: 'vinsta ?(.*)', fromSew: false, desc: sd }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
 
     const userName = match[1]
 
@@ -34,7 +34,7 @@ QueenSew.newcmdaddtosew({ pattern: 'vinsta ?(.*)', fromSew: false, desc: sd }, a
         await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))
     })
 });
-QueenSew.newcmdaddtosew({ pattern: 'pinsta ?(.*)', fromSew: false, desc: ph }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (message, match) => {
 
     const userName = match[1]
 
@@ -66,7 +66,7 @@ QueenSew.newcmdaddtosew({ pattern: 'pinsta ?(.*)', fromSew: false, desc: ph }, a
   },
 )
 
-QueenSew.newcmdaddtosew({ pattern: 'igtv ?(.*)', fromSew: false, desc: tvig }, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (message, match) => {
 
     const userName = match[1]
 
@@ -101,7 +101,7 @@ QueenSew.newcmdaddtosew({ pattern: 'igtv ?(.*)', fromSew: false, desc: tvig }, a
       )
   },
 )
-QueenSew.newcmdaddtosew({ pattern: 'igstalk ?(.*)', fromSew: true, desc: Lang.DESC }, (async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
 	if (match[0].includes('install')) return;
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
         if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });

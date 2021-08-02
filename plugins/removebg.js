@@ -25,7 +25,7 @@ const Lang = Language.getString('removebg');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromSew: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromSew: false, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromMe: false, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

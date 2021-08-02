@@ -23,7 +23,7 @@ const ENREP = "```You Need To Reply Any Message!```"
 
 // Plugin Start 
 
-        QueenSew.newcmdaddtosew({pattern: 'lesbianmeter', fromSew: false, desc: ENLEZ}, (async (message, match) => {
+        QueenSew.newcmdaddtosew({pattern: 'lesbianmeter', fromMe: false, desc: ENLEZ}, (async (message, match) => {
 
             if (message.reply_message === false) return await message.client.sendMessage(message.jid, ENREP, MessageType.text);
 

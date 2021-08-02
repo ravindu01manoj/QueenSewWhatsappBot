@@ -19,7 +19,7 @@ const Lang = Language.getString('ocr');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromSew: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);    
 	var info = await message.reply(Lang.DOWNLOADING);
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromSew: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromMe: false, desc: Lang.OCR_DESC}, (async (message, match) => { 
 
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);    
 	var info = await message.reply(Lang.DOWNLOADING);
@@ -90,7 +90,7 @@ else if (Config.WORKTYPE == 'public') {
 
         return await message.reply(Lang.RESULT.format(dil[2], result));
     }));
-    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromSew: true, desc: Lang.OCR_DESC, dontAdCommandList: true}, (async (message, match) => { 
+    QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC, dontAdCommandList: true}, (async (message, match) => { 
 
         if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);    
 	var info = await message.reply(Lang.DOWNLOADING);

@@ -19,7 +19,7 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromSew: true, desc: Lang.WP}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -654,7 +654,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromSew: false, desc: Lang.WP}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromMe: false, desc: Lang.WP}, (async (message, match) => {
 
         var r_text = new Array ();
 
@@ -1286,7 +1286,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by Ravindu Manoj'})
 
     }));
-    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromSew: true, desc: Lang.WP, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAdCommandList: true}, (async (message, match) => {
 
         var r_text = new Array ();
 

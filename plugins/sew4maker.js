@@ -18,7 +18,7 @@ const need = "*type some word after command*"
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'logogalaxy ?(.*)', fromSew: true,dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'logogalaxy ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'logov2 ?(.*)', fromSew: true,dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'logov2 ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'gamelogo ?(.*)', fromSew: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'gamelogo ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({ pattern: 'logogalaxy ?(.*)', fromSew: false,dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'logogalaxy ?(.*)', fromMe: false,dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -58,7 +58,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'logov2 ?(.*)', fromSew: false,dontAdCommandList: true }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'logov2 ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -67,7 +67,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*' })
 
     }));
-    QueenSew.newcmdaddtosew({ pattern: 'gamelogo ?(.*)', fromSew: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({ pattern: 'gamelogo ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 

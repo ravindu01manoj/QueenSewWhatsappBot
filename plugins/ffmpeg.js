@@ -22,7 +22,7 @@ const Lang = Language.getString('ffmpeg');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromSew: true, desc: Lang.FF_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {
@@ -43,7 +43,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (message.reply_message.video === false && message.reply_message.image) {
 
@@ -62,7 +62,7 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else {
             var downloading = await message.client.sendMessage(message.jid,Lang.FF_PROC,MessageType.text);
@@ -80,13 +80,13 @@ if (Config.WORKTYPE == 'private') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromSew: true, desc: Lang.FF_DESC}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {
@@ -107,7 +107,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (message.reply_message.video === false && message.reply_message.image) {
 
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else {
             var downloading = await message.client.sendMessage(message.jid,Lang.FF_PROC,MessageType.text);
@@ -144,10 +144,10 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
     }));
-    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromSew: false, desc: Lang.FF_DESC, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'ffmpeg ?(.*)', fromMe: false, desc: Lang.FF_DESC, dontAdCommandList: true}, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {
@@ -168,7 +168,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else if (message.reply_message.video === false && message.reply_message.image) {
 
@@ -187,7 +187,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by Ravindu Manoj'});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
         else {
             var downloading = await message.client.sendMessage(message.jid,Lang.FF_PROC,MessageType.text);
@@ -205,7 +205,7 @@ else if (Config.WORKTYPE == 'public') {
                 .on('end', async () => {
                     await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio});
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromSew: true})
+            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
         }
     }));
 }
