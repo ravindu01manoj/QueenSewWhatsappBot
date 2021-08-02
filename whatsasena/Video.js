@@ -20,7 +20,7 @@ class Video extends Base {
     _patch(data) {
         this.id = data.key.id === undefined ? undefined : data.key.id;
         this.jid = data.key.remoteJid;
-        this.fromSew = data.key.fromSew;
+        this.fromMe = data.key.fromMe;
         this.caption = data.message.videoMessage.caption === null ? data.message.videoMessage.caption : '';
         this.url = data.message.videoMessage.url;
         this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
@@ -40,7 +40,7 @@ class Video extends Base {
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromSew: true})
+        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true})
     }
 
     async reply(text) {

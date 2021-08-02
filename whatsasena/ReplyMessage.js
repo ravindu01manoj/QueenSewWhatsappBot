@@ -54,7 +54,7 @@ class ReplyMessage extends Base {
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromSew: true});
+        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true});
     }
 
     async reply(text) {

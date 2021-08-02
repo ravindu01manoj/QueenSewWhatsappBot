@@ -23,7 +23,7 @@ class Image extends Base {
     _patch(data) {
         this.id = data.key.id === undefined ? undefined : data.key.id;
         this.jid = data.key.remoteJid;
-        this.fromSew = data.key.fromSew;
+        this.fromMe = data.key.fromMe;
         this.caption = data.message.imageMessage.caption === null ? data.message.imageMessage.caption : '';
         this.url = data.message.imageMessage.url;
         this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
@@ -43,7 +43,7 @@ class Image extends Base {
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromSew: true})
+        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true})
     }
 
     async reply(text) {
