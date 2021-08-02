@@ -15,7 +15,7 @@ function newcmdaddtosew(info, func) {
     var types = ['photo', 'image', 'text', 'message'];
 
     var infos = {
-        fromSew: info['fromSew'] === undefined ? true : info['fromSew'], // Or Sudo
+        fromMe: info['fromMe'] === undefined ? true : info['fromMe'], // Or Sudo
         onlyGrpSew: info['onlyGrpSew'] === undefined ? false : info['onlyGrpSew'],
         onlyPinned: info['onlyPinned'] === undefined ? false : info['onlyPinned'],
         onlyPm: info['onlyPm'] === undefined ? false : info['onlyPm'],
@@ -29,7 +29,7 @@ function newcmdaddtosew(info, func) {
 
     if (info['on'] === undefined && info['pattern'] === undefined) {
         infos.on = 'message';
-        infos.fromSew = false;
+        infos.fromMe = false;
     } else if (info['on'] !== undefined && types.includes(info['on'])) {
         infos.on = info['on'];
 

