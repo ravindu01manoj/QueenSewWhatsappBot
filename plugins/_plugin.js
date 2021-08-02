@@ -36,7 +36,7 @@ var LANG = {
             limit: Config.LANG == 'EN' || Config.LANG == 'EN' ? '*Bu Plugin Güvenlik Sınırını Aşıyor!*\n*Zararlılık Yüzdesi:* _%' : '*This Plugin Exceeds Security Limit!*\n*Percentage of Harm:* _%',
             imside: Config.LANG == 'EN' || Config.LANG == 'EN' ? '*Varolan Pluginleri Tekrar Yükleyemezsin!*' : '*You Cant Reinstall Existing Plugins!*'
 };
-QueenSew.newcmdaddtosew({pattern: 'install ?(.*)', fromSew: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
 
     if (match[1] == '') return await message.client.sendMessage(message.jid,Lang.NEED_URL + '.install https://gist.github.com/phaticusthiccy/4232b1c8c4734e1f06c3d991149c6fbd', MessageType.text)
     try {
@@ -123,7 +123,7 @@ QueenSew.newcmdaddtosew({pattern: 'install ?(.*)', fromSew: true, desc: Lang.INS
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'plugin$', fromSew: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -139,7 +139,7 @@ QueenSew.newcmdaddtosew({pattern: 'plugin$', fromSew: true, desc: Lang.PLUGIN_DE
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'remove(?: |$)(.*)', fromSew: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     try {

@@ -35,7 +35,7 @@ function secondsToHms(d) {
     return hDisplay + mDisplay + sDisplay; 
 }
 
-QueenSew.newcmdaddtosew({on: 'text', fromSew: false, delownsewcmd: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async (message, match) => {
     if (Config.AFKMSG == 'default') {
 
         if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') && 
@@ -87,7 +87,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromSew: false, delownsewcmd: false}, (asyn
     }
 }));
 
-QueenSew.newcmdaddtosew({on: 'text', fromSew: true, delownsewcmd: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: true, delownsewcmd: false}, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
@@ -97,7 +97,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromSew: true, delownsewcmd: false}, (async
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'afk ?(.*)', fromSew: true, delownsewcmd: false, desc: Lang.AFK_DESC}, (async (message, match) => {     
+QueenSew.newcmdaddtosew({pattern: 'afk ?(.*)', fromMe: true, delownsewcmd: false, desc: Lang.AFK_DESC}, (async (message, match) => {     
     if (!AFK.isAfk) {
         AFK.lastseen = Math.round((new Date()).getTime() / 1000);
         if (match[1] !== '') { AFK.reason = match[1]; }
