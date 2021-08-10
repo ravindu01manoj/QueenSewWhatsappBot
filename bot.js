@@ -78,7 +78,6 @@ async function sewQueen () {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2,2121,7];
-  /*
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
@@ -96,7 +95,6 @@ async function sewQueen () {
             }
         })
     }, 50000);
-    */
     var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
