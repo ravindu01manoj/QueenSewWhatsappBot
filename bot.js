@@ -101,7 +101,14 @@ async function sewQueen () {
     });
     setInterval(async () => { 
         if (biography_var == 'true') {
-            if (conn.user.jid.startsWith('90')) { // Turkey
+            if (conn.user.jid.startsWith('94')) { // Sri Lanka
+                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                await conn.setStatus(biography)
+            }
+            else if (conn.user.jid.startsWith('90')) { // Turkey
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
@@ -112,13 +119,6 @@ async function sewQueen () {
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
-                await conn.setStatus(biography)
-            }
-            else if (conn.user.jid.startsWith('94')) { // Sri Lanka
-                const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
                 const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
