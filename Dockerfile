@@ -1,11 +1,15 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone FROM fusuf/whatsasena:latest
-
-RUN git clone https://github.com/ravindu01manoj/QueenSewWhatsappBot /root/QueenSewWhatsappBot
+RUN git clone $GITHUB_REPO_URL /root/QueenSewWhatsappBot
 WORKDIR /root/QueenSewWhatsappBot/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
-RUN yarn install --no-audit
+RUN apk --no-cache --virtual build-dependencies add \
+    python \
+    make \
+    g++ \
+    && npm install \
+    && apk del build-dependencies
+RUN npm install
 
 CMD ["node", "bot.js"]
