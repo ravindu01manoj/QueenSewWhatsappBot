@@ -768,8 +768,8 @@ QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandLi
                   });
               };
 
-              await download(`${data}`, '/root/QueenSewWhatsappBot/horror.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/horror.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+              await download(`${data}`, '/root/QueenSewWhatsappBot/cup.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cup.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
               })
           } catch(err) { 
               console.log(err)
