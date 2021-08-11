@@ -62,55 +62,55 @@
         },
         "Z_GROUP_NAME_A": {
             "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් පලමු ගෲපයේ නම යොදන්න. Enter Your 1st Group Name",
-            "required": false,
+            "required": false
          },
          "Z_GROUP_NAME_B": {
             "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් දෙවන ගෲපයේ නම යොදන්න. Enter Your 2nd Group Name",
-            "required": false,
+            "required": false
          },
          "Z_GROUP_NAME_C": {
             "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් තෙවන ගෲපයේ නම යොදන්න. Enter Your 3rd Group Name",
-            "required": false,
+            "required": false
          },
          "Z_GROUP_LINK_A": {
             "description": "පලමු ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 1st Group link",
-            "required": false,
+            "required": false
          },
          "Z_GROUP_LINK_B": {
             "description": "දෙවන ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 2nd Group link",
-            "required": false,
+            "required": false
          },
          "Z_GROUP_LINK_C": {
             "description": "තෙවන ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 3rd Group link",
-            "required": false,
+            "required": false
          },
          "MAIN_COMMAND": {
             "description": "සියලු කමාන්ඩ් ලබාගැනීම සදහා යොදන කමාන්ඩ් එක ඇතුලත් කරන්න.enter the command for all commamd",
-            "required": false,
+            "required": false
          },
          "X_TEAM_API_A": {
             "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false,
+            "required": false
          },
          "X_TEAM_API_B": {
             "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false,
+            "required": false
          },
          "X_TEAM_API_C": {
             "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false,
+            "required": false
          },
          "X_TEAM_API_D": {
             "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false,
+            "required": false
          },
          "THUMBNAIL_FOR_VIDEO": {
             "description": "බොට් අප්ලෝඩ් කරන වීඩියෝ වල තම්බ්නෙයිල් එක වෙනස් කිරීම සදහා අදාල රූපයෙහි base64 මගින් encoded කේතය ඇතුලත් කරන්න",
-            "required": false,
+            "required": false
          },
          "AUTO_STICKER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
-            "required": false,
+            "required": false
             "value": "true"
         },
         "OWNER_SHIP": {
