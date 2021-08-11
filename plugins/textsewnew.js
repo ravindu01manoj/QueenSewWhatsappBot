@@ -757,8 +757,8 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
-    ravindumanoj.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
+QueenSew.newcmdaddtosew({pattern: 'sewnaru ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    ravindumanoj.textpro("https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
@@ -768,8 +768,8 @@ QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandLi
                   });
               };
 
-              await download(`${data}`, '/root/QueenSewWhatsappBot/cup.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cup.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+              await download(`${data}`, '/root/QueenSewWhatsappBot/naru.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/naru.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
               })
           } catch(err) { 
               console.log(err)
