@@ -756,3 +756,23 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
           } 
     });
 }));
+
+QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    ravindumanoj.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/horror.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/horror.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
