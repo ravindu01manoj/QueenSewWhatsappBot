@@ -53,7 +53,7 @@
         },
         "CAPTION_NAME": {
             "description": "කැප්ශන් එක වෙනස් කල හැකිය. you can change the caption",
-            "required": false,
+            "required": false
          },
          "SYSTEM_IMAGE": {
             "description": "කිලෝබයිට් 500ට අඩු පින්තූරයක ඩිරෙක්ට් ලින්ක් එකක් යොදන්න.add derect link for image",
