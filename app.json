@@ -14,7 +14,7 @@
         },
         "AUTO_STICKER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
-            "required": false
+            "required": false,
             "value": "true"
         },
         "SUDO": {
