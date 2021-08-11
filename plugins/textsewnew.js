@@ -11,17 +11,13 @@ Whats bot - Ravindu Manoj
 
 const ravindumanoj = require('queensewtext'); // Import NPM Package
 
-const sewQueen = require('../events');
+const QueenSew = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
 const axios = require('axios')
 const request = require('request');
 const os = require('os');
-var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }    
-var ggg = Buffer.from(clh.cd, 'base64')
-var ddd = ggg.toString('utf-8')
-clh.pay = ddd
 var desc_msg = ''
 if (Config.LANG == 'TR') desc_msg = 'Sınırsız erişime sahip textmaker araçlarını gösterir.'
 if (Config.LANG == 'EN') desc_msg = 'Shows textmaker tools with unlimited access.'
@@ -32,10 +28,9 @@ if (Config.LANG == 'ID') desc_msg = 'Menampilkan alat pembuat teks dengan akses 
 if (Config.LANG == 'ML') desc_msg = 'പരിധിയില്ലാത്ത ആക്സസ് ഉള്ള ടെക്സ്റ്റ് മേക്കർ ഉപകരണങ്ങൾ കാണിക്കുന്നു.'
 if (Config.LANG == 'HI') desc_msg = 'असीमित एक्सेस के साथ टेक्स्टमेकर टूल दिखाता है।'
 if (Config.LANG == 'ES') desc_msg = 'Muestra herramientas de creación de textos con acceso ilimitado.'
-if (os.userInfo().homedir !== clh.pay) return;
 let wk = Config.WORKTYPE == 'public' ? false : true
 
-sewQueen.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
     var t3 = ''
@@ -166,7 +161,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (as
         command_cmd + '```.sewglitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.sewglitch Ravindu;Manoj*\n\n'
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -185,7 +180,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewbear ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewbear ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -204,7 +199,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewbear ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewwolf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewwolf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -232,7 +227,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewwolf ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewneon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewneon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -251,7 +246,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewneon ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sew2neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew2neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/neon-text-effect-online-879.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -270,7 +265,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew2neon ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewlight ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewlight ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/thunder-text-effect-online-881.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -289,7 +284,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewlight ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewjoker ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewjoker ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/create-logo-joker-online-934.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -308,7 +303,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewjoker ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewninja ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewninja ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -336,7 +331,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewninja ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewglitter ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewglitter ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/advanced-glow-text-effect-873.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -355,7 +350,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewglitter ?(.*)', fromMe: wk, dontAdCommandL
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewbokeh ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewbokeh ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/bokeh-text-effect-876.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -374,7 +369,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewbokeh ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewmarvel ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewmarvel ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -402,7 +397,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewmarvel ?(.*)', fromMe: wk, dontAdCommandLi
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sew2marvel ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew2marvel ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -430,7 +425,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew2marvel ?(.*)', fromMe: wk, dontAdCommandL
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewavengers ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewavengers ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -458,7 +453,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewavengers ?(.*)', fromMe: wk, dontAdCommand
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewglitch ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewglitch ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -486,7 +481,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewglitch ?(.*)', fromMe: wk, dontAdCommandLi
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewgraf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewgraf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -514,7 +509,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewgraf ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sew2graf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew2graf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -542,7 +537,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew2graf ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewlion ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewlion ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -570,7 +565,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewlion ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sew3neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew3neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/neon-text-effect-online-963.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -589,7 +584,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew3neon ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewice ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewice ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/ice-cold-text-effect-862.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -608,7 +603,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewice ?(.*)', fromMe: wk, dontAdCommandList:
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'space ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'space ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes(';')) {
         var split = match[1].split(';');
@@ -636,7 +631,7 @@ sewQueen.newcmdaddtosew({pattern: 'space ?(.*)', fromMe: wk, dontAdCommandList: 
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewsmoke ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewsmoke ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/other-design/create-an-easy-smoke-type-effect-390.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -655,7 +650,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewsmoke ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewglow ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewglow ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     var download = async(uri, filename, callback) => {
         await request.head(uri, async(err, res, body) => {    
             await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
@@ -666,7 +661,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewglow ?(.*)', fromMe: wk, dontAdCommandList
         await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/glowttp.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
     })
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewfire ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewfire ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -685,7 +680,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewfire ?(.*)', fromMe: wk, dontAdCommandList
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewharry ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewharry ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/logo-and-text-effects/create-harry-potter-text-on-horror-background-178.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -704,7 +699,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewharry ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sew4neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sew4neon ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -723,7 +718,7 @@ sewQueen.newcmdaddtosew({pattern: 'sew4neon ?(.*)', fromMe: wk, dontAdCommandLis
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewcemetery ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewcemetery ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html",
         `${match[1]}`
         ).then(async (data) => { 
@@ -742,7 +737,7 @@ sewQueen.newcmdaddtosew({pattern: 'sewcemetery ?(.*)', fromMe: wk, dontAdCommand
           } 
     });
 }));
-sewQueen.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.photooxy("https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html",
         `${match[1]}`
         ).then(async (data) => { 
