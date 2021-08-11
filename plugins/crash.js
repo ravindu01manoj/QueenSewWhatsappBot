@@ -12,6 +12,7 @@ you may not use this file except in compliance with the License.
 const Queensew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const sql = require('./sql/crash');
+const Config = require('../config');
 
 SSSEW = '☣😈☣ ❆' + Config.BOTNAME + '❆ ☣😈☣\n═══════════════════'
 
