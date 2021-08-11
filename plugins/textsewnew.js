@@ -758,7 +758,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
 }));
 
 QueenSew.newcmdaddtosew({pattern: 'sewnaru ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
-    ravindumanoj.textpro("https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html",
+    ravindumanoj.photooxy("https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
