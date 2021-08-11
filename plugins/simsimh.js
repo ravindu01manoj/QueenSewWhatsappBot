@@ -19,13 +19,13 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'Sew ?(.*)', dontAdCommandList: true, desc: Lang.BOT_DESC}, async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bot ?(.*)', dontAdCommandList: true, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '************************************************\n\n*🇱🇰 Sew* 😈 ' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n************************************************' , MessageType.text,{quoted: message.data});
+	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '************************************************\n\n*🇱🇰 ' + Config.BOTNAME + '* 😈 ' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n************************************************' , MessageType.text,{quoted: message.data});
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
@@ -33,13 +33,13 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'Sew ?(.*)', dontAdCommandList: false, desc: Lang.BOT_DESC}, async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'bot ?(.*)', dontAdCommandList: false, desc: Lang.BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '************************************************\n\n*🇱🇰 Sew* 😈 ' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n************************************************' , MessageType.text,{quoted: message.data});
+	  if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '************************************************\n\n*🇱🇰 ' + Config.BOTNAME + '* 😈 ' + Lang.BOT +' ```' + json.messages[0].response + '```\n\n************************************************' , MessageType.text,{quoted: message.data});
 	} catch {
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}

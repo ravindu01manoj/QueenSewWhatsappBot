@@ -25,10 +25,10 @@ QueenSew.newcmdaddtosew({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, as
         const profileBuffer = await axios.get(resource.url[0], { responseType: 'arraybuffer' })
 
         if (resource.url.is_video[0]) {
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: 'Made By t.me/RavinduManoj' })
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: '*' + Config.CPK + '*' })
         }
         else if (!resource.url.is_video[0]) {
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: 'Made By t.me/RavinduManoj' })
+            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: '*' + Config.CPK + '*' })
         }
     }).catch(async (err) => {
         await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))

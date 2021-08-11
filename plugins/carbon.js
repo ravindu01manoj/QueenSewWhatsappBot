@@ -13,7 +13,7 @@ const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
-const dd = "Coded By t.me/RavinduManoj"
+const dd = Config.CPK
 
 const Language = require('../language');
 const Lang = Language.getString('carbon');

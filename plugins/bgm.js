@@ -24,31 +24,31 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
     var BGM_off = ''
     
     if (config.LANG == 'EN') {
-        l_dsc = 'turn on and turn of bgm. -bot owner command'
+        l_dsc = 'turn on and turn of voice reply. -bot owner command'
         alr_on = 'Antilink is already open!'
         alr_off = 'Antilink is currently closed!'
-        BGM_on = 'bgm option turned on!'
-        BGM_off = 'bgm option turned off'
+        BGM_on = 'voice reply option turned on!'
+        BGM_off = 'voice reply option turned off'
     }
     if (config.LANG == 'si') {
         l_dsc = 'Mengaktifkan alat Antilink.'
         alr_on = 'Antilink sudah terbuka!'
         alr_off = 'Antilink saat ini ditutup!'
-        BGM_on = 'bgm option turned on'
-        BGM_off = 'bgm option turned off'
+        BGM_on = 'voice reply option turned on'
+        BGM_off = 'voice reply option turned off'
     }
-    QueenSew.newcmdaddtosew({pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'voicereply ?(.*)', fromMe: true, desc: l_dsc, usage: '.voicereply on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['BGM_FILTER']: 'false'
+                        ['VOICE_REPLY']: 'false'
                     } 
                 });
                 await message.sendMessage(BGM_off)
         } else if (match[1] == 'on') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
-                        ['BGM_FILTER']: 'true'
+                        ['VOICE_REPLY']: 'true'
                     } 
                 });
                 await message.sendMessage(BGM_on)

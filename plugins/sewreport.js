@@ -26,7 +26,7 @@ const SEWB = "\nකෙනා:-"
 const SEWC = "\n\n\n*Reason*:-"
 const SEWD = "\n\n*හේතුව*:-"
 const SEWE = "╔═══════════ೋೋ═══════════╗\n╠       ⚠⚠⚠*Report Detected*⚠⚠⚠\n\n"
-const SEWF = "\n╠           *👆👆Group Admins👆👆*                      \n╚═══════════ೋೋ═══════════╝\n\n_*කරුණාකර ඇඩ්මින් කෙනෙකු මෙය සදහා*_\n_*අවධානය ලබා දෙන්න*_\n\n\n_*Coded By Ravindu Manoj*_\n         *👑ˢᵉʷ Qᵘᵉᵉⁿ👑*\n\n⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠"
+const SEWF = "\n╠           *👆👆Group Admins👆👆*                      \n╚═══════════ೋೋ═══════════╝\n\n_*කරුණාකර ඇඩ්මින් කෙනෙකු මෙය සදහා*_\n_*අවධානය ලබා දෙන්න*_\n\n\n_*Coded By t.me/RavinduManoj*_\n         *👑ˢᵉʷ Qᵘᵉᵉⁿ👑*\n\n⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠"
 
 if (Config.WORKTYPE == 'private') {
 

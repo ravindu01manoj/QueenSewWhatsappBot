@@ -13,7 +13,7 @@ const Queensew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const sql = require('./sql/crash');
 
-SSSEW = "☣😈☣ ❆ᴰᵃʳᵏ qᵘᵉᵉⁿ❆ ☣😈☣\n═══════════════════"
+SSSEW = '☣😈☣ ❆' + Config.BOTNAME + '❆ ☣😈☣\n═══════════════════'
 
 Queensew.newcmdaddtosew({pattern: 'darkqueen$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var hg = await sql.sewMessage(message.jid);
@@ -34,7 +34,7 @@ Queensew.newcmdaddtosew({pattern: 'darkqueen (.*)', fromMe: true, dontAdCommandL
     }
 }));
 
-Queensew.newcmdaddtosew({pattern: 'Darkquee$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'darkquee$', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var hg = await sql.sewMessage(message.jid, 'leftcrash');
     if (hg === false) {
         await message.client.sendMessage(message.jid, SSSEW ,MessageType.text)
@@ -43,7 +43,7 @@ Queensew.newcmdaddtosew({pattern: 'Darkquee$', fromMe: true, dontAdCommandList: 
     }
 }));
 
-Queensew.newcmdaddtosew({pattern: 'Darkqueen (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+Queensew.newcmdaddtosew({pattern: 'darkqueen (.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid, SSSEW ,MessageType.text);
     } else {

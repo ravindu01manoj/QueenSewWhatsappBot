@@ -28,6 +28,6 @@ QueenSew.newcmdaddtosew({ pattern: 'random ?(.*)', fromMe: false, desc: 'word im
 
     var ttinullimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```Made By t.me/RavinduManoj```' })
+    await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```' + Config.CPK + '```' })
 
 }));

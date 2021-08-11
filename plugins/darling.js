@@ -11,7 +11,7 @@ Whats bot - Ravindu Manoj
 
 const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
-const SEW = "*Codded by https://t.me/RavinduManoj*\n ඔබේ පෙම්වතිය හෝ පෙම්වතා වෙත සොදුරු ඇමතුමක්.\n💻Usage: *.msglv*"
+const SEW = "*ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ*\n ඔබේ පෙම්වතිය හෝ පෙම්වතා වෙත සොදුරු ඇමතුමක්.\n💻Usage: *.msglv*"
 
 
 QueenSew.newcmdaddtosew({pattern: 'msglv', fromMe: false, desc: SEW }, (async (message, match) => {

@@ -13,6 +13,7 @@ const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
+const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('sewmaker');
@@ -20,13 +21,13 @@ const Lang = Language.getString('sewmaker');
 
    QueenSew.newcmdaddtosew({pattern: 'text6', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
-    await message.sendMessage('❤❤❤❤❤❤❤❤❤❤\n\n\n\n    ```💗SEW 3 MAKER💗```\n\n\n\n❤❤❤❤❤❤❤❤❤❤\n\n\n*සියලු විස්තර ලබා ගැනීම සදහා👇👇👇⋆｡˚ ⁀➷★✼☆｡* ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\n\n\n●▬▬▬ *❤ Menu ❤* ▬▬▬●\n\n\n🇱🇰Usage: *.ninjalogo*\n💗Desc: Enters the text as the caption for a ninja themed logo.\n🌷 Example : *.ninjalogo Ravindu*\n\n🇱🇰Usage: *.sparkling*\n💗Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by *;* in order!\n🌷 Example : *.sparkling Ravindu;Manoj*\n\n🇱🇰Usage: *.shadow*\n💗Desc: Converts the text into shadow themed image.\n🌷 Example : *.Shadow Ravindu*\n\n🇱🇰Usage: *.phub*\n💗Desc: Converts the text into phub logo.\n🌷 Example : *.phub Ravindu/Manoj*\n\n🇱🇰Usage: *.lovemsg*\n💗Desc: It Sends love message style image of the text provided.\n🌷 Example : *.lovemsg Ravindu*\n\n🇱🇰Usage: *.grass*\n💗Desc: It Sends a grass image of the text provided.\n🌷 Example : *.grass Ravindu*\n\n🇱🇰Usage: *.blood*\n💗Desc: It Sends a blood image of the text provided.\n🌷 Example : *.blood Ravindu*\n\n🇱🇰Usage: *.romance*\n💗Desc: It Sends a green image with love shapes of the text provided.\n🌷 Example : *.romance Ravindu*\n\n🇱🇰Usage: *.candlemug*\n💗Desc: It Sends a mug image of the text provided.\n🌷 Example : *.candlemug Ravindu*\n\n🇱🇰Usage: *.snow*\n💗Desc: It Sends a snow image of the text provided.\n🌷 Example : *.snow Ravindu*\n\n🇱🇰Usage: *.cloud*\n💗Desc: It Sends a sky image of the text provided\n🌷 Example : *.cloud Ravindu*\n\n🇱🇰Usage: *.flower*\n💗Desc: It Sends a flower image of the text provided\n🌷 Example : *.flower Ravindu*\n\n🇱🇰Usage: *.burn*\n💗Desc: It Sends a half burned paper image of the text provided\n🌷 Example : *.burn Ravindu*\n\n🇱🇰Usage: *.candy*\n💗Desc: It Sends a candy image of the text provided\n🌷 Example : *.candy Ravindu*\n\n🇱🇰Usage: *.wood*\n💗Desc: It Sends a wood carved image of the text provided.\n🌷 Example : *.wood Ravindu*\n\n🇱🇰Usage: *.latte*\n💗Desc: It put the text as latte art within a coffee cup.\n🌷 Example : *.latte Ravindu*\n\n🇱🇰Usage: *.8bit*\n💗Desc: Converts the text into an 8bit style image.\nYou must enter the heading and subheading seperated by *;* in order!\n🌷 Example : *. Ravindu ; Manoj*\n\n🇱🇰Usage: *.glue*\n💗Desc: it makes 3D Glue text\n🌷 Example : *.glue Ravindu*\n\n🇱🇰Usage: *.harrypotter*\n💗Desc: Converts the text into a harrypotter themed image.\n🌷 Example : *.harrypotter Ravindu*\n\n🇱🇰Usage: *.watercolour*\n💗Desc: Converts the text into a watercolour themed image.\n🌷 Example : *.watercolor Ravindu*\n\n🇱🇰Usage: *.neonlight*\n💗Desc: Converts the text into a neonlight themed image.\n🌷 Example : *.neonlight Ravindu*\n\n🇱🇰Usage: *.3dtext*\n💗Desc: Converts the provided text into a 3D style image.\n🌷 Example : *.3dtext Ravindu*\n\n🇱🇰Usage: *.glitch*\n💗Desc: It Sends a glitch style image of the text provided\nYou must enter the heading and subheading seperated by *;* in order!.\n🌷 Example : *.glitch Ravindu;Manoj*\n\n🇱🇰Usage: *.galaxy*\n💗Desc: it makes metal galaxy text\n🌷 Example : *.galaxy Ravindu/Manoj*\n\n🇱🇰Usage: *.skull*\n💗Desc: it makes skull logo\n🌷 Example : *.skull Ravindu*\n\n🇱🇰Usage: *.robot*\n💗Desc: it makes Robot logo\n🌷 Example : *.robot Ravindu*\n\n🇱🇰Usage: *.toxic*\n💗Desc: it makes Toxic logo\n🌷 Example : *.toxic Ravindu*\n\n🇱🇰Usage: *orangeglass*\n💗Desc: it makes gradient text\n🌷 Example : *.orangeglass Ravindu*\n\n🇱🇰Usage: *.sandwriting*\n💗Desc: It Sends a sand image of the text provided.\n🌷 Example : *.sandwriting Ravindu*\n\n🇱🇰Usage: *.underwater*\n💗Desc: It Sends a ocean image of the text provided\n🌷 Example : *.underwater Ravindu*\n.');
+    await message.sendMessage('❤❤❤❤❤❤❤❤❤❤\n\n\n\n    ```💗' + Config.BOTNAME + '💗```\n\n\n\n❤❤❤❤❤❤❤❤❤❤\n\n\n*සියලු විස්තර ලබා ගැනීම සදහා👇👇👇⋆｡˚ ⁀➷★✼☆｡* ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\n\n\n●▬▬▬ *❤ Menu ❤* ▬▬▬●\n\n\n🇱🇰Usage: *.ninjalogo*\n💗Desc: Enters the text as the caption for a ninja themed logo.\n🌷 Example : *.ninjalogo Ravindu*\n\n🇱🇰Usage: *.sparkling*\n💗Desc: Converts the text into a sparkling themed image\nYou must enter the heading and subheading seperated by *;* in order!\n🌷 Example : *.sparkling Ravindu;Manoj*\n\n🇱🇰Usage: *.shadow*\n💗Desc: Converts the text into shadow themed image.\n🌷 Example : *.Shadow Ravindu*\n\n🇱🇰Usage: *.phub*\n💗Desc: Converts the text into phub logo.\n🌷 Example : *.phub Ravindu/Manoj*\n\n🇱🇰Usage: *.lovemsg*\n💗Desc: It Sends love message style image of the text provided.\n🌷 Example : *.lovemsg Ravindu*\n\n🇱🇰Usage: *.grass*\n💗Desc: It Sends a grass image of the text provided.\n🌷 Example : *.grass Ravindu*\n\n🇱🇰Usage: *.blood*\n💗Desc: It Sends a blood image of the text provided.\n🌷 Example : *.blood Ravindu*\n\n🇱🇰Usage: *.romance*\n💗Desc: It Sends a green image with love shapes of the text provided.\n🌷 Example : *.romance Ravindu*\n\n🇱🇰Usage: *.candlemug*\n💗Desc: It Sends a mug image of the text provided.\n🌷 Example : *.candlemug Ravindu*\n\n🇱🇰Usage: *.snow*\n💗Desc: It Sends a snow image of the text provided.\n🌷 Example : *.snow Ravindu*\n\n🇱🇰Usage: *.cloud*\n💗Desc: It Sends a sky image of the text provided\n🌷 Example : *.cloud Ravindu*\n\n🇱🇰Usage: *.flower*\n💗Desc: It Sends a flower image of the text provided\n🌷 Example : *.flower Ravindu*\n\n🇱🇰Usage: *.burn*\n💗Desc: It Sends a half burned paper image of the text provided\n🌷 Example : *.burn Ravindu*\n\n🇱🇰Usage: *.candy*\n💗Desc: It Sends a candy image of the text provided\n🌷 Example : *.candy Ravindu*\n\n🇱🇰Usage: *.wood*\n💗Desc: It Sends a wood carved image of the text provided.\n🌷 Example : *.wood Ravindu*\n\n🇱🇰Usage: *.latte*\n💗Desc: It put the text as latte art within a coffee cup.\n🌷 Example : *.latte Ravindu*\n\n🇱🇰Usage: *.8bit*\n💗Desc: Converts the text into an 8bit style image.\nYou must enter the heading and subheading seperated by *;* in order!\n🌷 Example : *. Ravindu ; Manoj*\n\n🇱🇰Usage: *.glue*\n💗Desc: it makes 3D Glue text\n🌷 Example : *.glue Ravindu*\n\n🇱🇰Usage: *.harrypotter*\n💗Desc: Converts the text into a harrypotter themed image.\n🌷 Example : *.harrypotter Ravindu*\n\n🇱🇰Usage: *.watercolour*\n💗Desc: Converts the text into a watercolour themed image.\n🌷 Example : *.watercolor Ravindu*\n\n🇱🇰Usage: *.neonlight*\n💗Desc: Converts the text into a neonlight themed image.\n🌷 Example : *.neonlight Ravindu*\n\n🇱🇰Usage: *.3dtext*\n💗Desc: Converts the provided text into a 3D style image.\n🌷 Example : *.3dtext Ravindu*\n\n🇱🇰Usage: *.glitch*\n💗Desc: It Sends a glitch style image of the text provided\nYou must enter the heading and subheading seperated by *;* in order!.\n🌷 Example : *.glitch Ravindu;Manoj*\n\n🇱🇰Usage: *.galaxy*\n💗Desc: it makes metal galaxy text\n🌷 Example : *.galaxy Ravindu/Manoj*\n\n🇱🇰Usage: *.skull*\n💗Desc: it makes skull logo\n🌷 Example : *.skull Ravindu*\n\n🇱🇰Usage: *.robot*\n💗Desc: it makes Robot logo\n🌷 Example : *.robot Ravindu*\n\n🇱🇰Usage: *.toxic*\n💗Desc: it makes Toxic logo\n🌷 Example : *.toxic Ravindu*\n\n🇱🇰Usage: *orangeglass*\n💗Desc: it makes gradient text\n🌷 Example : *.orangeglass Ravindu*\n\n🇱🇰Usage: *.sandwriting*\n💗Desc: It Sends a sand image of the text provided.\n🌷 Example : *.sandwriting Ravindu*\n\n🇱🇰Usage: *.underwater*\n💗Desc: It Sends a ocean image of the text provided\n🌷 Example : *.underwater Ravindu*\n.');
 
 
     }));
        QueenSew.newcmdaddtosew({pattern: 'text7', fromMe: false, dontAdCommandList: true}, (async (message, match) => {    
 
-    await message.sendMessage('❤❤❤❤❤❤❤❤❤❤\n    \n    \n    \n   ```Sew 👑Logo👑 Maker```\n\n\n\n\n❤❤❤❤❤❤❤❤❤❤\n\n\n*සියලු විස්තර ලබා ගැනීම සදහා👇👇👇⋆｡˚ ⁀➷★✼☆｡* ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\n\n\n●▬▬▬ *❤ Menu ❤* ▬▬▬●\n\n🇱🇰Usage: *.gamelogo*\n💗Desc: Converts the text into gamelogo logo.\n🌷 Example : *.gamelogo Ravindu*\n\n🇱🇰Usage: *.logov2*\n💗Desc: Converts the text into logov2 logo.\n🌷 Example : *.logov2 Ravindu*\n\n🇱🇰Usage: *.logogalaxy*\n💗Desc: Converts the text into logogalaxy logo.\n🌷 Example : *.logogalaxy Ravindu*\n\n🇱🇰Usage: *.mail*\n💗Desc: Converts the text into mail.\n🌷 Example : *.mail Ravindu/Manoj*\n\n🇱🇰Usage: *.brandlogo*\n💗Desc: Converts the text into brandlogo logo.\n🌷 Example : *.brandlogo Ravindu;1*\n🌷 Example : *.brandlogo Ravindu;2*\n🌷 Example : *.brandlogo Ravindu;3*\n🌷 Example : *.brandlogo Ravindu;4*\n🌷 Example : *.brandlogo Ravindu;5*\n🌷 Example : *.brandlogo Ravindu;6*\n🌷 Example : *.brandlogo Ravindu;7*\n🌷 Example : *.brandlogo Ravindu;8*\n🌷 Example : *.brandlogo Ravindu;9*\n🌷 Example : *.brandlogo Ravindu;10*\n');
+    await message.sendMessage('❤❤❤❤❤❤❤❤❤❤\n    \n    \n    \n   ```' + Config.BOTNAME + ' 👑Logo👑 Maker```\n\n\n\n\n❤❤❤❤❤❤❤❤❤❤\n\n\n*සියලු විස්තර ලබා ගැනීම සදහා👇👇👇⋆｡˚ ⁀➷★✼☆｡* ​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​\n\n\n●▬▬▬ *❤ Menu ❤* ▬▬▬●\n\n🇱🇰Usage: *.gamelogo*\n💗Desc: Converts the text into gamelogo logo.\n🌷 Example : *.gamelogo Ravindu*\n\n🇱🇰Usage: *.logov2*\n💗Desc: Converts the text into logov2 logo.\n🌷 Example : *.logov2 Ravindu*\n\n🇱🇰Usage: *.logogalaxy*\n💗Desc: Converts the text into logogalaxy logo.\n🌷 Example : *.logogalaxy Ravindu*\n\n🇱🇰Usage: *.mail*\n💗Desc: Converts the text into mail.\n🌷 Example : *.mail Ravindu/Manoj*\n\n🇱🇰Usage: *.brandlogo*\n💗Desc: Converts the text into brandlogo logo.\n🌷 Example : *.brandlogo Ravindu;1*\n🌷 Example : *.brandlogo Ravindu;2*\n🌷 Example : *.brandlogo Ravindu;3*\n🌷 Example : *.brandlogo Ravindu;4*\n🌷 Example : *.brandlogo Ravindu;5*\n🌷 Example : *.brandlogo Ravindu;6*\n🌷 Example : *.brandlogo Ravindu;7*\n🌷 Example : *.brandlogo Ravindu;8*\n🌷 Example : *.brandlogo Ravindu;9*\n🌷 Example : *.brandlogo Ravindu;10*\n');
 
     }));
 
@@ -121,7 +122,7 @@ QueenSew.newcmdaddtosew({pattern: 'neonglow ?(.*)', fromMe: false, dontAdCommand
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/glowingneon/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -132,7 +133,7 @@ QueenSew.newcmdaddtosew({pattern: 'latte ?(.*)', fromMe: false, dontAdCommandLis
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/coffeecup/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -143,7 +144,7 @@ QueenSew.newcmdaddtosew({pattern: 'wood ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/woodblock/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -160,7 +161,7 @@ QueenSew.newcmdaddtosew({pattern: '8bit ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/8bit/?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -170,7 +171,7 @@ QueenSew.newcmdaddtosew({pattern: 'shadow ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/shadowtext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+  await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -180,7 +181,7 @@ QueenSew.newcmdaddtosew({pattern: 'harrypotter ?(.*)', fromMe: false, dontAdComm
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/hpotter/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -197,7 +198,7 @@ QueenSew.newcmdaddtosew({pattern: 'sparkling ?(.*)', fromMe: false, dontAdComman
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/sparkling?text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -207,7 +208,7 @@ QueenSew.newcmdaddtosew({pattern: 'watercolor ?(.*)', fromMe: false, dontAdComma
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/watercolor?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -217,7 +218,7 @@ QueenSew.newcmdaddtosew({pattern: 'ninjalogo ?(.*)', fromMe: false, dontAdComman
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -227,7 +228,7 @@ QueenSew.newcmdaddtosew({pattern: 'neonlight ?(.*)', fromMe: false, dontAdComman
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/neon_light?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -237,7 +238,7 @@ QueenSew.newcmdaddtosew({pattern: '3dtext ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
 }));
 
@@ -248,7 +249,7 @@ QueenSew.newcmdaddtosew({pattern: 'underwater ?(.*)', fromMe: false, dontAdComma
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -258,7 +259,7 @@ QueenSew.newcmdaddtosew({pattern: 'underwater ?(.*)', fromMe: false, dontAdComma
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/mugflower/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -268,7 +269,7 @@ QueenSew.newcmdaddtosew({pattern: 'burn ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/burnpaper/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -278,7 +279,7 @@ QueenSew.newcmdaddtosew({pattern: 'burn ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -288,7 +289,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandwriting ?(.*)', fromMe: false, dontAdComm
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/sandwriting?text=${match[1]}&APIKEY=e248b81cffae4586`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -298,7 +299,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandwriting ?(.*)', fromMe: false, dontAdComm
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1]}&APIKEY=e248b81cffae4586`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -316,7 +317,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandwriting ?(.*)', fromMe: false, dontAdComm
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=e248b81cffae4586`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg , caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -326,7 +327,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1]}&APIKEY=e248b81cffae4586`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*  '})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*  '})
 
     }));
 
@@ -336,7 +337,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=e248b81cffae4586`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -346,7 +347,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/paperonglass/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -356,7 +357,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/candlemug/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -366,7 +367,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -376,7 +377,7 @@ QueenSew.newcmdaddtosew({pattern: 'snow ?(.*)', fromMe: false, dontAdCommandList
 
     var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -389,7 +390,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dluxury?text=${match[1]}&APIKEY=ba69027eb3dc7987`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -399,7 +400,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dgradient?text=${match[1]}&APIKEY=ba69027eb3dc7987`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -409,7 +410,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/realisticvintage?text=${match[1]}&APIKEY=00e0e1bf4c7dde0d`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -419,7 +420,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/summerysandwriting?text=${match[1]}&APIKEY=8a8ebc8d8b932805`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
    
@@ -429,7 +430,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/metaldarkgold?text=${match[1]}&APIKEY=98b033c6ef54b61a`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -439,7 +440,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/1917?text=${match[1]}&APIKEY=41fc0f9ac344b623`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -449,7 +450,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/holographic3d?text=${match[1]}&APIKEY=79cf7ab4e6598752`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -459,7 +460,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/deluxesilver?text=${match[1]}&APIKEY=981a4ef70f9f08c4`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -469,7 +470,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/glossybluemetal?text=${match[1]}&APIKEY=2376fa7786a47519`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -479,7 +480,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/fabric?text=${match[1]}&APIKEY=18f7678ff93ea7fa`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -496,7 +497,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3davengers?text=${topText}&text2=${bottomText}&APIKEY=2d7fce02fc14400a`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -513,7 +514,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/marvel?text=${topText}&text2=${bottomText}&APIKEY=d16462973349b432`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -530,7 +531,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dmetalsilver?text=${topText}&text2=${bottomText}&APIKEY=3ff38cc68ed02c5a`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -540,7 +541,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dglue?text=${match[1]}&APIKEY=3ff38cc68ed02c5a`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -550,7 +551,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/balloontext?text=${match[1]}&APIKEY=663f7f93a2011210`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -567,7 +568,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3drosegold?text=${topText}&text2=${bottomText}&APIKEY=663f7f93a2011210`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -584,7 +585,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dmetalgold?text=${topText}&text2=${bottomText}&APIKEY=bdf8f97d9f8b2ac8`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -601,7 +602,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/lionlogomascot?text=${topText}&text2=${bottomText}&APIKEY=bdf8f97d9f8b2ac8`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -618,7 +619,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/3dmetalgalaxy?text=${topText}&text2=${bottomText}&APIKEY=3daa10a39fb19f5d`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -628,7 +629,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=d2e4915e38d85d4b`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -638,7 +639,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/naturalleaves?text=${match[1]}&APIKEY=d2e4915e38d85d4b`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -648,7 +649,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/skeleton?text=${match[1]}&APIKEY=917058a2392ad776`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -658,7 +659,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/robotr2d2?text=${match[1]}&APIKEY=e142177d8e1b26e6`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -668,7 +669,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/toxic?text=${match[1]}&APIKEY=e142177d8e1b26e6`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -678,7 +679,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/rainbowequalizer?text=${match[1]}&APIKEY=e142177d8e1b26e6`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -688,7 +689,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/orangeglass?text=${match[1]}&APIKEY=60419a92fc8b3994`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -705,7 +706,7 @@ QueenSew.newcmdaddtosew({pattern: 'luxury ?(.*)', fromMe: false, dontAdCommandLi
 
     var webimage = await axios.get(`https://api.xteam.xyz/textpro/marvelstudios?text=${topText}&text2=${bottomText}&APIKEY=af92600dea99ccee`, { responseType: 'arraybuffer' })
 
-   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Made By t.me/RavinduManoj*'})
+   await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
   

@@ -48,7 +48,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/sandsummerbeach?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -58,7 +58,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cloudsky?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -68,7 +68,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/3dluxury?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -78,7 +78,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/summerysandwriting?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -88,7 +88,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metaldarkgold?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -98,7 +98,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neongalaxy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -108,7 +108,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/minion3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -118,7 +118,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/holographic3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -128,7 +128,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metalpurpledual?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -138,7 +138,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/deluxesilver?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -148,7 +148,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/glossycarbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -158,7 +158,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fabric?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -168,7 +168,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/newyear3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -178,7 +178,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neontext?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -188,7 +188,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/helloweenfire?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -198,7 +198,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/xmas3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -208,7 +208,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -218,7 +218,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/wicker?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -228,7 +228,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/skeleton?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -238,7 +238,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -248,7 +248,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -258,7 +258,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -268,7 +268,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -278,7 +278,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -288,7 +288,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -298,7 +298,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -308,7 +308,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/steel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -318,7 +318,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/ultragloss?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -328,7 +328,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/denim?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -338,7 +338,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decorategreen?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -348,7 +348,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decoratepurple?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -358,7 +358,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/peridotstone?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -368,7 +368,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rock?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -378,7 +378,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/lava?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -388,7 +388,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowglass?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -398,7 +398,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/strawberry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -408,7 +408,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/hororrblood?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -418,7 +418,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/horrorgift?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -428,7 +428,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluegem?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -438,7 +438,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bagel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -448,7 +448,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/captainamerica?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -458,7 +458,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/chocolatecake?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -468,7 +468,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/koifish?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -478,7 +478,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rainbowequalizer?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -488,7 +488,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/honey?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -498,7 +498,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkcandy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -508,7 +508,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluemetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
    
@@ -518,7 +518,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fruitjuice?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -528,7 +528,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/carbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -538,7 +538,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/erodedmetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -548,7 +548,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bronzeglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -558,7 +558,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -568,7 +568,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -578,7 +578,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -588,7 +588,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -598,7 +598,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/blueglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -608,7 +608,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purpleglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -619,7 +619,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -629,7 +629,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -639,7 +639,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -649,7 +649,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -659,7 +659,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/orangejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -669,7 +669,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -679,7 +679,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -689,7 +689,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -699,7 +699,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/biscuit?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -709,7 +709,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -719,7 +719,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinksparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -729,7 +729,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluesparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -739,7 +739,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greensparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -749,7 +749,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -759,7 +759,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gradientavatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -769,7 +769,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lol?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -779,7 +779,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolcover2?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -789,7 +789,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/stars?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -799,7 +799,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/fur?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -809,7 +809,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gerbang?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -819,7 +819,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolpentakill?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -829,7 +829,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/aov?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -839,7 +839,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/dota2avatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -849,7 +849,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/retro?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -859,7 +859,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/poly?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -869,7 +869,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/colorful?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -879,7 +879,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/1917?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -897,7 +897,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/sandsummerbeach?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -907,7 +907,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cloudsky?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -917,7 +917,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/3dluxury?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -927,7 +927,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/summerysandwriting?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -937,7 +937,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metaldarkgold?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -947,7 +947,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neongalaxy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -957,7 +957,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/minion3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -967,7 +967,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/holographic3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -977,7 +977,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metalpurpledual?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -987,7 +987,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/deluxesilver?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -997,7 +997,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/glossycarbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1007,7 +1007,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fabric?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1017,7 +1017,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/newyear3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1027,7 +1027,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neontext?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1037,7 +1037,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/helloweenfire?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1047,7 +1047,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/xmas3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1057,7 +1057,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1067,7 +1067,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/wicker?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1077,7 +1077,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/skeleton?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1087,7 +1087,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1097,7 +1097,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1107,7 +1107,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1117,7 +1117,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1127,7 +1127,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1137,7 +1137,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1147,7 +1147,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1157,7 +1157,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/steel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1167,7 +1167,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/ultragloss?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1177,7 +1177,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/denim?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1187,7 +1187,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decorategreen?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1197,7 +1197,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decoratepurple?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1207,7 +1207,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/peridotstone?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1217,7 +1217,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rock?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1227,7 +1227,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/lava?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1237,7 +1237,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowglass?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1247,7 +1247,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/strawberry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1257,7 +1257,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/hororrblood?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1267,7 +1267,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/horrorgift?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1277,7 +1277,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluegem?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1287,7 +1287,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bagel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1297,7 +1297,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/captainamerica?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1307,7 +1307,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/chocolatecake?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1317,7 +1317,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/koifish?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1327,7 +1327,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rainbowequalizer?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1337,7 +1337,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/honey?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1347,7 +1347,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkcandy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1357,7 +1357,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluemetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
    
@@ -1367,7 +1367,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fruitjuice?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1377,7 +1377,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/carbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1387,7 +1387,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/erodedmetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1397,7 +1397,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bronzeglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1407,7 +1407,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1417,7 +1417,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1427,7 +1427,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1437,7 +1437,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1447,7 +1447,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/blueglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1457,7 +1457,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purpleglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1468,7 +1468,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1478,7 +1478,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1488,7 +1488,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1498,7 +1498,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1508,7 +1508,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/orangejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1518,7 +1518,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1528,7 +1528,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1538,7 +1538,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1548,7 +1548,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/biscuit?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1558,7 +1558,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1568,7 +1568,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinksparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1578,7 +1578,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluesparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1588,7 +1588,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greensparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1598,7 +1598,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1608,7 +1608,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gradientavatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1618,7 +1618,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lol?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1628,7 +1628,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolcover2?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1638,7 +1638,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/stars?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1648,7 +1648,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/fur?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1658,7 +1658,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gerbang?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1668,7 +1668,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolpentakill?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1678,7 +1678,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/aov?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1688,7 +1688,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/dota2avatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1698,7 +1698,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/retro?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1708,7 +1708,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/poly?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1718,7 +1718,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/colorful?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1728,7 +1728,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/1917?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -1740,7 +1740,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/sandsummerbeach?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1750,7 +1750,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cloudsky?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1760,7 +1760,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/3dluxury?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1770,7 +1770,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/summerysandwriting?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1780,7 +1780,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metaldarkgold?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1790,7 +1790,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neongalaxy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1800,7 +1800,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/minion3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1810,7 +1810,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/holographic3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1820,7 +1820,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/metalpurpledual?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1830,7 +1830,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/deluxesilver?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1840,7 +1840,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/glossycarbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1850,7 +1850,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fabric?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1860,7 +1860,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/newyear3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1870,7 +1870,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/neontext?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1880,7 +1880,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/helloweenfire?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1890,7 +1890,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/xmas3d?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1900,7 +1900,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/jokerlogo?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1910,7 +1910,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/wicker?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1920,7 +1920,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/skeleton?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1930,7 +1930,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1940,7 +1940,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1950,7 +1950,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1960,7 +1960,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1970,7 +1970,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1980,7 +1980,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluefoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -1990,7 +1990,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldfoilballon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2000,7 +2000,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/steel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2010,7 +2010,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/ultragloss?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2020,7 +2020,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/denim?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2030,7 +2030,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decorategreen?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2040,7 +2040,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/decoratepurple?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2050,7 +2050,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/peridotstone?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2060,7 +2060,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rock?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2070,7 +2070,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/lava?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2080,7 +2080,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowglass?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2090,7 +2090,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/strawberry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2100,7 +2100,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/hororrblood?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2110,7 +2110,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/horrorgift?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2120,7 +2120,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluegem?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2130,7 +2130,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bagel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2140,7 +2140,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/captainamerica?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2150,7 +2150,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/chocolatecake?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2160,7 +2160,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/koifish?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2170,7 +2170,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/rainbowequalizer?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2180,7 +2180,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/honey?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2190,7 +2190,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkcandy?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2200,7 +2200,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluemetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
    
@@ -2210,7 +2210,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/fruitjuice?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2220,7 +2220,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/carbon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2230,7 +2230,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/erodedmetal?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2240,7 +2240,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bronzeglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2250,7 +2250,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2260,7 +2260,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2270,7 +2270,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2280,7 +2280,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinkglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2290,7 +2290,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/blueglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2300,7 +2300,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purpleglitter?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2311,7 +2311,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/yellowjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2321,7 +2321,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/silverjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2331,7 +2331,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2341,7 +2341,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/purplejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2351,7 +2351,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/orangejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2361,7 +2361,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greenjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2371,7 +2371,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/cyanjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2381,7 +2381,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluejewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2391,7 +2391,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/biscuit?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2401,7 +2401,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/goldsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2411,7 +2411,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/pinksparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2421,7 +2421,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/bluesparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2431,7 +2431,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/greensparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2441,7 +2441,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/redsparklingjewelry?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2451,8 +2451,25 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gradientavatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
+    }));
+    
+    QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: true, desc: 'Details For Coder'}, (async (message, match) => {
+    var r_text = new Array ();
+    r_text[0] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    r_text[1] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    var i = Math.floor(2*Math.random())
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '     *CODED BY RAVINDU MANOJ*\n\n❀Contact me: t.me/RavinduManoj\n\n\nYoutube Channel link 👇\n\n*https://youtube.com/channel/UCMrIJUBgoGCnyO2jLyybIWg*\n\n\n👑My Github Hub Profile👑\n\n*https://github.com/Sew01RaviduManoj01KingAndQueen*\n\n\nMy Website\n\nhttps://ravimano381.wixsite.com/ravindumanoj\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'})
+    }));
+    QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: false, desc: 'Details For Coder'}, (async (message, match) => {
+    var r_text = new Array ();
+    r_text[0] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    r_text[1] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    var i = Math.floor(2*Math.random())
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '     *CODED BY RAVINDU MANOJ*\n\n❀Contact me: t.me/RavinduManoj\n\n\nYoutube Channel link 👇\n\n*https://youtube.com/channel/UCMrIJUBgoGCnyO2jLyybIWg*\n\n\n👑My Github Hub Profile👑\n\n*https://github.com/Sew01RaviduManoj01KingAndQueen*\n\n\nMy Website\n\nhttps://ravimano381.wixsite.com/ravindumanoj\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'})
     }));
 
     QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2461,7 +2478,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lol?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2471,7 +2488,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolcover2?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2481,7 +2498,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/stars?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2491,7 +2508,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/fur?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2501,7 +2518,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/gerbang?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2511,7 +2528,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/lolpentakill?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2521,7 +2538,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/aov?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2531,7 +2548,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/dota2avatar?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2541,7 +2558,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/retro?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2551,7 +2568,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/poly?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
 
@@ -2561,7 +2578,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://xteam.xyz/videomaker/colorful?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.video, {mimetype: Mimetype.mp4, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2571,7 +2588,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/textpro/1917?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2718,7 +2735,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/rainbowshine?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2727,7 +2744,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/crispchrome?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2736,7 +2753,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/kueultah?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType:  'arraybuffer'  })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*Coded By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*' + Config.CPK + '*' })
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2745,7 +2762,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/rainbowbg?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2754,7 +2771,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/metalicglow?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2763,7 +2780,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/watermelon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2772,7 +2789,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/underwebmatrix?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2781,7 +2798,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/kopi2?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2790,7 +2807,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/metalicglow?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2799,7 +2816,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/smoketypography?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
@@ -2808,7 +2825,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/bevel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     
@@ -2818,7 +2835,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/rainbowshine?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'chrome ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2827,7 +2844,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/crispchrome?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern:'kueu ?(.*)' , fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2836,7 +2853,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/kueultah?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType:  'arraybuffer'  })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*Coded By t.me/RavinduManoj*' })
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption:  '*' + Config.CPK + '*' })
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2rainbow ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2845,7 +2862,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/rainbowbg?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2854,7 +2871,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/metalicglow?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'melon ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2863,7 +2880,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/watermelon?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'underweb ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2872,7 +2889,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/underwebmatrix?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2coffe ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2881,7 +2898,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/kopi2?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'metalic ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2890,7 +2907,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/metalicglow?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: '2smoke ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2899,7 +2916,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/smoketypography?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'bevel ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
@@ -2908,7 +2925,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     var sewimage = await axios.get(`https://api.xteam.xyz/photooxy/bevel?text=${match[1]}&APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*Coded By t.me/RavinduManoj*'})
+    await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*'})
 
     }));
 

@@ -20,7 +20,7 @@ const SEWA = "RUNNIG DARK QUEEN CRASH SCRIPT......"
 const SEWB = ".hunton"
 const SEWC = ".darkqueen .hunton"
 const SEWD = ".Darkqueen .hunton"
-const SEWF = "*😈HUNTED BY  DARK QUEEN😈*"
+const SEWF = "*😈HUNTED BY  Ravindu Manoj😈*"
 
 
 if (Config.WORKTYPE == 'private') {
