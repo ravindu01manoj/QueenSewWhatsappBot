@@ -18,7 +18,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: '${Config.MCMD} ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: Config.MCMD + ' ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         QueenSew.commands.map(
@@ -85,7 +85,7 @@ if (Config.WORKTYPE == 'private') {
 }));
 
 /*slf*/
-QueenSew.newcmdaddtosew({pattern: '${Config.MCMD} ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: Config.MCMD + ' ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         QueenSew.commands.map(
@@ -153,7 +153,7 @@ QueenSew.newcmdaddtosew({pattern: '${Config.MCMD} ?(.*)', fromMe: true, dontAdCo
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: '${Config.MCMD} ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: Config.MCMD + ' ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         QueenSew.commands.map(
@@ -220,7 +220,7 @@ else if (Config.WORKTYPE == 'public') {
 }));
 
 /*slf*/
-QueenSew.newcmdaddtosew({pattern: '${Config.MCMD} ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: Config.MCMD + ' ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         QueenSew.commands.map(
