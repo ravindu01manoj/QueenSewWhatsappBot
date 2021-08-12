@@ -577,7 +577,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
            // ==================== Greetings ====================
-if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' Raviya.GIFORPP == 'PP' || Raviya.GIFORPP == 'pP' ) {
+if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' || Raviya.GIFORPP == 'pP' ) {
     if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
@@ -600,7 +600,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' Raviya.GIFORPP == 'PP' || R
             return;
         }
     }
-    else if (Raviya.GIFORPP == 'gif' || Raviya.GIFORPP == 'Gif' Raviya.GIFORPP == 'GIF' || Raviya.GIFORPP == 'GIf' ) {
+    else if (Raviya.GIFORPP == 'gif' || Raviya.GIFORPP == 'Gif' || Raviya.GIFORPP == 'GIF' || Raviya.GIFORPP == 'GIf' ) {
     if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
