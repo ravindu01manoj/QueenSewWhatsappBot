@@ -364,7 +364,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
          console.log(
             chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
-         Password Incorrect
+         throw new Error("Wrong password");
          
          return;
          }
@@ -433,7 +433,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
          console.log(
             chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
-         Password Incorrect
+         throw new Error("Wrong password");
          
          return;
          }
