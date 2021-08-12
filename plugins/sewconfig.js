@@ -17,10 +17,10 @@ const fs = require('fs');
      
 const SEWARR = "Sew Queen session එක 👇"
 const SEWBRR = Raviya.SESSION
-const SEWCRR = "Heruku Api Key Eka👇"
-const SEWDRR = Raviya.API_KEY
-const SEWERR = "Remove.bg api key eka 👇"
-const SEWFRR = Raviya.RBG_API_KEY
+const SEWAARR = "Heruku Api Key Eka👇"
+const SEWABR = Raviya.API_KEY
+const SEWYRR = "Remove.bg api key eka 👇"
+const SEWZRR = Raviya.RBG_API_KEY
 const SEWGRR = "Alive Msg eka"
 const SEWHRR = Raviya.ALIVEMSG
 const SEWIRR = "Xteam Api Key 1"
@@ -37,12 +37,12 @@ const SEWSRR = "ගුඩ්බායි මැසේජ් එකට අදා�
 const SEWTRR = Raviya.GDB
 const SEWURR = "Base64 encoded 4to eka"
 const SEWVRR = Raviya.THUM
-const SEWWRR = "System Image eka"
-const SEWXRR = Raviya.ALIMG
-const SEWYRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
-const SEWZRR = ""
-const SEWAARR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
-const SEWABRR = ""
+const SEWERR = "System Image eka"
+const SEWFRR = Raviya.ALIMG
+const SEWWRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
+const SEWXRR = ""
+const SEWCRR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
+const SEWDRR = ""
 
 QueenSew.newcmdaddtosew({pattern: 'configlist', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
       await message.client.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
