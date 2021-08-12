@@ -18,7 +18,7 @@ Therefore, 100% efficiency cannot be obtained from sew Artificial Intelligence.
 The voice recognition doesn't work with sew infrastructure.
 We are using wit.ai's voice recognition for voicy conversation.
 The all input datas must be english. We are using google translate before send users inputs.
-*/
+
 
 
 const QueenSew = require('../events');
@@ -343,3 +343,5 @@ QueenSew.newcmdaddtosew({ pattern: 'fullsew ?(.*)', desc: fulleva_dsc, fromMe: t
         }
     }
 }));
+
+*/
