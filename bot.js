@@ -82,7 +82,7 @@ async function sewQueen () {
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        await axios.get('https://gist.githubusercontent.com/ravindu01manoj/4ad7c57ca1d2f735dd1aba62641841fc/raw/').then(async (ann) => {
+        await axios.get('https://gist.githubusercontent.com/ravindu01manoj/cd69106e0ebb07587456b98230dead20/raw/').then(async (ann) => {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 09 && getGMTm == 00) { 
@@ -99,7 +99,7 @@ async function sewQueen () {
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        await axios.get('https://gist.githubusercontent.com/ravindu01manoj/4ad7c57ca1d2f735dd1aba62641841fc/raw/').then(async (ann) => {
+        await axios.get('https://gist.githubusercontent.com/ravindu01manoj/cd69106e0ebb07587456b98230dead20/raw/').then(async (ann) => {
             const { infoen, infosi} = ann.data.announcements          
             if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 15 && getGMTm == 00) { 
