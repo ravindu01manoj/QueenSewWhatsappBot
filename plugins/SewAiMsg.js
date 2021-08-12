@@ -78,9 +78,9 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: wk, dontAdCommandList: true, delown
 }));
 
 
-/*
+
 QueenSew.newcmdaddtosew({ pattern: 'fullsew ?(.*)', desc: fulleva_dsc, fromMe: true, usage: '.fullsew on / off' }, (async (message, match) => {
-    var eva_status = `${conf.FULLEVA}`
+    var eva_status = `${Config.FULLSEW}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
             return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
@@ -108,4 +108,4 @@ QueenSew.newcmdaddtosew({ pattern: 'fullsew ?(.*)', desc: fulleva_dsc, fromMe: t
         }
     }
 }));
-*/
+
