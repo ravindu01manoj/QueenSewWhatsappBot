@@ -42,7 +42,7 @@ const SEWXRR = Raviya.ALIMG
 const SEWYRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
 const SEWZRR = " "
 const SEWAARR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
-const SEWABRR = " "
+const SEWABRR = "  "
 
 QueenSew.newcmdaddtosew({pattern: 'conlist ?(.*)', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
       await message.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
