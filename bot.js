@@ -252,7 +252,7 @@ async function sewQueen () {
     }, 7890);
     var insult = await axios.get('https://gist.githubusercontent.com/ravindu01manoj/c1f052db0c7712072d5ee432bf9d613a/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
-    await config.DATABASE.sync();
+    await Raviya.DATABASE.sync();
     var StrSes_Db = await SewQueenDB.findAll({
         where: {
           info: 'StringSession'
