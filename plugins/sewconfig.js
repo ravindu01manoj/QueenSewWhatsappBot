@@ -40,52 +40,52 @@ const SEWVRR = Raviya.THUM
 const SEWWRR = "System Image eka"
 const SEWXRR = Raviya.ALIMG
 const SEWYRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
-const SEWZRR = " "
+const SEWZRR = ""
 const SEWAARR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
-const SEWABRR = "  "
+const SEWABRR = ""
 
-QueenSew.newcmdaddtosew({pattern: 'conlist ?(.*)', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
-      await message.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
-      await message.sendMessage(message.jid,SEWARR, MessageType.text);
-      await message.sendMessage(message.jid,SEWBRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWCRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWDRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWERR, MessageType.text);
-      await message.sendMessage(message.jid,SEWFRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWGRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWHRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWIRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWJRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWKRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWLRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWMRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWNRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWORR, MessageType.text);
-      await message.sendMessage(message.jid,SEWPRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWQRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWRRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWSRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWTRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWURR, MessageType.text);
-      await message.sendMessage(message.jid,SEWVRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWWRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWXRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWYRR, MessageType.text);
-      await message.sendMessage(message.jid,SEWZRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
-      await message.sendMessage(message.jid,SEWAARR, MessageType.text);
-      await message.sendMessage(message.jid,SEWABRR, MessageType.text);
-      await message.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+QueenSew.newcmdaddtosew({pattern: 'configlist', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
+      await message.client.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWARR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWBRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWCRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWDRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWERR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWFRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWGRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWHRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWIRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWJRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWKRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWLRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWMRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWNRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWORR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWPRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWQRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWRRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWSRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWTRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWURR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWVRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWWRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWXRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWYRR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWZRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
+      await message.client.sendMessage(message.jid,SEWAARR, MessageType.text);
+      await message.client.sendMessage(message.jid,SEWABRR, MessageType.text);
+      await message.client.sendMessage(message.jid,'👆👆👆👆', MessageType.text);
    }));
