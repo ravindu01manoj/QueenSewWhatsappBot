@@ -12,7 +12,7 @@ const os = require("os");
 const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
-const config = require('./config');
+const Raviya = require('./config');
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
@@ -26,14 +26,14 @@ const git = simpleGit();
 const crypto = require('crypto');
 const nw = '```Blacklist Defected!```'
 const heroku = new Heroku({
-    token: config.HEROKU.API_KEY
+    token: Raviya.HEROKU.API_KEY
 });
-let baseURI = '/apps/' + config.HEROKU.APP_NAME;
+let baseURI = '/apps/' + Raviya.HEROKU.APP_NAME;
 const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const SewQueenDB = config.DATABASE.define('QueenSewWhatsappBot', {
+const SewQueenDB = Raviya.DATABASE.define('QueenSewWhatsappBot', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -78,26 +78,47 @@ Array.prototype.remove = function() {
 async function sewQueen () {
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [2,2121,7];
-    /*
-setInterval(async () => { 
+    conn.version = [2,2123,8];
+    await Raviya.DATABASE.sync();
+    var StrSes_Db = await SewQueenDB.findAll({
+        where: {
+          info: 'StringSession'
+        }
+    });
+    setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
         await axios.get('https://gist.githubusercontent.com/ravindu01manoj/4ad7c57ca1d2f735dd1aba62641841fc/raw/').then(async (ann) => {
-            const { infotr, infoen, infoes, infopt, infoid, infoaz, infohi, infoml, inforu} = ann.data.announcements          
-            if (infotr !== '' && config.LANG == 'SI') {
-                while (getGMTh == 19 && getGMTm == 1) { 
-                    return conn.sendMessage(conn.user.jid, '[ *👑Daily Announcements👑 By Ravindu Manoj* ]\n\n' + infotr.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+            const { infoen, infosi} = ann.data.announcements          
+            if (infoen !== '' && config.LANG == 'EN') {
+                while (getGMTh == 09 && getGMTm == 00) { 
+                    return conn.sendMessage(conn.user.jid, '[ *👑Daily Announcements👑 By Ravindu Manoj* ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
-            else if (infoen !== '' && config.LANG == 'EN') {
-                while (getGMTh == 19 && getGMTm == 1) { 
-                    return conn.sendMessage(conn.user.jid, '[ *👑Daily Announcements👑 By Ravindu Manoj* ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+            else if (infosi !== '' && config.LANG == 'SI') {
+                while (getGMTh == 09 && getGMTm == 00) { 
+                    return conn.sendMessage(conn.user.jid, '[  *👑Daily Announcements👑 By Ravindu Manoj*  ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
                 }
             }
         })
     }, 50000);
-    */
+    setInterval(async () => { 
+        var getGMTh = new Date().getHours()
+        var getGMTm = new Date().getMinutes()
+        await axios.get('https://gist.githubusercontent.com/ravindu01manoj/4ad7c57ca1d2f735dd1aba62641841fc/raw/').then(async (ann) => {
+            const { infoen, infosi} = ann.data.announcements          
+            if (infoen !== '' && config.LANG == 'EN') {
+                while (getGMTh == 15 && getGMTm == 00) { 
+                    return conn.sendMessage(conn.user.jid, '[ *👑Daily Announcements👑 By Ravindu Manoj* ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                }
+            }
+            else if (infosi !== '' && config.LANG == 'SI') {
+                while (getGMTh == 15 && getGMTm == 00) { 
+                    return conn.sendMessage(conn.user.jid, '[ *👑Daily Announcements👑 By Ravindu Manoj* ]\n\n' + infosi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text) 
+                }
+            }
+        })
+    }, 50000);
     var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
@@ -106,157 +127,141 @@ setInterval(async () => {
         if (biography_var == 'true') {
             if (conn.user.jid.startsWith('94')) { // Sri Lanka
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('90')) { // Turkey
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('994')) { // Azerbayjan
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
                 var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('75')) { // Russia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Indian
                 var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('62')) { // Indonesia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { // Germany
                 var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('61')) { // Australia 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('55')) { // Brazil
                 var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('33')) { // France
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('34')) { // Spain
                 var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('44')) { // UK
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('GB', { timeZone: 'Europe/London' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('39')) { // Italy 
                 var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Kazakhistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('998')) { // Uzbekistan 
                 var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('993')) { // Turkmenistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-                var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
+                var utch = new Date().toLocaleDateString(Raviya.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('EN', { timeZone: 'America/New_York' }).split(' ')[1]
-                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + config.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+                const biography = '❄️ ' + utch + '❄️\n⏰ ' + ov_time +'\n\n ' + Raviya.OWNERSHIP +' \nOO═══∩═══OO\n...........╭╬╮ ◢\n-✶-╭▅▇□□█▇▆▅▄▃▂▁(╳)█╮\n.....╰═▃_▁∠════▔▔▔\n............╙O ╙O\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
                 await conn.setStatus(biography)
             }
         }
     }, 7890);
-    var insult = await axios.get('https://gist.githubusercontent.com/ravindu01manoj/c1f052db0c7712072d5ee432bf9d613a/raw')
-    const { shs1, shl2, lss3, dsl4 } = insult.data.inside
-    await config.DATABASE.sync();
-    var StrSes_Db = await SewQueenDB.findAll({
-        where: {
-          info: 'StringSession'
-        }
-    });
-    const buff = Buffer.from(`${shs1}`, 'base64');  
-    const one = buff.toString('utf-8'); 
-    const bufft = Buffer.from(`${shl2}`, 'base64');  
-    const two = bufft.toString('utf-8'); 
-    const buffi = Buffer.from(`${lss3}`, 'base64');  
-    const three = buffi.toString('utf-8'); 
-    const buffu = Buffer.from(`${dsl4}`, 'base64');  
-    const four = buffu.toString('utf-8'); 
     
-    conn.logger.level = config.DEBUG ? 'debug' : 'warn';
+    conn.logger.level = Raviya.DEBUG ? 'debug' : 'warn';
     var nodb;
     if (StrSes_Db.length < 1) {
         nodb = true;
-        conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+        conn.loadAuthInfo(Session.deCrypt(Raviya.SESSION)); 
     } else {
         conn.loadAuthInfo(Session.deCrypt(StrSes_Db[0].dataValues.value));
     }
@@ -273,7 +278,7 @@ setInterval(async () => {
     })    
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Sew')}
-${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
+${chalk.white.bold('Version:')} ${chalk.red.bold(Raviya.VERSION)}
 
 ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
     });
@@ -282,8 +287,156 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             chalk.green.bold('🚀 Login successful!')
         );
         console.log(
-            chalk.blueBright.italic('💿 Installing External Commands...')
+            chalk.blueBright.italic('💕 Installing External Commands...')
         );
+        // ==================== Password Checking ====================
+        console.log(
+            chalk.blueBright.italic('✨PASSWORD CHECKING✨')
+        );
+        if (Raviya.SEWRR == 'raviya') {
+        
+        console.log(
+            chalk.green.bold('Password Done')
+        );
+         }
+         else if (Raviya.SEWRR == '') {
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         Password Incorrect
+         
+         return;
+         }
+         else if (Raviya.SEWRR !== 'raviya') {
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+            console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         console.log(
+            chalk.red.bold('⚠⚠Password Incorrect⚠⚠'));
+         Password Incorrect
+         
+         return;
+         }
         // ==================== External Plugins ====================
         var plugins = await plugindb.PluginDB.findAll();
         plugins.map(async (plugin) => {
@@ -299,7 +452,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End External Plugins ====================
 
         console.log(
-            chalk.blueBright.italic('💿  Installing Commands...')
+            chalk.blueBright.italic('💕  Installing Commands...')
         );
 
         // ==================== Internal Plugins ====================
@@ -314,10 +467,10 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             chalk.green.bold('🚀 Command Installed!')
         );
         await new Promise(r => setTimeout(r, 200));
-        let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('👑 Sew Queen' + afwhasena));
+        let afwhasena = Raviya.WORKTYPE == 'public' ? ' Public' : ' Private'
+        console.log(chalk.bgGreen('👑 Sew Queen is' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
-        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*Sew Queen Chatbot Olarak Çalışıyor!* 👑\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*Sew Queen Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*Sew Queen Working as a Chatbot! 👑*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.fulleva off* _command to return to normal mode._\n\n*Thanks For Using Sew Queen💌*\n    *- Eva*'
+        let EVA_ACTİON = Raviya.LANG == 'TR' || Raviya.LANG == 'AZ' ? ' ' : '*Sew Queen Working as a Chatbot! 👑*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.fullsew off* _command to return to normal mode._\n\n*Thanks For Using Sew Queen💌*\n    *-SEW AI*'
         if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
             await conn.sendMessage(conn.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => { 
@@ -329,42 +482,14 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                 });
             })
         }
-        if (config.WORKTYPE == 'public') {
-      
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                if (config.FULLEVA == 'true') {
-                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
-                } else {
-                    await conn.sendMessage(conn.user.jid, '*Sew Queen Public Olarak Çalışıyor! 👑*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*Sew Queen Kullandığın İçin Teşekkürler 💌*', MessageType.text);
-                }
-                await git.fetch();
-                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-                if (commits.total === 0) {
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        Lang.UPDATE, MessageType.text
-                    );    
-                } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
-                    commits['all'].map(
-                        (commit) => {
-                            degisiklikler += '🇱🇰  [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' 👑 ' + commit.author_name + ' 👑\n';
-                        }
-                    );
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
-                    ); 
-                }
-            }
-            else { 
-                if (config.FULLEVA == 'true') {
+        if (Raviya.WORKTYPE == 'public') {
+                if (Raviya.FULLSEW == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
                     await conn.sendMessage(conn.user.jid, '*Sew Queen Working as Public! 👑*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as Public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using Sew Bot💌*', MessageType.text);
                 }               
                 await git.fetch();
-                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                var commits = await git.log([Raviya.BRANCH + '..origin/' + Raviya.BRANCH]);
                 if (commits.total === 0) {
                     await conn.sendMessage(
                         conn.user.jid,
@@ -383,43 +508,16 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                         '```Type``` *.update now* ```For Update The Bot.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
-            }
+            
         }
-        else if (config.WORKTYPE == 'private') { 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { 
-                if (config.FULLEVA == 'true') {
-                    await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
-                } else {
-                    await conn.sendMessage(conn.user.jid, '*Sew Queen Private Olarak Çalışıyor! 👑*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*Sew Queen Kullandığın İçin Teşekkürler 💌*', MessageType.text);
-                }
-                await git.fetch();
-                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
-                if (commits.total === 0) {
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        Lang.UPDATE, MessageType.text
-                    );    
-                } else {
-                    var degisiklikler = Lang.NEW_UPDATE;
-                    commits['all'].map(
-                        (commit) => {
-                            degisiklikler += '🇱🇰 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' 👑 ' + commit.author_name + ' 👑\n';
-                        }
-                    );
-                    await conn.sendMessage(
-                        conn.user.jid,
-                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
-                    ); 
-                }
-            }
-            else { 
-                if (config.FULLEVA == 'true') {
+        else if (Raviya.WORKTYPE == 'private') { 
+                if (Raviya.FULLSEW == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
                     await conn.sendMessage(conn.user.jid, '\n*Sew Queen  Working as Private! 👑*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using Sew Queen💌*', MessageType.text);
                 }
                 await git.fetch();
-                var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
+                var commits = await git.log([Raviya.BRANCH + '..origin/' + Raviya.BRANCH]);
                 if (commits.total === 0) {
                     await conn.sendMessage(
                         conn.user.jid,
@@ -437,23 +535,9 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                         '```Type``` *.update now* ```For The Update Bot.```\n\n' + degisiklikler + '```', MessageType.text
                     ); 
                 }
-            }
+            
         }
-        else if (config.WORKTYPE == ' private' || config.WORKTYPE == 'Private' || config.WORKTYPE == ' Private' || config.WORKTYPE == 'privaye' || config.WORKTYPE == ' privaye' || config.WORKTYPE == ' prigate' || config.WORKTYPE == 'prigate' || config.WORKTYPE == 'priavte' || config.WORKTYPE == ' priavte' || config.WORKTYPE == 'PRİVATE' || config.WORKTYPE == ' PRİVATE' || config.WORKTYPE == 'PRIVATE' || config.WORKTYPE == ' PRIVATE') {
-
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
-
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '_Görünüşe Göre Private Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
-                );
-                await heroku.patch(baseURI + '/config-vars', {
-                    body: {
-                        ['WORK_TYPE']: 'private'
-                    }
-                })
-            }
-            else {
+        else if (Raviya.WORKTYPE == ' private' || Raviya.WORKTYPE == 'Private' || Raviya.WORKTYPE == ' Private' || Raviya.WORKTYPE == 'privaye' || Raviya.WORKTYPE == ' privaye' || Raviya.WORKTYPE == ' prigate' || Raviya.WORKTYPE == 'prigate' || Raviya.WORKTYPE == 'priavte' || Raviya.WORKTYPE == ' priavte' || Raviya.WORKTYPE == 'PRİVATE' || Raviya.WORKTYPE == ' PRİVATE' || Raviya.WORKTYPE == 'PRIVATE' || Raviya.WORKTYPE == ' PRIVATE') {
                 await conn.sendMessage(
                     conn.user.jid,
                     '_It Looks Like You Want to Switch to Private Mode! Sorry, Your_ *WORK_TYPE* _Key Is Incorrect!_ \n_Dont Worry! I am Trying To Find The Right One For You.._', MessageType.text
@@ -463,21 +547,10 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                         ['WORK_TYPE']: 'private'
                     }
                 })
-            }
+            
         }
-        else if (config.WORKTYPE == ' public' || config.WORKTYPE == 'Public' || config.WORKTYPE == ' Public' || config.WORKTYPE == 'publoc' || config.WORKTYPE == ' Publoc' || config.WORKTYPE == 'pubcli' || config.WORKTYPE == ' pubcli' || config.WORKTYPE == 'PUBLİC' || config.WORKTYPE == ' PUBLİC' || config.WORKTYPE == 'PUBLIC' || config.WORKTYPE == ' PUBLIC' || config.WORKTYPE == 'puvlic' || config.WORKTYPE == ' puvlic' || config.WORKTYPE == 'Puvlic' || config.WORKTYPE == ' Puvlic') {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                await conn.sendMessage(
-                    conn.user.jid,
-                    '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
-                );
-                await heroku.patch(baseURI + '/config-vars', {
-                    body: {
-                        ['WORK_TYPE']: 'public'
-                    }
-                })
-            }
-            else {
+        else if (Raviya.WORKTYPE == ' public' || Raviya.WORKTYPE == 'Public' || Raviya.WORKTYPE == ' Public' || Raviya.WORKTYPE == 'publoc' || Raviya.WORKTYPE == ' Publoc' || Raviya.WORKTYPE == 'pubcli' || Raviya.WORKTYPE == ' pubcli' || Raviya.WORKTYPE == 'PUBLİC' || Raviya.WORKTYPE == ' PUBLİC' || Raviya.WORKTYPE == 'PUBLIC' || Raviya.WORKTYPE == ' PUBLIC' || Raviya.WORKTYPE == 'puvlic' || Raviya.WORKTYPE == ' puvlic' || Raviya.WORKTYPE == 'Puvlic' || Raviya.WORKTYPE == ' Puvlic') {
+          
                 await conn.sendMessage(
                     conn.user.jid,
                     '_It Looks Like You Want to Switch to Public Mode! Sorry, Your_ *WORK_TYPE* _Key Is Incorrect!_ \n_Dont Worry! I am Trying To Find The Right One For You.._', MessageType.text
@@ -487,35 +560,52 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                         ['WORK_TYPE']: 'public'
                     }
                 })
-            }
+            
         }
         else {
-            if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                return await conn.sendMessage(
-                    conn.user.jid,
-                    '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
-                );
-            }
-            else {
                 return await conn.sendMessage(
                     conn.user.jid,
                     '_The_ *WORK_TYPE* _Key You Entered Was Not Found!_ \n_Please Type_ ```.setvar WORK_TYPE:private``` _Or_ ```.setvar WORK_TYPE:public```', MessageType.text
                 );
-            }
+            
         }
     })
     conn.on('message-new', async msg => {
        
         if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
-        if (config.NO_ONLINE) {
+        if (Raviya.NO_ONLINE) {
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
            // ==================== Greetings ====================
-        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' Raviya.GIFORPP == 'PP' || Raviya.GIFORPP == 'pP' ) {
+    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
             // Görüşürüz Mesajı
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
-                var sewqueenimage = await axios.get(`https://github.com/ravindu01manoj/Sew33Raviya99Manoj77Sewwandi/blob/0b410ca93d3c90bb9eb844122203f3822151d514/media/gif/ezgif-3-28263f1d2219.mp4`, { responseType: 'arraybuffer' })
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // Hoşgeldin Mesajı
+            var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+               let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        }
+    }
+    else if (Raviya.GIFORPP == 'gif' || Raviya.GIFORPP == 'Gif' Raviya.GIFORPP == 'GIF' || Raviya.GIFORPP == 'GIf' ) {
+    if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // Görüşürüz Mesajı
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            if (gb !== false) {
+                var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
                 await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
@@ -523,11 +613,12 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             // Hoşgeldin Mesajı
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
-            var sewqueenimage = await axios.get(`https://github.com/ravindu01manoj/Sew33Raviya99Manoj77Sewwandi/blob/d975dc02895f7b8e699617fc4c223dab7ba9b2ba/media/gif/ezgif-3-b734413d8b3e.mp4`, { responseType: 'arraybuffer' })
+            var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
             await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message +'\n\n                 ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'});
             }
             return;
         }
+     }
         // ==================== End Greetings ====================
         
         // ==================== Crash ====================
@@ -549,20 +640,20 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End Crash ====================
 
         // ==================== Blocked Chats ====================
-        if (config.BLOCKCHAT !== false) {     
-            var abc = config.BLOCKCHAT.split(',');                            
+        if (Raviya.BLOCKCHAT !== false) {     
+            var abc = Raviya.BLOCKCHAT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? abc.includes(msg.key.remoteJid.split('@')[0]) : abc.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.SUPPORT == '94785435462-1627812354') {     
-            var sup = config.SUPPORT.split(',');                            
+        if (Raviya.SUPPORT == '94785435462-1627812354') {     
+            var sup = Raviya.SUPPORT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.SUPPORT2 == '905511384572-1617736751') {     
-            var tsup = config.SUPPORT2.split(',');                            
+        if (Raviya.SUPPORT2 == '94785435462-1627812354') {     
+            var tsup = Raviya.SUPPORT2.split(',');                            
             if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (config.SUPPORT3 == '905511384572-1621015274') {     
-            var nsup = config.SUPPORT3.split(',');                            
+        if (Raviya.SUPPORT3 == '94785435462-1627812354') {     
+            var nsup = Raviya.SUPPORT3.split(',');                            
             if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
         // ==================== End Blocked Chats ====================
@@ -594,8 +685,8 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                     let sendMsg = false;
                     var chat = conn.chats.get(msg.key.remoteJid)
                         
-                    if ((config.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
-                        (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
+                    if ((Raviya.SUDO !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == Raviya.SUDO || Raviya.SUDO.includes(',') ? Raviya.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == Raviya.SUDO)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
@@ -612,7 +703,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
 
                     // ==================== Message Catcher ====================
                     if (sendMsg) {
-                        if (config.SEND_READ && command.on === undefined) {
+                        if (Raviya.SEND_READ && command.on === undefined) {
                             await conn.chatRead(msg.key.remoteJid);
                         }
                         var match = text_msg.match(command.pattern);
@@ -632,7 +723,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                             await command.function(whats, match);
                         }
                         catch (error) {
-                            if (config.NOLOG == 'true') return;
+                            if (Raviya.NOLOG == 'true') return;
                                 await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [Sew Queen] --*' + 
                                     '\n*Sew Queen an error has occurred!*'+
                                     '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
@@ -779,7 +870,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
     } catch {
         if (!nodb) {
             console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
-            conn.loadAuthInfo(Session.deCrypt(config.SESSION)); 
+            conn.loadAuthInfo(Session.deCrypt(Raviya.SESSION)); 
             try {
                 await conn.connect();
             } catch {

@@ -1,5 +1,5 @@
 {
-    "name": "LovelySew",
+    "name": "QueenSewWhatsappBot",
     "description": "SewQueen - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
     "logo": "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
@@ -11,11 +11,6 @@
         "_SEW_QUEEN_SESSION": {
             "description": "Type here yours SEW_QUEEN Session.QR කෝඩය ස්කෑන් කර ලබා ගන්නා කේතය ඇතුලත් කරන්න",
             "required": true
-        },
-        "AUTO_STICKER": {
-            "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
-            "required": false,
-            "value": "true"
         },
         "SUDO": {
             "description": "Leave blank if you don't know how to use it! Sudo mode; Your number must be an international number. So you should have your number after the country code. Example: 94xxxxxxxx (USA number +94)",
@@ -60,10 +55,25 @@
             "description": "කැප්ශන් එක වෙනස් කල හැකිය. you can change the caption",
             "required": false
          },
-         "SYSTEM_IMAGE": {
+         "Y__GREETING_TYPE": {
+            "description": "welcome/goodbye මැසේජ් සදහා අවශය ආකාරය තෝරන්න.. ප්‍රොෆයිල් පික් එක සමග නම් pp ද ගිෆ් එකක් සමග නම් gif ලෙසද යොදන්න",
+            "required": false,
+            "value": "pp"
+        },
+       "Y_WELLCOME": {
+            "description": "ඉහත තේරීම gif නම් වෙල්කම් මැසේජ් එක සදහා gif එකක direct link එකක් යොදන්න",
+            "required": false,
+            "value": "https://bit.ly/3yG3zk6"
+        },
+        "Y_GOODBYE": {
+            "description": "ඉහත තේරීම gif නම් ගුඩ්බායි මැසේජ් එක සදහා gif එකක direct link එකක් යොදන්න",
+            "required": false,
+            "value": "https://bit.ly/3lXyPHM"
+        },
+        "SYSTEM_IMAGE": {
             "description": "කිලෝබයිට් 500ට අඩු පින්තූරයක ඩිරෙක්ට් ලින්ක් එකක් යොදන්න.add derect link for image",
             "required": false,
-            "value": "https://i.ibb.co/RzSZW8F/IMG-20210810-WA0005.jpg"
+            "value": "https://bit.ly/3AyW139"
         },
         "Z_GROUP_NAME_A": {
             "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් පලමු ගෲපයේ නම යොදන්න. Enter Your 1st Group Name",
@@ -89,10 +99,6 @@
             "description": "තෙවන ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 3rd Group link",
             "required": false
          },
-         "MAIN_COMMAND": {
-            "description": "සියලු කමාන්ඩ් ලබාගැනීම සදහා යොදන කමාන්ඩ් එක ඇතුලත් කරන්න.enter the command for all commamd",
-            "required": false
-         },
          "X_TEAM_API_A": {
             "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
             "required": false
@@ -110,9 +116,18 @@
             "required": false
          },
          "THUMBNAIL_FOR_VIDEO": {
-            "description": "බොට් අප්ලෝඩ් කරන වීඩියෝ වල තම්බ්නෙයිල් එක වෙනස් කිරීම සදහා අදාල රූපයෙහි base64 මගින් encoded කේතය ඇතුලත් කරන්න",
+            "description": "බොට් අප්ලෝඩ් කරන වීඩියෝ වල තම්බ්නෙයිල් එක වෙනස් කිරීම සදහා අදාල රූපයෙහි base64 මගින් encoded කේතය ඇතුලත් කරන්න. කිලෝබයිට් 25ට අඩු පින්තූරක් භාවිත කරන්න.. නැති නම් ඩිප්ලෝයි කිරීමට නොහැක",
             "required": false
          },
+          "ZZ_PASSWORD": {
+            "description": "බොට්ව සෑදීම සදහා පාස්වර්ඩ් එකක් අවශ්‍ය අතර වීඩියෝව නරඹා එය ලබා ගන්න.password required.. watch the video",
+            "required": true
+         },
+         "AUTO_STICKER": {
+            "description": "If you likes bgm you can write 'true'. Otherwise false. auto ස්ටිකර්ස් රිප්ලයි යැවීම සදහා",
+            "required": false,
+            "value": "true"
+        },
         "OWNER_SHIP": {
             "description": "බොට් අයිතිකරුගේ නාමය වෙනස් කරයි",
             "required": false,
