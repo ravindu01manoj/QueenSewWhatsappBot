@@ -285,5 +285,6 @@ QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: false, dontAdCommandList:
         );
     }
 }));
-}
 */
+}
+
