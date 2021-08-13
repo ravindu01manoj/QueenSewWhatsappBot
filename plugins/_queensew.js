@@ -153,7 +153,7 @@ QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: true, dontAdCommandList: 
 }
 else if (Config.WORKTYPE == 'public') {
 
-    QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         QueenSew.commands.map(
@@ -219,7 +219,7 @@ else if (Config.WORKTYPE == 'public') {
     }
 }));
 
-/*slf*/
+/*slf
 QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
@@ -286,3 +286,4 @@ QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: false, dontAdCommandList:
     }
 }));
 }
+*/
