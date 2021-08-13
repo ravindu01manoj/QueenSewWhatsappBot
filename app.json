@@ -22,7 +22,7 @@
             "value": "en"
         },
         "ANTİ_LİNK": {
-            "description": "Link Blocking System.ගෲපයට කෙනෙකු ලින්ක් එකක් ඇතුලත් කලහොත් ඔහුව ගෲපයෙන් නෙරපා දමයිල්",
+            "description": "Link Blocking System.ගෲපයට කෙනෙකු ලින්ක් එකක් ඇතුලත් කලහොත් ඔහුව ගෲපයෙන් නෙරපා දමයි",
             "required": true,
             "value": "false"
         },
