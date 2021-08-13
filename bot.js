@@ -658,11 +658,11 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
             var sup = Raviya.SUPPORT.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (Raviya.SUPPORT2 == '94785435462-1627812354') {     
+        if (Raviya.SUPPORT2 == '94785435462-1628835469') {     
             var tsup = Raviya.SUPPORT2.split(',');                            
             if(msg.key.remoteJid.includes('-') ? tsup.includes(msg.key.remoteJid.split('@')[0]) : tsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
-        if (Raviya.SUPPORT3 == '94785435462-1627812354') {     
+        if (Raviya.SUPPORT3 == '94785435462-1628835633') {     
             var nsup = Raviya.SUPPORT3.split(',');                            
             if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
@@ -738,7 +738,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     '\n*Sew Queen an error has occurred!*'+
                                     '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
                                     '\n*You can write to our Telegram group for help.*' +
-                                    '\n*Aslo you can join our support group:* https://chat.whatsapp.com/Loh2qrwzIleAR7cndME3CG' +
+                                    '\n*Aslo you can join our support group:* \nhttps://chat.whatsapp.com/Loh2qrwzIleAR7cndME3CG\nhttps://chat.whatsapp.com/Hxyj6cqaMEJ3aXeisxaZeq\nhttps://chat.whatsapp.com/H0YB8hX54Vj9GdR9uQxVL8\n\nOr Join Our Telegrame Group\n*t.me/SewQueen*' +
                                     '\n*This message should have gone to your number (saved messages).*\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
