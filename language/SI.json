@@ -568,7 +568,7 @@
             "NNVL": "සින්හල නව කතා සහ කෙටි කතා කියවීමට කැමති පිරිස සදහා 😁."
         },
         "github": {
-            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github phaticusthiccy",
+            "GİTHUB_DESC": "Collects github information from the given username.\n⌨️ Example: .github Raviya",
             "REPLY": "```You Need To Type Any Username!```",
             "NOT": "```User not found!```",
             "FOLLOWERS": "Followers:",
