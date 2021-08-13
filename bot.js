@@ -738,7 +738,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     '\n*Sew Queen an error has occurred!*'+
                                     '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
                                     '\n*You can write to our Telegram group for help.*' +
-                                    '\n*Aslo you can join our support group:* https://chat.whatsapp.com/IlmB0J0SilOIJRq1CLotXT' +
+                                    '\n*Aslo you can join our support group:* https://chat.whatsapp.com/Loh2qrwzIleAR7cndME3CG' +
                                     '\n*This message should have gone to your number (saved messages).*\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
