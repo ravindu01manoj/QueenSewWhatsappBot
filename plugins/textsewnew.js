@@ -19,15 +19,9 @@ const axios = require('axios')
 const request = require('request');
 const os = require('os');
 var desc_msg = ''
-if (Config.LANG == 'TR') desc_msg = 'Sınırsız erişime sahip textmaker araçlarını gösterir.'
+if (Config.LANG == 'SI') desc_msg = 'ටෙක්ස්ට් මේකර් ටූල්ස්.'
 if (Config.LANG == 'EN') desc_msg = 'Shows textmaker tools with unlimited access.'
-if (Config.LANG == 'RU') desc_msg = 'Показывает инструменты для создания текстов с неограниченным доступом.'
-if (Config.LANG == 'AZ') desc_msg = 'Sınırsız girişi olan textmaker alətləri göstərir.'
-if (Config.LANG == 'PT') desc_msg = 'Mostra ferramentas textmaker com acesso ilimitado.'
-if (Config.LANG == 'ID') desc_msg = 'Menampilkan alat pembuat teks dengan akses tak terbatas.'
-if (Config.LANG == 'ML') desc_msg = 'പരിധിയില്ലാത്ത ആക്സസ് ഉള്ള ടെക്സ്റ്റ് മേക്കർ ഉപകരണങ്ങൾ കാണിക്കുന്നു.'
-if (Config.LANG == 'HI') desc_msg = 'असीमित एक्सेस के साथ टेक्स्टमेकर टूल दिखाता है।'
-if (Config.LANG == 'ES') desc_msg = 'Muestra herramientas de creación de textos con acceso ilimitado.'
+
 let wk = Config.WORKTYPE == 'public' ? false : true
 
 QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
@@ -60,37 +54,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (as
     var t27 = ''
     var t28 = ''
     var t29 = ''
-    if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-        t1 = 'Şeytan Temalı Logo Yapar.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
-        t2 = 'Ayı İkonu İçeren Logo Yapar.' // https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html
-        t3 = 'Neon Efekti İçeren Logo Yapar.' // https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html
-        t4 = '2. Bir Neon Efekti İçeren Logo Yapar.' // https://textpro.me/neon-text-effect-online-879.html
-        t5 = 'Yıldırım Temalı Logo Yapar.' // https://textpro.me/thunder-text-effect-online-881.html
-        t6 = 'Joker Temalı Logo Yapar.' // https://textpro.me/create-logo-joker-online-934.html
-        t7 = 'Ninja Temalı Logo Yapar.' // https://textpro.me/create-ninja-logo-online-935.html
-        t8 = 'Parıltı Temalı Logo Yapar.' // https://textpro.me/advanced-glow-text-effect-873.html
-        t9 = 'Bokeh Efekti İçeren Logo Yapar.' // https://textpro.me/bokeh-text-effect-876.html
-        t10 = 'Kurt İkonu İçeren Logo Yapar.' // https://textpro.me/create-wolf-logo-galaxy-online-936.html
-        t11 = 'Siyah Beyaz Marvel Logosu Yapar.' // https://textpro.me/create-logo-style-marvel-studios-online-971.html
-        t12 = 'Renkli Marvel Logosu Yapar.' // https://textpro.me/create-logo-style-marvel-studios-ver-metal-972.html
-        t13 = 'Avengers Logosu Yapar.' // https://textpro.me/create-3d-avengers-logo-online-974.html
-        t14 = 'Glitch Efekti İçeren Logo Yapar.' // https://textpro.me/create-glitch-text-effect-style-tik-tok-983.html
-        t15 = 'Graffiti Temalı Logo Yapar.' // https://textpro.me/create-cool-wall-graffiti-text-effect-online-1009.html
-        t16 = '2. Bir Graffiti Temalı Logo Yapar.' // https://textpro.me/create-a-cool-graffiti-text-on-the-wall-1010.html
-        t17 = 'Aslan Temalı Logo Yapar.' // https://textpro.me/create-lion-logo-mascot-online-938.html
-        t18 = '3. Bir Neon Temalı Logo Yapar.' // https://textpro.me/neon-text-effect-online-963.html
-        t19 = 'Buz Temalı Logo Yapar.' // https://textpro.me/ice-cold-text-effect-862.html
-        t20 = 'Uzay Temalı Logo Yapar.' // https://textpro.me/create-space-3d-text-effect-online-985.html
-        t21 = 'Duman Efekti İçeren Logo Yapar.' // https://photooxy.com/other-design/create-an-easy-smoke-type-effect-390.html
-        t22 = 'Naruto Temalı Logo Yapar.' // https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html
-        t23 = 'Glow Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/make-smoky-neon-glow-effect-343.html
-        t25 = 'Alev Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html
-        t26 = 'Harry Potter Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/create-harry-potter-text-on-horror-background-178.html
-        t27 = '4. Bir Neon Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html
-        t28 = 'Mezarlık Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html
-        t29 = 'Kupa Temalı Logo Yapar.' // https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html
-       }
-    else {
+    
         t1 = 'Makes Devil Themed Logo.' // https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html
         t2 = 'Makes Logo With Bear Icon.' // https://textpro.me/online-black-and-white-bear-mascot-logo-creation-1012.html
         t3 = 'Makes Logo With Neon Effect.' // https://textpro.me/create-a-futuristic-technology-neon-light-text-effect-1006.html
@@ -119,17 +83,16 @@ QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (as
         t27 = 'Makes a Fourth Neon-Themed Logo.' // https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html
         t28 = 'Makes a Cemetery Themed Logo.' // https://photooxy.com/logo-and-text-effects/text-on-scary-cemetery-gate-172.html
         t29 = 'Makes a Cup Themed Logo.' // https://photooxy.com/logo-and-text-effects/put-text-on-the-cup-387.html
-    }
     var usage_cmd = ''
     var command_cmd = ''
     var desc_cmd = ''
-    if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-        usage_cmd = '🌷 *Örnek:* _'
-        command_cmd = '🐲 *Komut:* '
-        desc_cmd = '🇱🇰*Açıklama:* _'
+    if (Config.LANG == 'SI') {
+        usage_cmd = '🌷 *උදාහරණ:* _'
+        command_cmd = '❄ *විදාන:* '
+        desc_cmd = '🇱🇰*විස්තර:* _'
     } else { 
         usage_cmd = '🌷 Example : '
-        command_cmd = '🐲 Command : '
+        command_cmd = '❄ Command : '
         desc_cmd = '🇱🇰 Description : '
     }
     const msg = command_cmd + '```.sewdevil``` \n' + t1 + '_\n' + usage_cmd + '*.sewdevil Ravindu*\n\n' +
@@ -173,7 +136,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/devil.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/devil.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/devil.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -192,7 +155,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewbear ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/bear.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/bear.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/bear.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -220,7 +183,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewwolf ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/wolf.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/wolf.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/wolf.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -239,7 +202,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewneon ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/neon.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -258,7 +221,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew2neon ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/neon2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon2.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon2.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -277,7 +240,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewlight ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/li.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/li.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/li.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -296,7 +259,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewjoker ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/joker.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/joker.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/joker.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -324,7 +287,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewninja ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/ninja.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ninja.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ninja.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -343,7 +306,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewglitter ?(.*)', fromMe: wk, dontAdCommandL
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/tt.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tt.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tt.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -362,7 +325,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewbokeh ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/bkh.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/bkh.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/bkh.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -390,7 +353,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewmarvel ?(.*)', fromMe: wk, dontAdCommandLi
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/marvel.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/marvel.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/marvel.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -418,7 +381,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew2marvel ?(.*)', fromMe: wk, dontAdCommandL
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/mar2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/mar2.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/mar2.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -446,7 +409,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewavengers ?(.*)', fromMe: wk, dontAdCommand
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/aven.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/aven.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/aven.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -474,7 +437,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewglitch ?(.*)', fromMe: wk, dontAdCommandLi
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/tt2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tt2.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tt2.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -502,7 +465,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewgraf ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/ttgra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ttgra.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ttgra.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -530,7 +493,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew2graf ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/t2gra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/t2gra.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/t2gra.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -558,7 +521,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewlion ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/lion.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/lion.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/lion.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -577,7 +540,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew3neon ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/neon3.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon3.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/neon3.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -596,7 +559,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewice ?(.*)', fromMe: wk, dontAdCommandList:
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/ice.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ice.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/ice.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -624,7 +587,7 @@ QueenSew.newcmdaddtosew({pattern: 'space ?(.*)', fromMe: wk, dontAdCommandList: 
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/space.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/space.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/space.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -643,7 +606,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewsmoke ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/smoke.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/smoke.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/smoke.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -658,7 +621,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewglow ?(.*)', fromMe: wk, dontAdCommandList
     };
     var uri = encodeURI(match[1])
     await download(`https://api.xteam.xyz/photooxy/neonlight?text=${uri}&APIKEY=da5fb2b73ae3e451`, '/root/QueenSewWhatsappBot/glowttp.jpg', async() => {                          
-        await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/glowttp.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+        await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/glowttp.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
     })
 }));
 QueenSew.newcmdaddtosew({pattern: 'sewfire ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
@@ -673,7 +636,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewfire ?(.*)', fromMe: wk, dontAdCommandList
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/tfire.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tfire.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/tfire.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -692,7 +655,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewharry ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/hp.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/hp.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/hp.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -711,7 +674,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew4neon ?(.*)', fromMe: wk, dontAdCommandLis
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/t4n.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/t4n.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/t4n.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -730,7 +693,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewcemetery ?(.*)', fromMe: wk, dontAdCommand
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/cmth.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cmth.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cmth.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -749,7 +712,7 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
               };
 
               await download(`${data}`, '/root/QueenSewWhatsappBot/cup.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cup.jpg'), MessageType.image, { caption: '*Coded By t.me/RavinduManoj*' })
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/cup.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
