@@ -40,9 +40,9 @@ const SEWVRR = Raviya.THUM
 const SEWERR = "System Image eka"
 const SEWFRR = Raviya.ALIMG
 const SEWWRR = "හදන විදිය තියෙන යූටියුබ් ලින්ක් එක"
-const SEWXRR = ""
+const SEWXRR = "https://youtu.be/AKU7YVXxMbM"
 const SEWCRR = "බොට් සෑදීම සදහා යා යුතු ලින්ක් එක"
-const SEWDRR = ""
+const SEWDRR = "https://github.com/Sew01RaviduManoj01KingAndQueen/QueenSew.git"
 
 QueenSew.newcmdaddtosew({pattern: 'configlist', fromMe: true, disc: 'බොට්ව සෑදීමේදී ඔබ විසින් දමා ඇති දත්ත ලබා ගත හැක . your config details.' }, (async (message, match) => {
       await message.client.sendMessage(message.jid,'hear is your all config 😉', MessageType.text);
