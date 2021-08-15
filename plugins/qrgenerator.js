@@ -28,7 +28,7 @@ QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromMe: true, desc: Lang.QR_DESC},
 
     var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK,quoted: message.data,thumbnail: Config.THUM })
+    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK,quoted: message.data})
 }));
 }
 if (Config.WORKTYPE == 'public') {
@@ -39,6 +39,6 @@ QueenSew.newcmdaddtosew({pattern: 'qr ?(.*)', fromMe: false, desc: Lang.QR_DESC}
 
     var webimage = await axios.get(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${match[1].replace(/#/g, '\n')} `, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK,quoted: message.data,thumbnail: Config.THUM })
+    await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK,quoted: message.data})
 }));
 }
