@@ -109,7 +109,7 @@ else if (Config.WORKTYPE == 'public') {
    }));
    
    QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
-      await message.sendMessage('   18+ list\n\n💠 .xxx\n ✨Xnxx link මගින් වීඩියෝ බාගත හැක  💠 .sespussy\n💠 .sesuni\n💠 .sestent\n💠 .sespanti\n💠 .sesmstrb\n💠 .sesmanga\n💠 .sesglass\n💠 .sescuck\n💠 .sesero\n💠 .sesbdsm\n💠 .sesass\n💠 .sessf')
+      await message.sendMessage('   18+ list\n\n💠 .xxx\n ✨Xnxx link මගින් වීඩියෝ බාගත හැක \n\n  💠 .sespussy\n💠 .sesuni\n💠 .sestent\n💠 .sespanti\n💠 .sesmstrb\n💠 .sesmanga\n💠 .sesglass\n💠 .sescuck\n💠 .sesero\n💠 .sesbdsm\n💠 .sesass\n💠 .sessf')
    }));
    
    QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: false}, (async (message, match) => {
