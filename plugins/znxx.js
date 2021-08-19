@@ -58,3 +58,23 @@ QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok v
         .catch(
           async (err) => await message.client.sendMessage(message.jid,'cant find 🥴🥴🥴',MessageType.text, {quoted: message.data}),
         )});
+
+QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok video download without watermark'}, async (message, match) => {
+        const sewtik = match[1]
+        if (!sewtik) return await message.client.sendMessage(message.jid,'need xnxx video link',MessageType.text);
+         await message.client.sendMessage(message.jid,'downloading your video',MessageType.text)
+        await axios
+          .get(`https://zenzapi.xyz/api/downloader/tiktok?url=${sewtik}&apikey=${r_text[i]}`)
+          .then(async (response) => {
+            const {
+              nowatermark,
+            } = response.data.result
+    
+            const videoBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+    
+            await message.client.sendMessage(message.jid,'uploading your video',MessageType.text, {quoted: message.data});
+            await message.client.sendMessage(message.jid,Buffer.from(videoBuffer.data), MessageType.video, {mimetype: Mimetype.mp4, ptt: false})
+        })
+        .catch(
+          async (err) => await message.client.sendMessage(message.jid,'cant find 🥴🥴🥴',MessageType.text, {quoted: message.data}),
+        )});
