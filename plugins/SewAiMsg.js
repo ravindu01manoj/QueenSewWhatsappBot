@@ -7,6 +7,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
+
 */
 
 
@@ -48,7 +49,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, dontAdCommandList: true, del
 }));
 
 
-QueenSew.newcmdaddtosew({ pattern: 'fullsew ?(.*)', desc: 'ai chat bot on off command' , fromMe: true, usage: '.fullsew on / off' }, (async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'sewai ?(.*)', desc: 'ai chat bot on off command' , fromMe: true, usage: '.fullsew on / off' }, (async (message, match) => {
     var eva_status = `${Config.FULLSEW}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
