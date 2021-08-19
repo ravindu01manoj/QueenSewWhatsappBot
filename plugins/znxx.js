@@ -59,7 +59,7 @@ QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok v
           async (err) => await message.client.sendMessage(message.jid,'cant find 🥴🥴🥴',MessageType.text, {quoted: message.data}),
         )});
 
-QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok video download without watermark'}, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: false, disc: 'tiktok video download without watermark'}, async (message, match) => {
         const sewtik = match[1]
         if (!sewtik) return await message.client.sendMessage(message.jid,'need xnxx video link',MessageType.text);
          await message.client.sendMessage(message.jid,'downloading your video',MessageType.text)
