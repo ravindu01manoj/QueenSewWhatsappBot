@@ -26,7 +26,7 @@ const translatte = require('translatte');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
 
-QueenSew.newcmdaddtosew({on: 'text', fromMe: wk, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false, dontAdCommandList: true, delownsewcmd: false}, (async (message, match) => {
     if (message.message.startsWith('Sew') && Raviya.FULLSEW !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
         var sewm = message.message.replace('Sew', '').replace(' ', '')   
