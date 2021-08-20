@@ -672,7 +672,7 @@ QueenSew.newcmdaddtosew({pattern: '1foil ?(.*)', fromMe: rs, dontAdCommandList: 
               console.log(err)
           } 
     });
-}));.
+}));
 
 QueenSew.newcmdaddtosew({pattern: 'glue ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     ravindu.rgmsa("https://textpro.me/create-3d-glue-text-effect-with-realistic-style-986.html",
