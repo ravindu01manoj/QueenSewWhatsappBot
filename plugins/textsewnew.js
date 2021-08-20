@@ -124,8 +124,27 @@ QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (as
         command_cmd + '```.sewglitch``` \n' + desc_cmd + t14 + '_\n' + usage_cmd + '*.sewglitch Ravindu;Manoj*\n\n'
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
-QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/devil.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/devil.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    ravindumanoj.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
