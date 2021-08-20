@@ -62,13 +62,13 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => 
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
         if (!!message.mention && message.mention[0] == '919895828468@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./Resources/VoiceClip/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
+await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
 const array = ['Adarey','Bye','Hello','Helo','Hey','Hi','Hy','I love you','Marilada','adarey','bye','hello','hey','helo','hi','hy','i love you','marilada','sewmaker','bitch','sapak','Sapak','Bich','y ban','Y ban','Y bn','y bn','Why ban','why ban','uddika','Uddika','sindu','Sindu','Seen','seen','Raviya','raviya','78 545 7519','notes','Ponnaya','Pinnaya','Paraya','Pala','ponnaya','pinnaya','paraya','pala','natanna','Natanna','Natahan','natahan','Nah','nah','na na','Na na','mokek','Mokek','Mk','mk','Kohomd','kohomada','kohomd','kohomada','hum','Hum','Hmm','hmm','Hako','hako','ha ha','Ha ha','Guti','guti','Gothaya','gothaya','Good night','good night','good morning','Good Morning','Gn','gn','Gm','gm','Gahano','gahano','Gahanawa','gahanawa','Fuck','fuck','Esawa','esawa','Ep wel','ep wel','epa wela','Epa wela','En nane','en nane','Bitch','bich','Bb ek','bb ek','balagena','Balagena','balaganin','Balaganin','baba eka','Baba eka']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-       await message.client.sendMessage(message.jid, fs.readFileSync('./Resources/VoiceClip/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
+       await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
 }
 });
 }
@@ -89,13 +89,13 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => 
     let banned = jkd.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
     if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
-await message.client.sendMessage(message.jid, fs.readFileSync('./Resources/SewStickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
+await message.client.sendMessage(message.jid, fs.readFileSync('./SewStickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
 const array = ['gm','love','adarey','morning','Gm','Love','Adarey','Morning','hi','Hi','hlo','Hlo','Hello','hello','ok','Ok','alive','sorry','Sorry']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
-   await message.client.sendMessage(message.jid, fs.readFileSync('./Resources/SewStickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
+   await message.client.sendMessage(message.jid, fs.readFileSync('./SewStickers/' + a + '.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
 }
 });
 }
