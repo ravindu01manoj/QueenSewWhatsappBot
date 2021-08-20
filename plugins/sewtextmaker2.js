@@ -1192,7 +1192,7 @@ QueenSew.newcmdaddtosew({pattern: 'logojocker ?(.*)', fromMe: rs, dontAdCommandL
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1221,7 +1221,7 @@ QueenSew.newcmdaddtosew({pattern: 'steel ?(.*)', fromMe: wk, dontAdCommandList: 
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'ninja2logo ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'ninja2logo ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1250,7 +1250,7 @@ QueenSew.newcmdaddtosew({pattern: 'ninja2logo ?(.*)', fromMe: wk, dontAdCommandL
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'wolf ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'wolf ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1279,7 +1279,7 @@ QueenSew.newcmdaddtosew({pattern: 'wolf ?(.*)', fromMe: wk, dontAdCommandList: t
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'lionlogo ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'lionlogo ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1308,7 +1308,7 @@ QueenSew.newcmdaddtosew({pattern: 'lionlogo ?(.*)', fromMe: wk, dontAdCommandLis
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'phub ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'phub ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1337,7 +1337,7 @@ QueenSew.newcmdaddtosew({pattern: 'phub ?(.*)', fromMe: wk, dontAdCommandList: t
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'sstone ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'sstone ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1366,7 +1366,7 @@ QueenSew.newcmdaddtosew({pattern: 'sstone ?(.*)', fromMe: wk, dontAdCommandList:
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'blub ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'blub ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
@@ -1395,7 +1395,7 @@ QueenSew.newcmdaddtosew({pattern: 'blub ?(.*)', fromMe: wk, dontAdCommandList: t
     });
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'vgame ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'vgame ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     var topText, bottomText; 
     if (match[1].includes('/')) {
         var split = match[1].split('/');
