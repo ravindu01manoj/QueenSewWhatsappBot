@@ -42,6 +42,8 @@ var r_text = new Array ();
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         if (Raviya.WORKTYPE == 'private') {
 
+
+/*
 QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
@@ -2454,6 +2456,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Raviya.CPK + '*'})
 
     }));
+    */
     
     QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: true, desc: 'Details For Coder'}, (async (message, match) => {
     var r_text = new Array ();
@@ -2471,7 +2474,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
     await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '     *CODED BY RAVINDU MANOJ*\n\n❀Contact me: t.me/RavinduManoj\n\n\nYoutube Channel link 👇\n\n*https://youtube.com/channel/UCMrIJUBgoGCnyO2jLyybIWg*\n\n\n👑My Github Hub Profile👑\n\n*https://github.com/Sew01RaviduManoj01KingAndQueen*\n\n\nMy Website\n\nhttps://ravimano381.wixsite.com/ravindumanoj\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'})
     }));
-
+/*
     QueenSew.newcmdaddtosew({pattern: '1lol ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,need);
@@ -2591,7 +2594,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*' + Raviya.CPK + '*'})
 
     }));
-    
+    */
         QueenSew.newcmdaddtosew({pattern: 'sesuni', fromMe: true, dontAdCommandList: true}, (async (message) => {
 
     var sewimage = await axios.get(`https://api.xteam.xyz/randomimage/uniform?APIKEY=${r_text[i]}`, { responseType: 'arraybuffer' })
@@ -2727,7 +2730,7 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*😈Coded😈By😈Raviya😈*'})
 
     }));
-
+/*
 
     QueenSew.newcmdaddtosew({pattern: 'shine ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
 
@@ -2929,5 +2932,5 @@ QueenSew.newcmdaddtosew({pattern: 'sandsum ?(.*)', fromMe: true, dontAdCommandLi
 
     }));
 
-
+*/
 }
