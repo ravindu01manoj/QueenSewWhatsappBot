@@ -32,7 +32,7 @@ const SLINK = TEXTMAKE.getrule('slink');
 const FILE = TEXTMAKE.getrule('sfile');
 const SDISC = TEXTMAKE.getrule('sewdisc');
 
-QueenSew.newcmdaddtosew({pattern: '2text', fromMe: rs, desc: Lang.PR}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '2text', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -47,7 +47,7 @@ QueenSew.newcmdaddtosew({pattern: '2text', fromMe: rs, desc: Lang.PR}, (async (m
 
     }));
     
-QueenSew.newcmdaddtosew({pattern: '3text', fromMe: rs, desc: Lang.PR}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '3text', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -62,7 +62,7 @@ QueenSew.newcmdaddtosew({pattern: '3text', fromMe: rs, desc: Lang.PR}, (async (m
 
     }));
     
-QueenSew.newcmdaddtosew({pattern: '4text', fromMe: rs, desc: Lang.PR}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '4text', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
@@ -77,7 +77,7 @@ QueenSew.newcmdaddtosew({pattern: '4text', fromMe: rs, desc: Lang.PR}, (async (m
 
     }));
     
-QueenSew.newcmdaddtosew({pattern: '1text', fromMe: rs, desc: Lang.PR}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: '1text', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
 
