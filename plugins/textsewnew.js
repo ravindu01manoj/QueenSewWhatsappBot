@@ -135,8 +135,8 @@ QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandLi
                   });
               };
 
-              await download(`${data}`, '/root/QueenSewWhatsappBot/devil.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/devil.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
+              await download(`${data}`, '/root/QueenSewWhatsappBot/horror.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/horror.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
               })
           } catch(err) { 
               console.log(err)
@@ -192,6 +192,34 @@ QueenSew.newcmdaddtosew({pattern: 'sewwolf ?(.*)', fromMe: wk, dontAdCommandList
         bottomText = '';
     }
     ravindumanoj.textpro("https://textpro.me/create-wolf-logo-galaxy-online-936.html",
+        [`${topText}`, `${bottomText}`]
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/wolf.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/wolf.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
+QueenSew.newcmdaddtosew({pattern: 'sewwice ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    var topText, bottomText; 
+    if (match[1].includes(';')) {
+        var split = match[1].split(';');
+        topText = split[0];
+        bottomText = split[1];
+    } else {
+        topText = match[1];
+        bottomText = '';
+    }
+    ravindumanoj.textpro("https://textpro.me/create-layered-text-effects-online-free-1032.html",
         [`${topText}`, `${bottomText}`]
         ).then(async (data) => { 
           try { 
