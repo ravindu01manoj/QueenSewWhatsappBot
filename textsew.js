@@ -17,7 +17,7 @@ if (fs.existsSync('./textsew/' + Raviya.TEXT + '.json')) {
 }
 
 function getrule(file) {
-    return json['RULE'][file];
+    return json['STRINGS'][file];
 }
 
 module.exports = {
