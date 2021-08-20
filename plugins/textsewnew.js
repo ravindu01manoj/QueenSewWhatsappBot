@@ -143,6 +143,25 @@ QueenSew.newcmdaddtosew({pattern: 'sewhorror ?(.*)', fromMe: wk, dontAdCommandLi
           } 
     });
 }));
+QueenSew.newcmdaddtosew({pattern: 'sewgart ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    ravindumanoj.ephoto("https://ephoto360.com/tao-hieu-ung-mui-ten-dinh-kem-chu-ky-nhieu-mau-846.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/gart.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/gart.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
 QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
     ravindumanoj.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
         `${match[1]}`
