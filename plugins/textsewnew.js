@@ -125,7 +125,7 @@ QueenSew.newcmdaddtosew({pattern: 'sew2maker$', fromMe: wk, desc: desc_msg}, (as
     await message.client.sendMessage(message.jid,msg, MessageType.text, { quoted: message.data })
 }));
 QueenSew.newcmdaddtosew({pattern: 'sewdevil ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
-    ravindumanoj.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html",
+    ravindumanoj.textpro("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
         `${match[1]}`
         ).then(async (data) => { 
           try { 
