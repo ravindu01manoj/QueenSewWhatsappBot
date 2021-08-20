@@ -766,3 +766,23 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
           } 
     });
 }));
+
+QueenSew.newcmdaddtosew({pattern: 'sewnaru ?(.*)', fromMe: wk, dontAdCommandList: true}, (async (message, match) => {
+    ravindumanoj.photooxy("https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/naru.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/naru.jpg'), MessageType.image, { caption: '*' + Config.CPK + '*' })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
