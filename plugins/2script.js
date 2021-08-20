@@ -81,7 +81,7 @@ else if (Config.WORKTYPE == 'public') {
    }));
    */
    QueenSew.newcmdaddtosew({pattern: 'sewmaker', fromMe: false, desc: NNVL}, (async (message, match) => {
-      await message.sendMessage('👑 *' + Config.BOTNAME + ' TEXT MAKER* 👑\n  \n_වචන පින්තූර බවට පත් කිරීමෙ මෙනු ලබා ගැනීමට පහත කමාන්ඩ් භාවිතාකරන්න_\n\n\n\n💠 .text1\n\n💠 .text2\n\n💠 .text3\n\n💠 .text4\n\n💠 .text5\n\n💠 .text6\n\n💠 .text7\n\n💠 .text8\n\n\n\n\n· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·\n... _*Coded By t.me/RavinduManoj*_ ...\n· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·\n')
+      await message.sendMessage('👑 *' + Config.BOTNAME + ' TEXT MAKER* 👑\n  \n_වචන පින්තූර බවට පත් කිරීමෙ මෙනු ලබා ගැනීමට පහත කමාන්ඩ් භාවිතාකරන්න_\n\n\n\n💠 .1text\n\n💠 .2text\n\n💠 .3text\n\n💠 .4text\n\n💠 .text5\n\n💠 .text6\n\n💠 .text7\n\n💠 .text8\n\n\n\n\n· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·\n... _*Coded By t.me/RavinduManoj*_ ...\n· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·· ··÷¦÷·· ·\n')
    }));
   /*
    QueenSew.newcmdaddtosew({pattern: 'text1', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
