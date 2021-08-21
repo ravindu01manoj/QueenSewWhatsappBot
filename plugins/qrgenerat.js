@@ -186,4 +186,3 @@ QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: true, desc: 'Details For Code
     await message.client.sendMessage(message.jid,Buffer.from(sewimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: '*😈Coded😈By😈Raviya😈*'})
 
     }));
-    }
