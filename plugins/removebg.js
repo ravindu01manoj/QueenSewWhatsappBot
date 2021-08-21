@@ -27,13 +27,8 @@ if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
 
-        if (message.jid === '905524317852-1612300121@g.us') {
-
-            return;
-        }
-
         if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid,Lang.NEED_PHOTO,MessageType.text);
-        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid,Lang.NO_API_KEY,MessageType.text);
+        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid,'Api key එකක් අවශ්හ්‍යයි\nremove.bg වෙබ්සයිට් එක මගින් ලබා ගන්න',MessageType.text);
     
         var load = await message.reply(Lang.RBGING);
         var location = await message.client.downloadAndSaveMediaMessage({
