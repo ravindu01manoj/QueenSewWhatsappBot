@@ -134,11 +134,11 @@
             "LOG": "Saves the message you reply to your private number.",
             "REPLY": "*Please Reply To Any Message!*",
             "ANIM": "Does not support animated stickers!",
-            "HEAD": "```===== [LOGGED MESSAGE] =====```\n\n",
+            "HEAD": "```👑✨ [LOGGED MESSAGE] ✨👑```\n\n",
             "USER": " From User Number \n",
             "FROM": " From the group with ID, ",
             "MSG": "Message: \n\n",
-            "SUC": "*Message Successfully Saved to LOG!*"
+            "SUC": "*Message Successfully Saved to LOG!✨👑*"
         },
         "ocr": {
             "OCR_DESC": "Reads the text on the photo you have replied.",
