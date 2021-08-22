@@ -86,7 +86,7 @@ QueenSew.newcmdaddtosew({pattern: 'hunton ?(.*)', fromMe: true, dontAdCommandLis
 }));
 
 
-QueenSew.newcmdaddtosew({pattern: 'hunt1', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'hunt1 ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 if (match[1] == '') {
   var msg = await message.reply('```Running Hunting Script By Sew Queen....```');
   
@@ -105,7 +105,7 @@ if (match[1] == '') {
         else {
             return await message.client.sendMessage(message.jid, SEW, MessageType.text)};
 }));
-QueenSew.newcmdaddtosew({pattern: 'hunt2', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'hunt2 ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 if (match[1] == '') {
   var msg = await message.reply('```Running Hunting Script By Sew Queen....```');
   
@@ -145,7 +145,7 @@ if (match[1] == '') {
         else {
             return await message.client.sendMessage(message.jid, SEW, MessageType.text)};
 }));
-QueenSew.newcmdaddtosew({pattern: 'hunt3', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'hunt3 ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 if (match[1] == '') {
   var msg = await message.reply('```Running Hunting Script By Sew Queen....```');
   
@@ -5701,7 +5701,7 @@ if (match[1] == '') {
         else {
             return await message.client.sendMessage(message.jid, SEW, MessageType.text)};
 }));
-QueenSew.newcmdaddtosew({pattern: 'hunt4', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'hunt4 ?(.*)', fromMe: true, delownsewcmd: false, dontAdCommandList: true}, (async (message, match) => {
 if (match[1] == '') {
   var msg = await message.reply('```Running Hunting Script By Sew Queen....```');
   
@@ -10708,7 +10708,7 @@ if (match[1] == '') {
         else {
             return await message.client.sendMessage(message.jid, SEW, MessageType.text)};
 }));
-QueenSew.newcmdaddtosew({pattern: 'darkmod', fromMe: true, disc: 'Most Powerful Dark Command For Hijackers And Hackers' }, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'darkmod ?(.*)', fromMe: true, disc: 'Most Powerful Dark Command For Hijackers And Hackers' }, (async (message, match) => {
 
     var r_text = new Array ();
 
