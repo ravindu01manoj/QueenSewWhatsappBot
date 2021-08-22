@@ -83,7 +83,7 @@ async function sewQueen () {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2,2121,7];
-   /* setInterval(async () => { 
+    setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
         await axios.get('https://gist.githubusercontent.com/ravindu01manoj/cd69106e0ebb07587456b98230dead20/raw/').then(async (ann) => {
@@ -117,7 +117,7 @@ async function sewQueen () {
             }
         })
     }, 50000);
-*/
+
     var biography_var = ''
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         biography_var = vars.AUTO_BİO
