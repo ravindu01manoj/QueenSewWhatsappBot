@@ -10708,7 +10708,7 @@ if (match[1] == '') {
         else {
             return await message.client.sendMessage(message.jid, SEW, MessageType.text)};
 }));
-QueenSew.newcmdaddtosew({pattern: 'darkmod', fromMe: true,'Most Powerful Dark Command For Hijackers And Hackers' }, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'darkmod', fromMe: true, disc: 'Most Powerful Dark Command For Hijackers And Hackers' }, (async (message, match) => {
 
     var r_text = new Array ();
 
