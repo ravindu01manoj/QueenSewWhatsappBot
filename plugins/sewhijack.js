@@ -12,6 +12,7 @@ const {MessageType, GroupSettingChange, Mimetype} = require('@adiwajshing/bailey
 const QueenSew = require('../events');
 const Config = require('../config');
 const os = require("os");
+const axios = require('axios')
 const SEW = "only command you can type"
 const QUEEN = "BOT BUG HOLE"
 const Ravi = '*😈HUNTED BY  ' + Config.BOTNAME + '😈*\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
