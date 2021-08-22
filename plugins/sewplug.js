@@ -13,7 +13,7 @@ This Is Official Pluging From Ravindu Manoj
 const ravindu = require('textsewmake');  // button msg npm export
 const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-onst exec = require('child_process').exec;
+const exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const got = require('got');
