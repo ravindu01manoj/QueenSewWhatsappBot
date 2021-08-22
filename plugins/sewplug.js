@@ -13,7 +13,7 @@ This Is Official Pluging From Ravindu Manoj
 const ravindu = require('textsewmake');  // button msg npm export
 const QueenSew = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
-const exec = require('child_process').exec;
+onst exec = require('child_process').exec;
 const os = require("os");
 const fs = require('fs');
 const got = require('got');
@@ -26,7 +26,8 @@ var ssss = rrrr.toString('utf-8')
 rgms.pay = ssss
 if (os.userInfo().homedir !== rgms.pay) return;
 if (Config.SEWRR == 'raviya') {
-QueenSew.newcmdaddtosew({pattern: 'test', fromMe: true, delownsewcmd: false,}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'testb ?(.*)', fromMe: true, delownsewcmd: false,}, (async (message, match) => {
+var reply = await message.client.sendMessage(message.jid,'test',MessageType.text);
 var rows = [
  {title: 'Row 1', description: "Hello it's description 1", rowId:"rowid1"},
  {title: 'Row 2', description: "Hello it's description 2", rowId:"rowid2"}
