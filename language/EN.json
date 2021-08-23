@@ -4,7 +4,7 @@
     "LANGCODE": "en",
     "AUTHOR": "RavinduManoj",
     "STRINGS": {
-        "❤❤": {
+        "_sewqueen": {
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",
@@ -135,8 +135,8 @@
             "REPLY": "*Please Reply To Any Message!*",
             "ANIM": "Does not support animated stickers!",
             "HEAD": "```👑✨ [LOGGED MESSAGE] ✨👑```\n\n",
-            "USER": " From User Number \n",
-            "FROM": " From the group with ID, ",
+            "USER": " \nFrom User Number \n\n",
+            "FROM": " \nFrom the group with ID,\n\n ",
             "MSG": "Message: \n\n",
             "SUC": "*Message Successfully Saved to LOG!✨👑*"
         },
@@ -186,12 +186,12 @@
             "SONG_DESC": "Uploads the song you wrote.",
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song werala konaka sita song```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "_*Sew, Searching your song*_ ✨➾🔎",
-            "UPLOADING_SONG": "_*Sew, Uploading your song*_ ✨➾👻",
+            "DOWNLOADING_SONG": "_*I'm Searching your song*_ ✨➾🔎",
+            "UPLOADING_SONG": "_*I'm Uploading your song*_ ✨➾👻",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://youtu.be/6DBdFrOH6NU```",
-            "DOWNLOADING_VIDEO": "_*Sew, Bringing  your  video*_  ✨➾🎯",
-            "UPLOADING_VIDEO": "_*Sew, Uploading your video*_ ✨➾💿",
+            "DOWNLOADING_VIDEO": "_*I'm Bringing  your  video*_  ✨➾🎯",
+            "UPLOADING_VIDEO": "_*I'M Uploading your video*_ ✨➾💿",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
