@@ -36,7 +36,7 @@ QueenSew.newcmdaddtosew({ pattern: 'xxx ?(.*)', fromMe: true, dontAdCommandList:
         
 QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok video download without watermark'}, async (message, match) => {
         const sewtik = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need xnxx video link',MessageType.text);
+        if (!sewtik) return await message.client.sendMessage(message.jid,'need tiktok link',MessageType.text);
          await message.client.sendMessage(message.jid,'downloading your video',MessageType.text)
         await axios
           .get(`https://zenzapi.xyz/api/downloader/tiktok?url=${sewtik}&apikey=${r_text[i]}`)
@@ -56,7 +56,7 @@ QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, disc: 'tiktok v
 
 QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: false, disc: 'tiktok video download without watermark'}, async (message, match) => {
         const sewtik = match[1]
-        if (!sewtik) return await message.client.sendMessage(message.jid,'need xnxx video link',MessageType.text);
+        if (!sewtik) return await message.client.sendMessage(message.jid,'need tiktok video link',MessageType.text);
          await message.client.sendMessage(message.jid,'downloading your video',MessageType.text)
         await axios
           .get(`https://zenzapi.xyz/api/downloader/tiktok?url=${sewtik}&apikey=${r_text[i]}`)
