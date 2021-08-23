@@ -14,7 +14,7 @@ const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
-const Lang = Language.getString('_asena');
+const Lang = Language.getString('_sewqueen');
 
 if (Config.WORKTYPE == 'private') {
 
