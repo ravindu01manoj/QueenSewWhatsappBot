@@ -1543,3 +1543,22 @@ QueenSew.newcmdaddtosew({pattern: 'arrow ?(.*)', fromMe: rs, dontAdCommandList: 
           } 
     });
 }));
+QueenSew.newcmdaddtosew({pattern: 'penta ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
+    ravindu.rgmsb("https://photooxy.com/other-design/glow-pentakill-cover-lol-136.html",
+        `${match[1]}`
+        ).then(async (data) => { 
+          try { 
+              var download = async(uri, filename, callback) => {
+                  await request.head(uri, async(err, res, body) => {    
+                      await request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+                  });
+              };
+
+              await download(`${data}`, '/root/QueenSewWhatsappBot/pt.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/QueenSewWhatsappBot/pt.jpg'), MessageType.image, { caption: Raviya.CPK })
+              })
+          } catch(err) { 
+              console.log(err)
+          } 
+    });
+}));
