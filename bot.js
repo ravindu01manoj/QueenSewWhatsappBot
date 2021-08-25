@@ -388,12 +388,12 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         if (Raviya.WORKTYPE == 'public') {
                 if (Raviya.FULLSEW == 'true') {
                 var rsgg = await axios.get(`${da2ta}`, { responseType: 'arraybuffer' })
-                    await conn.client.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
-                    await conn.client.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat2a})
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat2a})
                 } else {
                 var rsgg = await axios.get(`${da4ta}`, { responseType: 'arraybuffer' })
-                    await conn.client.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
-                    await conn.client.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat4a})
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat4a})
                 }               
                 await git.fetch();
                 var commits = await git.log([Raviya.BRANCH + '..origin/' + Raviya.BRANCH]);
@@ -420,12 +420,12 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         else if (Raviya.WORKTYPE == 'private') { 
                 if (Raviya.FULLSEW == 'true') {
                 var rsgg = await axios.get(`${da1ta}`, { responseType: 'arraybuffer' })
-                    await conn.client.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
-                    await conn.client.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat1a});
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat1a});
                 } else {
                 var rsgg = await axios.get(`${da3ta}`, { responseType: 'arraybuffer' })
-                    await conn.client.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
-                    await conn.client.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat3a})
+                    await conn.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
+                    await conn.sendMessage(conn.user.jid, Buffer.from(rsgg), MessageType.image, {mimetype: Mimetype.jpg, caption: dat3a})
                 }
                 await git.fetch();
                 var commits = await git.log([Raviya.BRANCH + '..origin/' + Raviya.BRANCH]);
