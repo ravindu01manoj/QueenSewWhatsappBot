@@ -1,6 +1,6 @@
 {
   "name": "lovelysew",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Sew Queen project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./QueenSewWhatsappBot/bot.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "queensewtext": "1.0.0",
     "textsewmake": "2.0.1",
     "axios": "^0.21.1",
-    "pach-rs": "1.2.0",
+    "pach-rs": "1.3.0",
     "googlethis": "^1.0.7",
     "audiobuffer-to-wav": "1.0.0",
     "chalk": "^4.1.0",
