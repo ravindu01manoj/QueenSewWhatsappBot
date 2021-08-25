@@ -22,7 +22,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './sewqueen.db' : proces
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'lovelysew 1.0.0 - Full Control',
+    VERSION: 'lovelysew 1.3.2 - Full Control',
     CHANNEL: 'https://t.me/SewQueen',
     SESSION: process.env._SEW_QUEEN_SESSION === undefined ? '' : process.env._SEW_QUEEN_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
