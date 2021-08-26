@@ -29,5 +29,5 @@ sewrm [10] = zzaak
 sewrm [11] = zzaal
 sewrm [12] = zzaam
 var s = Math.floor(13*Math.random())
-await message.client.sendMessage(message.jid, fs.readFileSync('./SewStickers/' + sewrm[s] + '.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
+await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/' + sewrm[s] + '.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
 }));
