@@ -91,7 +91,7 @@ var r_text = new Array ();
    }));
 
   if (Raviya.PSW == 'kingraviya') {
-      QueenSew.newcmdaddtosew({pattern: 'queensew ?(.*)', fromMe: true, dontAdCommandList: true,, desc: Sod }, (async (message, match) => {
+      QueenSew.newcmdaddtosew({pattern: 'queensew ?(.*)', fromMe: true, dontAdCommandList: true, desc: Sod }, (async (message, match) => {
 
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
