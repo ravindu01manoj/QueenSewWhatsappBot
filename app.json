@@ -2,7 +2,7 @@
     "name": "QueenSewWhatsappBot",
     "description": "SewQueen - Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
     "logo": "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "keywords": ["whatsapp", "userbot", "sew", "sewqueen", "bot", "api", "ai"],
     "repository": "",
     "website":   "https://t.me/RavinduManoj",
     "success_url": "https://t.me/AsenaSupport",
@@ -23,6 +23,11 @@
         },
         "ANTİ_LİNK": {
             "description": "Link Blocking System.ගෲපයට කෙනෙකු ලින්ක් එකක් ඇතුලත් කලහොත් ඔහුව ගෲපයෙන් නෙරපා දමයි",
+            "required": true,
+            "value": "false"
+        },
+        "INBO_BLOCK": {
+            "description": "Inbox Blocking System. ඉන්බොක්ස් මැසේජ් දමන්නන් බ්ලොක් කරයි",
             "required": true,
             "value": "false"
         },
@@ -56,17 +61,17 @@
             "required": false
          },
          "Y__GREETING_TYPE": {
-            "description": "welcome/goodbye මැසේජ් සදහා අවශය ආකාරය තෝරන්න.. ප්‍රොෆයිල් පික් එක සමග නම් pp ද ගිෆ් එකක් සමග නම් gif ලෙසද යොදන්න",
+            "description": "welcome/goodbye මැසේජ් සදහා අවශය ආකාරය තෝරන්න.. ප්‍රොෆයිල් පික් එක සමග නම් pp ද ගිෆ් එකක් සමග නම් gif ලෙසද පින්තූරයක් සදහා img ලෙසද යොදන්න.",
             "required": false,
             "value": "pp"
         },
        "Y_WELLCOME": {
-            "description": "ඉහත තේරීම gif නම් වෙල්කම් මැසේජ් එක සදහා gif එකක direct link එකක් යොදන්න",
+            "description": "ඉහත තේරීම gif හෝ img නම් වෙල්කම් මැසේජ් එක සදහා gif හෝ img එකක direct link එකක් යොදන්න",
             "required": false,
             "value": "https://bit.ly/3yG3zk6"
         },
         "Y_GOODBYE": {
-            "description": "ඉහත තේරීම gif නම් ගුඩ්බායි මැසේජ් එක සදහා gif එකක direct link එකක් යොදන්න",
+            "description": "ඉහත තේරීම gif හෝ img නම් ගුඩ්බායි මැසේජ් එක සදහා gif හෝ img එකක direct link එකක් යොදන්න",
             "required": false,
             "value": "https://bit.ly/3lXyPHM"
         },
@@ -75,50 +80,6 @@
             "required": false,
             "value": "https://bit.ly/3AyW139"
         },
-        "Z_GROUP_NAME_A": {
-            "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් පලමු ගෲපයේ නම යොදන්න. Enter Your 1st Group Name",
-            "required": false
-         },
-         "Z_GROUP_NAME_B": {
-            "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් දෙවන ගෲපයේ නම යොදන්න. Enter Your 2nd Group Name",
-            "required": false
-         },
-         "Z_GROUP_NAME_C": {
-            "description": "ඔබ සතුව ව්ට්සැප් ගෲප් ඇත්නම් තෙවන ගෲපයේ නම යොදන්න. Enter Your 3rd Group Name",
-            "required": false
-         },
-         "Z_GROUP_LINK_A": {
-            "description": "පලමු ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 1st Group link",
-            "required": false
-         },
-         "Z_GROUP_LINK_B": {
-            "description": "දෙවන ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 2nd Group link",
-            "required": false
-         },
-         "Z_GROUP_LINK_C": {
-            "description": "තෙවන ගෲපයේ ලින්ක් එක යොදන්න. Enter Your 3rd Group link",
-            "required": false
-         },
-         "X_TEAM_API_A": {
-            "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false
-         },
-         "X_TEAM_API_B": {
-            "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false
-         },
-         "X_TEAM_API_C": {
-            "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false
-         },
-         "X_TEAM_API_D": {
-            "description": "https://api.xteam.xyz/register මගින් ලබා ගන්නා Api Key ඇතුලත් කරන්න.. නොමැති නම් අවශ්‍ය නැත... ඇතුලත් කිරීමෙන් text to image කෝඩ් 200කට ආසන්නව ඇති සියල්ලම ලිමිට් එකකින් තොරව භාවිතා කල හැක",
-            "required": false
-         },
-         "THUMBNAIL_FOR_VIDEO": {
-            "description": "බොට් අප්ලෝඩ් කරන වීඩියෝ වල තම්බ්නෙයිල් එක වෙනස් කිරීම සදහා අදාල රූපයෙහි base64 මගින් encoded කේතය ඇතුලත් කරන්න. කිලෝබයිට් 25ට අඩු පින්තූරක් භාවිත කරන්න.. නැති නම් ඩිප්ලෝයි කිරීමට නොහැක",
-            "required": false
-         },
           "ZZ_PASSWORD": {
             "description": "බොට්ව සෑදීම සදහා පාස්වර්ඩ් එකක් අවශ්‍ය අතර වීඩියෝව නරඹා එය ලබා ගන්න.password required.. watch the video",
             "required": true
@@ -162,6 +123,11 @@
         "HEROKU_API_KEY": {
             "description": "Heroku API Key.",
             "required": true
+        },
+        "PROXY": {
+            "description": " Proxy Address => http://some-host:1234",
+            "required": false,
+            "value": "false"
         },
         "MUTE_MESSAGE": {
             "description": "Customizable Mute Message! Use => default, to change back.",
