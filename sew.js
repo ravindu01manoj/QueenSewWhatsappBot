@@ -324,7 +324,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             })
         }
             var sew_start = await Pach.work_type(Raviya.WORKTYPE, Raviya.LANG, Raviya.FULLSEW)
-            var sew_img = await Pach.image_type(Raviya.WORKTYPE, Raviya.FULLSEW)
+            var sew_img = await Pach.img_type(Raviya.WORKTYPE, Raviya.FULLSEW)
             var rsgg = await axios.get(`${sew_img}`, { responseType: 'arraybuffer' })
                 await CdSew.sendMessage(conn.user.jid, fs.readFileSync('./VoiceClip/robo.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true})
                 await CdSew.sendMessage(conn.user.jid, Buffer.from(rsgg.data), MessageType.image, {mimetype: Mimetype.jpg, caption: sew_start})
