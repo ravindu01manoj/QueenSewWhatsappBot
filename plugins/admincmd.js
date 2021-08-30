@@ -16,7 +16,7 @@ const Config = require('../config');
 
 
 if (Config.LANG == 'EN') {
-QueenSew.newcmdaddtosew({pattern: 'admin$', fromMe: true, delownsewcmd: false, desc: 'all admin command')}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'admin$', fromMe: true, delownsewcmd: false, desc: 'all admin command'}, (async (message, match) => {
         
             await message.sendMessage(`*✨✨♔♕ADMIN COMMAND♕♔✨✨*
 
@@ -410,7 +410,7 @@ QueenSew.newcmdaddtosew({pattern: 'admin$', fromMe: true, delownsewcmd: false, d
   ᴾᵒʷᵉʳᵈ ᴮʸ ˢᵉʷ Qᵘᵉᵉⁿ`);
     }));
 }
-QueenSew.newcmdaddtosew({pattern: 'configvar$', fromMe: true, delownsewcmd: false, desc: 'all admin command')}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'configvar$', fromMe: true, delownsewcmd: false, desc: 'all admin command'}, (async (message, match) => {
         
             await message.sendMessage(`*✨✨♔♕CONFIG VARS♕♔✨✨*
 
