@@ -105,9 +105,9 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd + '```.sl2gold``` \n' + desc_cmd + t79 + '_\n' + usage_cmd + '.sl2gold Sew\n\n' +
         command_cmd + '```.slsnow``` \n' + desc_cmd + t75 + '_\n' + usage_cmd + '.slsnow Sew\n\n' +
         command_cmd + '```.slballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.slballoon Sew\n\n' +
-        command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Sew\n\n' +
+        command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Sew\n\n'
         
-        const respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
+        var respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: msg + ' ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'  })
         }));
 
