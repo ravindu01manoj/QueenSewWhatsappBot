@@ -78,7 +78,7 @@ if (config.LANG == 'EN') {
     dlang_input = 'Processed Text:'
 }
 
- if (Config.PSW !== 'kingraviya') {
+ if (config.PSW !== 'kingraviya') {
 if (config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true}, (async (message, match) => {
