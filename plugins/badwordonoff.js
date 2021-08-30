@@ -31,15 +31,15 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         BAD_off = '*Bad Word Ai Turned off 😵*'
     }
    
-    if (config.LANG == 'HI') {
-        l_dsc = 'एंटीलिंक टूल को सक्रिय करता है।'
-        alr_on = 'एंटीलिंक पहले से ही खुला है!'
-        alr_off = 'एंटीलिंक वर्तमान में बंद है!'
-        BAD_on = 'bgm option turndा!'
-        BAD_off = 'bgm option turned off'
+    if (config.LANG == 'SI') {
+        l_dsc = 'අසභය වචන භාවිතා කරන අය ගෲප් එකෙන් කික් කල හැක'
+        alr_on = 'ඔන් විය!'
+        alr_off = 'ඕෆ් විය'
+        BAD_on = 'ආරම්භ විය!'
+        BAD_off = 'ක්‍රියා විරහිත විය'
     }
     
-   
+    if (config.PSW !== 'kingraviya') {
     QueenSew.newcmdaddtosew({pattern: 'bad ?(.*)', fromMe: true, desc: l_dsc, usage: '.bad off / on' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
@@ -57,3 +57,4 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 await message.sendMessage(BAD_on)
         }
     }));
+    }

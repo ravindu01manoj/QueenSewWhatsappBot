@@ -29,7 +29,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-QueenSew.newcmdaddtosew({pattern: 'ban ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
+QueenSew.newcmdaddtosew({pattern: 'ban ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -67,7 +67,7 @@ QueenSew.newcmdaddtosew({pattern: 'ban ?(.*)', fromMe: true, onlyGrpSew: true, d
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'add(?: |$)(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
+QueenSew.newcmdaddtosew({pattern: 'add(?: |$)(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.ADD_DESC}, (async (message, match) => {  
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -101,7 +101,7 @@ QueenSew.newcmdaddtosew({pattern: 'add(?: |$)(.*)', fromMe: true, onlyGrpSew: tr
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'promote ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'promote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.PROMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -159,7 +159,7 @@ QueenSew.newcmdaddtosew({pattern: 'promote ?(.*)', fromMe: true, onlyGrpSew: tru
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'demote ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'demote ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.DEMOTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN);
 
@@ -217,7 +217,7 @@ QueenSew.newcmdaddtosew({pattern: 'demote ?(.*)', fromMe: true, onlyGrpSew: true
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'mute ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'mute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.MUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1573,7 +1573,7 @@ QueenSew.newcmdaddtosew({pattern: 'mute ?(.*)', fromMe: true, onlyGrpSew: true, 
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'unmute ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'unmute ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.UNMUTE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
@@ -1587,13 +1587,13 @@ QueenSew.newcmdaddtosew({pattern: 'unmute ?(.*)', fromMe: true, onlyGrpSew: true
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'invite ?(.*)', fromMe: true, onlyGrpSew: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'invite ?(.*)', fromMe: true, dontAdCommandList: true, onlyGrpSew: true, desc: Lang.INVITE_DESC}, (async (message, match) => {    
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);
     await message.client.sendMessage(message.jid,Lang.INVITE + ' https://chat.whatsapp.com/' + invite, MessageType.text);
 }));
-QueenSew.newcmdaddtosew({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true,desc: SEW}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'name ?(.*)', onlyGrpSew: true, fromMe: true, dontAdCommandList: true,desc: SEW}, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
     if (match[1] === '') return await message.client.sendMessage(message.jid,SEWA);

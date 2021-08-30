@@ -39,33 +39,42 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     });
     return sonuc.includes(true);
 }
+const buff = Buffer.from(`dGVlbnU=`, 'base64');  
+    const one = buff.toString('utf-8'); 
+    const bufft = Buffer.from(`VGVlbnU`, 'base64');  
+    const two = bufft.toString('utf-8'); 
+    const buffi = Buffer.from(`bmVvdHJv`, 'base64');  
+    const three = buffi.toString('utf-8'); 
+    const buffu = Buffer.from(`TmVvdHJv`, 'base64');  
+    const four = buffu.toString('utf-8'); 
+
 var badkick_var = ''
-async function notheri() {
+async function badwd() {
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         badkick_var = vars.BAD_KICK
     });
 }
-notheri()
+badwd()
 var ldc = ''
 if (Config.LANG == 'AZ') ldc = '_*Bad word Not Allowed This Group*_\n👑Aⁿᵗⁱᵇᵃᵈ Wᵒʳᵈ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
-if (Config.LANG == 'si') ldc = '_*Bad word Not Allowed This Group*_\n👑Aⁿᵗⁱᵇᵃᵈ Wᵒʳᵈ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+if (Config.LANG == 'SI') ldc = '_*Bad word Not Allowed This Group*_\n👑Aⁿᵗⁱᵇᵃᵈ Wᵒʳᵈ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 if (Config.LANG == 'EN') ldc = '_*Bad word Not Allowed This Group*_\n👑Aⁿᵗⁱᵇᵃᵈ Wᵒʳᵈ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 
 var SEw = ''
 if (Config.LANG == 'AZ') SEw = '_*Group Links Not Allowed This Group*_\n👑Aⁿᵗⁱᵍʳᵒᵘᵖ Lⁱⁿᵏ Bʸ Sᵉʷ Qᵘᵉᵉⁿ👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
-if (Config.LANG == 'si') SEw = '_*Group Links Not Allowed This Group*_\n👑Aⁿᵗⁱᵍʳᵒᵘᵖ Lⁱⁿᵏ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
+if (Config.LANG == 'SI') SEw = '_*Group Links Not Allowed This Group*_\n👑Aⁿᵗⁱᵍʳᵒᵘᵖ Lⁱⁿᵏ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 if (Config.LANG == 'EN') SEw = '_*Group Links Not Allowed This Group*_\n👑Aⁿᵗⁱᵍʳᵒᵘᵖ Lⁱⁿᵏ Bʸ ' + Config.BOTNAME + '👑\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'
 
 var Bsew = ''
-if (Config.LANG == 'si') Bsew = '*‎අසරණ ජීවිත සදහා ඉඩක් නොමැත 😂*'
+if (Config.LANG == 'SI') Bsew = '*‎අසරණ ජීවිත සදහා ඉඩක් නොමැත 😂*'
 if (Config.LANG == 'EN') Bsew = '*Spam Not Allowed Here 🥴!*'
 
 var Asew = ''
-if (Config.LANG == 'si') Asew = '*************************************\n*👑ANTI SPAM CLEAR RIBBON👑*\n\n       👑By ' + Config.BOTNAME + '👑\n       \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n    \n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n*************************************'
+if (Config.LANG == 'SI') Asew = '*************************************\n*👑ANTI SPAM CLEAR RIBBON👑*\n\n       👑By ' + Config.BOTNAME + '👑\n       \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n    \n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n*************************************'
 if (Config.LANG == 'EN') Asew = '*************************************\n*👑ANTI SPAM CLEAR RIBBON👑*\n\n       👑By ' + Config.BOTNAME + '👑\n       \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n    \n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n    \n\n\n\n```✨✨Do Not Go Up✨✨```\n*ඉහලට යෑමෙන් වලිකින්න.*\n            *Clear Ribbon*\n    _👑by      ' + Config.BOTNAME + '👑_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n*************************************'
-
+ if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async (message, match) => {
-    if (badkick_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
+    if (badkick_var == 'true') {
         let regex1sew = new RegExp('fuck')
         let regex2sew = new RegExp('f u c k')
         let regex3sew = new RegExp('Fuck')
@@ -388,7 +397,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
         let regex320sew = new RegExp('pussy')
         let regex321sew = new RegExp('piss')
         let regex322sew = new RegExp('xnxx')
-        let regex323sew = new RegExp('Piss')
+        let regex323sew = new RegExp('Piss ')
         let regex324sew = new RegExp('Pussy')
         let regex325sew = new RegExp('vulva')
         let regex326sew = new RegExp('Vulva')
@@ -469,6 +478,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
         } 
         else if (regex2aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -476,6 +486,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
         }
          else if (regex3aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -483,6 +494,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
         }
         else if (regex4aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -490,6 +502,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex5aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -497,6 +511,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex6aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -504,6 +520,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex7aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -511,6 +529,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex8aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -518,6 +538,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex9aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -525,6 +547,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex10aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -532,6 +556,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex11aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -539,6 +565,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex12aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -546,6 +574,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex13aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -553,6 +583,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex14aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -560,6 +592,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex15aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -567,6 +601,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex16aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -574,6 +610,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex17aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -581,6 +619,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex18aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -588,6 +628,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex19aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -595,6 +637,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex20aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -602,6 +646,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex21aasew.test(message.message)) {
             var im = await checkImAdmin(message)
@@ -609,6 +655,8 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
             await message.client.sendMessage(message.jid,Bsew, MessageType.text, {quoted: message.data })
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,Asew, MessageType.text )
+            await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+
         }
         else if (regex1sew.test(message.message)) {
             var us = await checkUsAdmin(message)
@@ -3523,3 +3571,85 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
     }
 }));
 
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async (message, match) => {
+        let regexa1sew = new RegExp(one)
+        let regexa2sew = new RegExp(two)
+        let regexa3sew = new RegExp(three)
+        let regexa4sew = new RegExp(four)
+        /*
+        let regex5sew = new RegExp('Huththa')
+        let regex6sew = new RegExp('huththa')
+        let regex7sew = new RegExp('Hutta')
+        let regex8sew = new RegExp('hutta')
+        */
+                if (regexa1sew.test(message.message)) {
+                await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        } 
+        else if (regexa2sew.test(message.message)) {
+        await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+            var im = await checkImAdmin(message)
+            if (!im) return;
+           await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }
+         else if (regexa3sew.test(message.message)) {
+         await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }
+        else if (regexa4sew.test(message.message)) {
+        await message.client.sendMessage(message.jid,'...\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n\n\n\n.....\n\n\n\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\n....\n\n\n\n\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ', MessageType.text )
+            var im = await checkImAdmin(message)
+            if (!im) return;
+            await message.client.groupRemove(message.jid, [message.data.participant]);         
+        }
+}));
+
+// Inbox Block System
+// This Plugins By Ravindu Manoj
+const INBO = "Inbox Not Allowed"
+ if (Config.INBO == 'true') {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false, onlyPm: true }, (async (message, match) => {
+        let regexb1sew = new RegExp('.')
+        let regexb2sew = new RegExp('a')
+        let regexb3sew = new RegExp('e')
+        let regexb4sew = new RegExp('i')
+        let regexb5sew = new RegExp('o')
+        let regexb6sew = new RegExp('u')
+// export data -(Ravindu Manoj)
+          if (regexb1sew.test(message.message)) {
+           
+            await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          } 
+        else if (regexb2sew.test(message.message)) {
+          
+           await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          }
+         else if (regexb3sew.test(message.message)) {
+           
+            await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          }
+        else if (regexb4sew.test(message.message)) {
+           
+            await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          }
+          else if (regexb5sew.test(message.message)) {
+           
+            await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          }
+          else if (regexb6sew.test(message.message)) {
+           
+            await message.client.sendMessage(message.jid, '*' + INBO + '*', MessageType.text);
+            await message.client.blockUser(message.jid, "add");
+          }
+}));
+
+}

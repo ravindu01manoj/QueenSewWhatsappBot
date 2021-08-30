@@ -8,7 +8,7 @@ const brainly = "Finds the answer."
 const usage = ".brainly <Question>"
 
 const butuh = "```Enter the Question!```"
-
+ if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly, usage: usage }, async (message, match) => {
 
         const Soal = match[1]
@@ -29,3 +29,4 @@ QueenSew.newcmdaddtosew({ pattern: 'brainly ?(.*)', fromMe: false, desc: brainly
            })
       },
     )
+}

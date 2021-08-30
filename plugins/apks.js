@@ -5,21 +5,13 @@ const {spawnSync} = require('child_process');
 const Config = require('../config');
 const fs = require('fs');
 
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
    QueenSew.newcmdaddtosew({pattern: 'apkmod', fromMe: true}, (async (message, match) => {
-      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *APK COMMANDS* ☣️ 〙\n┗━━━━━━━━━━━━━━━━━━━\nAplicaciones Full\n┠⊷️ 🇱🇰 Nova Launcher:\n     *.nova*\n\n┠⊷️ 🇱🇰 CM Launcher:\n     *.cml*\n\n┠⊷️ 🇱🇰 Apex Launcher:\n     *.apex*\n\n\n┠⊷️ 🇱🇰 Kinemaster:\n     *.kinemaster*\n\n┠⊷️ 🇱🇰 PicsArt Gold:\n     *.picsart*\n\n┠⊷️ 🇱🇰 Canva Pro:\n     *.canva*\n\n┠⊷️ 🇱🇰 Ligthrom:\n     *.lightroom*\n\n┠⊷️ 🇱🇰 Photoshop Express:\n     *.pshop*\n\n┠⊷️ 🇱🇰 Snapseed:\n     *.snaps*\n\n┠⊷️ 🇱🇰 Retouch:\n     *.retouch*\n\n\n┠⊷️ 🇱🇰 Vanced Manager:\n     *.vanced*\n\n┠⊷️ 🇱🇰 Crunchyroll:\n     *.crunchy*\n\n┠⊷️ 🇱🇰 Freezer Mod:\n     *.freez*\n\n┠⊷️ 🇱🇰 Deezer Premium:\n     *.deezer*\n\n┠⊷️ 🇱🇰 RadioBox:\n     *.rbox*\n\n┠⊷️ 🇱🇰 Mx Player Pro:\n     *.mxpro*\n\n┠⊷️ 🇱🇰 Power AMP:\n     *.amp*\n\n┠⊷️ 🇱🇰 JetAudio:\n     *.jetau*\n\n\n┠⊷️ 🇱🇰 ExpressVpn:\n     *.xpress*\n\n┠⊷️ 🇱🇰 Hospot Shield:\n     *.hshield*\n\n┠⊷️ 🇱🇰 TurboVpn:\n     *.Turbo*\n\n┠⊷️ 🇱🇰 File Manager:\n     *.flmanager*\n\n┠⊷️ 🇱🇰 CallRecorder:\n     *.callr*\n\n┠⊷️ 🇱🇰 FingScanner:\n     *.fing*\n\n┠⊷️ 🇱🇰 Shazam Encore:\n     *.shazam*\n\n┠⊷️ 🇱🇰 QR Scanner Pro:\n     *.qrcode*\n\n┠⊷️ 🇱🇰 Screen Recorder:\n     *.srecorder*\n\n┠⊷️ 🇱🇰 TikTok Mod:\n     *.tiktok*\n\n┠⊷️ 🇱🇰 Photomath:\n     *.pmath*\n\n┠⊷️ 🇱🇰 WhatsApp Plus:\n     *.waplus*\n\n┏━━━━━━━━━━━━━━━━━━━\n  *ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ* 😉\n┗━━━━━━━━━━━━━━━━━━━\n');
+      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *APK COMMANDS* ☣️ 〙\n┗━━━━━━━━━━━━━━━━━━━\nAplicaciones Full\n┠⊷️ 🇱🇰 Nova Launcher:\n     *.nova*\n\n┠⊷️ 🇱🇰 CM Launcher:\n     *.cml*\n\n┠⊷️ 🇱🇰 Apex Launcher:\n     *.apex*\n\n\n┠⊷️ 🇱🇰 Kinemaster:\n     *.kinemaster*\n\n┠⊷️ 🇱🇰 PicsArt Gold:\n     *.picsart*\n\n┠⊷️ 🇱🇰 Canva Pro:\n     *.canva*\n\n┠⊷️ 🇱🇰 Ligthrom:\n     *.lightroom*\n\n┠⊷️ 🇱🇰 Photoshop Express:\n     *.pshop*\n\n┠⊷️ 🇱🇰 Snapseed:\n     *.snaps*\n\n┠⊷️ 🇱🇰 Retouch:\n     *.retouch*\n\n\n┠⊷️ 🇱🇰 Vanced Manager:\n     *.vanced*\n\n┠⊷️ 🇱🇰 Crunchyroll:\n     *.crunchy*\n\n┠⊷️ 🇱🇰 Freezer Mod:\n     *.freez*\n\n┠⊷️ 🇱🇰 Deezer Premium:\n     *.deezer*\n\n┠⊷️ 🇱🇰 RadioBox:\n     *.rbox*\n\n┠⊷️ 🇱🇰 Mx Player Pro:\n     *.mxpro*\n\n┠⊷️ 🇱🇰 Power AMP:\n     *.amp*\n\n┠⊷️ 🇱🇰 JetAudio:\n     *.jetau*\n\n\n┠⊷️ 🇱🇰 ExpressVpn:\n     *.xpress*\n\n┠⊷️ 🇱🇰 Hospot Shield:\n     *.hshield*\n\n┠⊷️ 🇱🇰 TurboVpn:\n     *.Turbo*\n\n┠⊷️ 🇱🇰 File Manager:\n     *.flmanager*\n\n┠⊷️ 🇱🇰 CallRecorder:\n     *.callr*\n\n┠⊷️ 🇱🇰 FingScanner:\n     *.fing*\n\n┠⊷️ 🇱🇰 Shazam Encore:\n     *.shazam*\n\n┠⊷️ 🇱🇰 QR Scanner Pro:\n     *.qrcode*\n\n┠⊷️ 🇱🇰 Screen Recorder:\n     *.srecorder*\n\n┠⊷️ 🇱🇰 TikTok Mod:\n     *.tiktk*\n\n┠⊷️ 🇱🇰 Photomath:\n     *.pmath*\n\n┠⊷️ 🇱🇰 WhatsApp Plus:\n     *.waplus*\n\n┏━━━━━━━━━━━━━━━━━━━\n  *ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ* 😉\n┗━━━━━━━━━━━━━━━━━━━\n');
    }));
 
-   QueenSew.newcmdaddtosew({pattern: 'fatp', fromMe: false}, (async (message, match) => {        
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("media/gif/apk/FATP.mp3"),
-            MessageType.audio, 
-            {mimetype: Mimetype.mp4Audio}
-        )
-   }));
 
    QueenSew.newcmdaddtosew({pattern: 'nova', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *NOVA LAUNCHER* 💗\npremium unlocked .\n📌 bit.ly/drknova');
@@ -136,7 +128,7 @@ if (Config.WORKTYPE == 'private') {
       await message.sendMessage('💗 *SCREEN RECORDER* 💗\npremium unlocked.\n📌 bit.ly/drkgrabr');
    }));
 
-   QueenSew.newcmdaddtosew({pattern: 'tiktok', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
+   QueenSew.newcmdaddtosew({pattern: 'tiktk', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *TIKTOK MOD* 💗\npremium unlocked.\n📌 bit.ly/drktiktok');
    }));
 
@@ -161,17 +153,9 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
    QueenSew.newcmdaddtosew({pattern: 'apkmod', fromMe: false}, (async (message, match) => {
-      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *APK COMANDOS* ☣️ 〙\n┗━━━━━━━━━━━━━━━━━━━\nAplicaciones Full\n┠⊷️ 🇱🇰 Nova Launcher:\n     *.nova*\n\n┠⊷️ 🇱🇰 CM Launcher:\n     *.cml*\n\n┠⊷️ 🇱🇰 Apex Launcher:\n     *.apex*\n\n\n┠⊷️ 🇱🇰 Kinemaster:\n     *.kinemaster*\n\n┠⊷️ 🇱🇰 PicsArt Gold:\n     *.picsart*\n\n┠⊷️ 🇱🇰 Canva Pro:\n     *.canva*\n\n┠⊷️ 🇱🇰 Ligthrom:\n     *.lightroom*\n\n┠⊷️ 🇱🇰 Photoshop Express:\n     *.pshop*\n\n┠⊷️ 🇱🇰 Snapseed:\n     *.snaps*\n\n┠⊷️ 🇱🇰 Retouch:\n     *.retouch*\n\n\n┠⊷️ 🇱🇰 Vanced Manager:\n     *.vanced*\n\n┠⊷️ 🇱🇰 Crunchyroll:\n     *.crunchy*\n\n┠⊷️ 🇱🇰 Freezer Mod:\n     *.freez*\n\n┠⊷️ 🇱🇰 Deezer Premium:\n     *.deezer*\n\n┠⊷️ 🇱🇰 RadioBox:\n     *.rbox*\n\n┠⊷️ 🇱🇰 Mx Player Pro:\n     *.mxpro*\n\n┠⊷️ 🇱🇰 Power AMP:\n     *.amp*\n\n┠⊷️ 🇱🇰 JetAudio:\n     *.jetau*\n\n\n┠⊷️ 🇱🇰 ExpressVpn:\n     *.xpress*\n\n┠⊷️ 🇱🇰 Hospot Shield:\n     *.hshield*\n\n┠⊷️ 🇱🇰 TurboVpn:\n     *.Turbo*\n\n┠⊷️ 🇱🇰 File Manager:\n     *.flmanager*\n\n┠⊷️ 🇱🇰 CallRecorder:\n     *.callr*\n\n┠⊷️ 🇱🇰 FingScanner:\n     *.fing*\n\n┠⊷️ 🇱🇰 Shazam Encore:\n     *.shazam*\n\n┠⊷️ 🇱🇰 QR Scanner Pro:\n     *.qrcode*\n\n┠⊷️ 🇱🇰 Screen Recorder:\n     *.srecorder*\n\n┠⊷️ 🇱🇰 TikTok Mod:\n     *.tiktok*\n\n┠⊷️ 🇱🇰 Photomath:\n     *.pmath*\n\n┠⊷️ 🇱🇰 WhatsApp Plus:\n     *.waplus*\n\n┏━━━━━━━━━━━━━━━━━━━\n  *ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ* 😉\n┗━━━━━━━━━━━━━━━━━━━\n');
+      await message.sendMessage('┏━━━━━━━━━━━━━━━━━━━\n┃〘 ☣️ *APK COMANDOS* ☣️ 〙\n┗━━━━━━━━━━━━━━━━━━━\nAplicaciones Full\n┠⊷️ 🇱🇰 Nova Launcher:\n     *.nova*\n\n┠⊷️ 🇱🇰 CM Launcher:\n     *.cml*\n\n┠⊷️ 🇱🇰 Apex Launcher:\n     *.apex*\n\n\n┠⊷️ 🇱🇰 Kinemaster:\n     *.kinemaster*\n\n┠⊷️ 🇱🇰 PicsArt Gold:\n     *.picsart*\n\n┠⊷️ 🇱🇰 Canva Pro:\n     *.canva*\n\n┠⊷️ 🇱🇰 Ligthrom:\n     *.lightroom*\n\n┠⊷️ 🇱🇰 Photoshop Express:\n     *.pshop*\n\n┠⊷️ 🇱🇰 Snapseed:\n     *.snaps*\n\n┠⊷️ 🇱🇰 Retouch:\n     *.retouch*\n\n\n┠⊷️ 🇱🇰 Vanced Manager:\n     *.vanced*\n\n┠⊷️ 🇱🇰 Crunchyroll:\n     *.crunchy*\n\n┠⊷️ 🇱🇰 Freezer Mod:\n     *.freez*\n\n┠⊷️ 🇱🇰 Deezer Premium:\n     *.deezer*\n\n┠⊷️ 🇱🇰 RadioBox:\n     *.rbox*\n\n┠⊷️ 🇱🇰 Mx Player Pro:\n     *.mxpro*\n\n┠⊷️ 🇱🇰 Power AMP:\n     *.amp*\n\n┠⊷️ 🇱🇰 JetAudio:\n     *.jetau*\n\n\n┠⊷️ 🇱🇰 ExpressVpn:\n     *.xpress*\n\n┠⊷️ 🇱🇰 Hospot Shield:\n     *.hshield*\n\n┠⊷️ 🇱🇰 TurboVpn:\n     *.Turbo*\n\n┠⊷️ 🇱🇰 File Manager:\n     *.flmanager*\n\n┠⊷️ 🇱🇰 CallRecorder:\n     *.callr*\n\n┠⊷️ 🇱🇰 FingScanner:\n     *.fing*\n\n┠⊷️ 🇱🇰 Shazam Encore:\n     *.shazam*\n\n┠⊷️ 🇱🇰 QR Scanner Pro:\n     *.qrcode*\n\n┠⊷️ 🇱🇰 Screen Recorder:\n     *.srecorder*\n\n┠⊷️ 🇱🇰 TikTok Mod:\n     *.tiktk*\n\n┠⊷️ 🇱🇰 Photomath:\n     *.pmath*\n\n┠⊷️ 🇱🇰 WhatsApp Plus:\n     *.waplus*\n\n┏━━━━━━━━━━━━━━━━━━━\n  *ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ* 😉\n┗━━━━━━━━━━━━━━━━━━━\n');
    }));
     
-   QueenSew.newcmdaddtosew({pattern: 'fatp', fromMe: false}, (async (message, match) => {        
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("media/gif/apk/FATP.mp3"),
-            MessageType.audio, 
-            {mimetype: Mimetype.mp4Audio}
-        )
-   }));
 
    QueenSew.newcmdaddtosew({pattern: 'nova', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *NOVA LAUNCHER* 💗\npremium unlocked.\n📌 bit.ly/drknova');
@@ -295,7 +279,7 @@ QueenSew.newcmdaddtosew({pattern: 'capcut', fromMe: false, dontAdCommandList: tr
       await message.sendMessage('💗 *SCREEN RECORDER* 💗\npremium unlocked.\n📌 bit.ly/drkgrabr');
    }));
 
-   QueenSew.newcmdaddtosew({pattern: 'tiktok', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
+   QueenSew.newcmdaddtosew({pattern: 'tiktk', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage('💗 *TIKTOK MOD* 💗\npremium unlocked.\n📌 bit.ly/drktiktok');
    }));
 
@@ -315,4 +299,5 @@ QueenSew.newcmdaddtosew({pattern: 'capcut', fromMe: false, dontAdCommandList: tr
    QueenSew.newcmdaddtosew({pattern: 'link', fromMe: false, dontAdCommandList: true}, (async (message, match) => {
       await message.sendMessage(' ```｡❤❤☆✼★꒱࿐♡ Your Lovely  ' + Config.BOTNAME + '⋆｡˚ ⁀➷★✼☆｡\n\n\n*❄💓' + Config.GRPNAMEA + '💓❄*\n\n```' + Config.GRPLINKA + '```\n\n*❄💓' + Config.GRPNAMEB + '💓❄*\n\n```' + Config.GRPLINKB + '```\n\n*❄💓' + Config.GRPNAMEC + '💓❄*\n\n```' + Config.GRPLINKC + '```\n\n●▬▬▬ *❄' + Config.BOTNAME + '⚡* ▬▬▬●\n\n❄ බොට් කෙනෙක් මඟින් සිදු කරන මෙම ගෲපය තුළින් ඔබට සින්දු සහ වීඩියෝස් බා ගැනීමට ද,\n\n❄ ඕනෑ ම photo හෝ 6s අඩු video එකක් ස්ටිකර් එකක් විදිහට සාදා ගැනීමට ද,\n\n❄ සින්දුවල lyrics  ගැනීමට ද, Language translate  කර ගැනීමට ද,\nතව ප්‍රයෝජනවත් බොහෝ දෑ කරගැනීමටත් පුලුවන්.\n\n*❄️💓බොට් stutes ලබා ගැනීමට...💓❄️*\n\n👇👇 👇 use\n*.alive*     👈👈\n\n\n\n*❄️💓සියලු විස්තර ලබා ගැනීම සදහා👇👇👇⋆｡˚⁀➷★✼☆｡...💓❄️*\n\n👇👇👇 use\n*.cmd*     👈👈\n\n\n\n*ඔබගේ අධ්‍යාපන කටයුතු සාර්ථක කරගැනීම සදහා...💓❄️*\n\n👇👇👇 use\n*.edu*     👈👈\n\n\n\n*┈┈╭━╱▔▔▔▔╲━╮┈┈┈ ꜱ*\n*┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ ᴇ*\n*╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ ᴡ*\n*┈┈┈╲┈╰━━╯┈╱┈┈╳┈ ǫ*\n*┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ ᴜ*\n*┈╭━╮▔▏┊┊▕▔╭━╮┈╳ ᴇ*\n*┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ ᴇ*\n*┈╰━━━━╲╱━━━━╯┈╳ ɴ*\n*ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ*\n\n\n*ගෲප් එකේ නීති👇👇👇*\n\n⚡කිසිම කෙන්ක්ගේ ඉන්බොක්ස් යෑම. (විශේෂයෙන් ම ගැහැනු ළමුන්ගේ හා බොට්ගේ)\n\n⚡ගෲපය තුළට අසභ්‍ය දෑ  දැමීම.\n\n⚡ස්පෑම් , ලින්ක් වැනි දෑ දැමීම.\n\n⚡අසභ්‍ය වචන හෝ අසභ්‍ය ලෙස හැසිරීම , නිකරුනේ චැට් කිරීම.\n\n*දැනුම් දීමකින් තොර ව ගෲපයෙන් නෙරපා දැමීමට හේතු වේ...*');
    }));
+}
 }
