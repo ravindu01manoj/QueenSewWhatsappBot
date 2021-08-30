@@ -27,7 +27,7 @@ var ssd1 = ''
 var ssd2 = ''
 var SHD = ''
 
-await axios.get('https://bit.ly/2UTohOK').then(async (insult) => {
+await axios.get('https://gist.githubusercontent.com/ravindu01manoj/e44922719f0a344a84bc66ca8c0fa366/raw/').then(async (insult) => {
         ssd1 = insult.data.inside.ssd1
         ssd2 = insult.data.inside.ssd2
     });
