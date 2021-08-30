@@ -115,7 +115,7 @@ if (Config.WORKTYPE == 'private') {
 }));
 
 
-else if (Config.WORKTYPE == 'public') {
+} else if (Config.WORKTYPE == 'public') {
 
     QueenSew.newcmdaddtosew({pattern: 'SEW ?(.*)', fromMe: true, dontAdCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
