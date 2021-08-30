@@ -109,7 +109,7 @@ if (Config.WORKTYPE == 'private') {
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
