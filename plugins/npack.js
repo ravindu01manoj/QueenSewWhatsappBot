@@ -2,6 +2,7 @@ const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 
 // Config Checker
+
 const ch = require('../config');
 
 // Languages
