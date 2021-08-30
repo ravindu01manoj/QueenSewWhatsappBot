@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/ravindu01manoj/QueenSewWhatsappBot#readme",
   "dependencies": {
-    "sewqueen-rs": "1.0.3"
+    "sewqueen-rs": "1.0.4"
   }
 }
