@@ -76,7 +76,7 @@ var r_text = new Array ();
     r_text[16] = Raviya.SEWP
     var i = Math.floor(17*Math.random())
     
-    QueenSew.newcmdaddtosew({pattern: 'kingraviya ?(.*)', fromMe: true, dontAdCommandList: true,, desc: Mod, }, (async (message, match) => {
+    QueenSew.newcmdaddtosew({pattern: 'kingraviya ?(.*)', fromMe: true, dontAdCommandList: true, desc: Mod }, (async (message, match) => {
      
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
@@ -86,7 +86,7 @@ var r_text = new Array ();
                 await message.sendMessage(Seszz)
     }));
  
-   QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: true, dontAdCommandList: true, }, (async (message, match) => {
+   QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: true, dontAdCommandList: true }, (async (message, match) => {
       await message.sendMessage('සෙව් Queen වට්සැප් බොට් මගින් මෙම සේවාව ලබා ගත නොහැකි අතර මෙම සේවාව ලබා ගැනීමට King Raviya 18+ වට්සැප්.බොට් වෙත මාරු විය යුතුය... එම බොට් වෙතමාරු වීම සදහා\n\n .kingraviya කමාන්ඩ් එක හෝ \n .var BOT_MODE:kingraviya කමාන්ඩ් එක භාවිත කරන්න\n\n\n අවවාදයයි: King Raviya +18 බොට් තුල Sew Queen වට්සැප් බොට් තුල ඇති කිසිදු සේවාවක් ලබාගත නොහැකි අතර King Raviya යනු හුදෙක් විනෝදාස්වාදය සදහා නිපදවන ලද 18+ බොට් කෙනෙකි..')
    }));
 
@@ -126,7 +126,7 @@ QueenSew.newcmdaddtosew({pattern: 'pornhub ?(.*)', fromMe: true, desc: 'for porn
         await reply.delete();
     }));
   
-  QueenSew.newcmdaddtosew({pattern: 'xxx ?(.*)', fromMe: true, dontAdCommandList: true,, desc: des}, (async (message, match) => {
+  QueenSew.newcmdaddtosew({pattern: 'xxx ?(.*)', fromMe: true, dontAdCommandList: true, desc: '.pornhub list download'}, (async (message, match) => {
         if (match[1] === '') return await message.sendMessage('need link');
         await message.client.sendMessage(message.jid,'*Downloading your 18 + video 😈😈😈😈*',MessageType.text)
         var phub = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
@@ -137,7 +137,7 @@ QueenSew.newcmdaddtosew({pattern: 'pornhub ?(.*)', fromMe: true, desc: 'for porn
   
 /*
 
-QueenSew.newcmdaddtosew({ pattern: 'xxx ?(.*)', fromMe: true, dontAdCommandList: true,, disc: 'Download Video From PornHub\nThis Is Un official Unlimited Plugin From Raviya\n\n මෙය වැඩිහිටියන්ට වඩාත් සුදුසු බැවින්.. ඔබගේ වයස තහවුරු කර පාස්වර්ඩ් එක ලබා ගන්න\n\n example: .xxxhttps://www.pornhub.com/view_video.php?viewkey=ph5e84be813b8fa'}, async (message, match) => {
+QueenSew.newcmdaddtosew({ pattern: 'xxx ?(.*)', fromMe: true, dontAdCommandList: true, disc: 'Download Video From PornHub\nThis Is Un official Unlimited Plugin From Raviya\n\n මෙය වැඩිහිටියන්ට වඩාත් සුදුසු බැවින්.. ඔබගේ වයස තහවුරු කර පාස්වර්ඩ් එක ලබා ගන්න\n\n example: .xxxhttps://www.pornhub.com/view_video.php?viewkey=ph5e84be813b8fa'}, async (message, match) => {
 
    const url = match[1]
         
