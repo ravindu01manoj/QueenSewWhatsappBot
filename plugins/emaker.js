@@ -107,7 +107,7 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd + '```.slballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.slballoon Sew\n\n' +
         command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Sew\n\n' +
         
-        var respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
+        const respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: msg + ' ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'  })
         }));
 
