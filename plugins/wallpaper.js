@@ -16,7 +16,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('wallpaper');
-
+if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
@@ -1918,4 +1918,21 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.CPK})
 
     }));
+    QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: true, dontAdCommandList: true, desc: 'Details For Coder'}, (async (message, match) => {
+    var r_text = new Array ();
+    r_text[0] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    r_text[1] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    var i = Math.floor(2*Math.random())
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '     *CODED BY RAVINDU MANOJ*\n\n❀Contact me: t.me/RavinduManoj\n\n\nYoutube Channel link 👇\n\n*https://youtube.com/channel/UCMrIJUBgoGCnyO2jLyybIWg*\n\n\n👑My Github Hub Profile👑\n\n*https://github.com/Sew01RaviduManoj01KingAndQueen*\n\n\nMy Website\n\nhttps://ravimano381.wixsite.com/ravindumanoj\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'})
+    }));
+    QueenSew.newcmdaddtosew({pattern: 'owner', fromMe: false, dontAdCommandList: true, desc: 'Details For Coder'}, (async (message, match) => {
+    var r_text = new Array ();
+    r_text[0] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    r_text[1] = "https://i.ibb.co/JkjKGTy/temp-user-profile1621662133773.jpg";
+    var i = Math.floor(2*Math.random())
+    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: '     *CODED BY RAVINDU MANOJ*\n\n❀Contact me: t.me/RavinduManoj\n\n\nYoutube Channel link 👇\n\n*https://youtube.com/channel/UCMrIJUBgoGCnyO2jLyybIWg*\n\n\n👑My Github Hub Profile👑\n\n*https://github.com/Sew01RaviduManoj01KingAndQueen*\n\n\nMy Website\n\nhttps://ravimano381.wixsite.com/ravindumanoj\n\n\n\nᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'})
+    }));
+}
 }

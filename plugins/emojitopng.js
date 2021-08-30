@@ -18,7 +18,7 @@ const got = require("got");
 const Config = require('../config');
 const des = "You Can Png From Any Emoji"
 const iii = "Only work with emoji\n ඉමොජි පමණක් එවන්න"
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     SewRavi.newcmdaddtosew({pattern: 'png ?(.*)', fromMe: true, desc: des}, (async (message, match) => {
@@ -53,4 +53,5 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.CPK})
 
     }));
+}
 }

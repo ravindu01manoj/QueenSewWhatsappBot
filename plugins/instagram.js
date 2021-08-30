@@ -19,7 +19,7 @@ const Language = require('../language');
 const { errorMessage, infoMessage } = require('../helpers');
 const Lang = Language.getString('instagram') ;
 
-
+ if (Config.PSW !== 'kingraviya') {
 
 if (Config.WORKTYPE == 'private') {
 
@@ -100,4 +100,5 @@ QueenSew.newcmdaddtosew({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang
   },
 
  )
+}
 }

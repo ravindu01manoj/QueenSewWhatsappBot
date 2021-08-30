@@ -7,7 +7,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
-*/
+
 
 const QueenSew = require('../events')
 const { MessageType } = require('@adiwajshing/baileys')
@@ -46,7 +46,7 @@ if (cn.WORKTYPE == 'private') {
 
     }));
 
-    /*
+    
     QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: true, desc: Tlang.TİKTOK }, async (message, match) => {
 
         const userName = match[1]
@@ -75,7 +75,7 @@ if (cn.WORKTYPE == 'private') {
           )
       },
     )
-    */
+    
 }
 else if (cn.WORKTYPE == 'public') {
 
@@ -127,7 +127,7 @@ else if (cn.WORKTYPE == 'public') {
         });
 
     }));
-    /*
+    
     QueenSew.newcmdaddtosew({ pattern: 'tiktok ?(.*)', fromMe: false, desc: Tlang.TİKTOK }, async (message, match) => {
 
         const userName = match[1]
@@ -184,5 +184,6 @@ else if (cn.WORKTYPE == 'public') {
           )
       },
     )
-    */
+    
 }
+*/

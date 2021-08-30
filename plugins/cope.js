@@ -14,7 +14,7 @@ const SewQueen = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
-
+ 
 SewQueen.newcmdaddtosew({pattern: 'horo ?(.*)', fromMe: false, desc: 'Get the days horosope for your sunsign(ජෝතිශ්‍ය විස්තර ලබා දේ)'}, async (message, match) => {
 	if (match[1] === '') return await message.reply('Invalid Request,Provide your sunsign(වැරදි වේලාවක්,හිරු බැස ගිය වේලාව ඇතුලත් කරන්න!)');
 	const url = `https://horoscope-api.herokuapp.com/horoscope/today/${match[1]}`;

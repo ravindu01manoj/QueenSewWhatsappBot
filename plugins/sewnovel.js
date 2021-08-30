@@ -18,7 +18,7 @@ const fs = require('fs');
 
 const Language = require('../language');
 const Lang = Language.getString('nnvl');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
      
         QueenSew.newcmdaddtosew({pattern: 'novel', fromMe: true, desc: Lang.NNVL}, (async (message, match) => {
@@ -329,4 +329,4 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
 }
-
+}

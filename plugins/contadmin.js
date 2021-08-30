@@ -16,7 +16,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('admincont');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
     QueenSew.newcmdaddtosew({pattern: 'tagadmin', fromMe: true, desc: Lang.CONTADMİN}, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
@@ -56,4 +56,5 @@ else if (Config.WORKTYPE == 'public') {
         });
         await message.client.sendMessage(message.jid,'◻    🔱    *👑 Group Admins 👑*    🔱    ◻\n\n\n' + mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }));
+}
 }

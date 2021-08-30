@@ -19,7 +19,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('unvoice'); // Language support
-
+if (Config.PSW !== 'kingraviya') {
 
 if (Config.WORKTYPE == 'private') {
 
@@ -84,7 +84,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
 
-    QueenSew.newcmdaddtosew({pattern: 'a ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'unvoice ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
@@ -123,3 +123,4 @@ let id = match[1];
     }));
 }
 
+}

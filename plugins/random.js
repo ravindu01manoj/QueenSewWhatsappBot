@@ -30,4 +30,5 @@ QueenSew.newcmdaddtosew({ pattern: 'random ?(.*)', fromMe: false, desc: 'word im
 
     await message.client.sendMessage(message.jid,Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```' + Config.CPK + '```' })
 
+
 }));

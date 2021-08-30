@@ -1,6 +1,12 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Codded by @Ravindu Manoj
+
+Telegram: t.me/RavinduManoj
+Facebook: https://www.facebook.com/ravindu.manoj.79
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+Whats bot - Ravindu Manoj
 */
 
 const QueenSew = require('../events');
@@ -13,7 +19,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('webss');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC}, (async (message, match) => {
@@ -22,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made By t.me/RavinduManoj'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK})
 
     }));
 }
@@ -34,7 +40,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made By t.me/RavinduManoj'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK})
 
     }));
     QueenSew.newcmdaddtosew({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontAdCommandList: true}, (async (message, match) => {
@@ -43,8 +49,8 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made By t.me/RavinduManoj'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: Config.CPK})
 
     }));
 }
-
+}

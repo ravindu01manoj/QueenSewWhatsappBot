@@ -68,7 +68,7 @@ function webp2mp4File(path) {
         }).catch(reject)
     })
 }
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC}, (async (message, match) => {    
@@ -200,3 +200,4 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
     
+}

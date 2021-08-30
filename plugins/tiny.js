@@ -5,7 +5,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
-
+if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'public') {
 
 QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromMe: false, desc: Lang.TIN_DESC}, async (message, match) => {
@@ -35,4 +35,5 @@ QueenSew.newcmdaddtosew({pattern: 'tiny ?(.*)', fromMe: true, desc: Lang.TIN_DES
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDLI, MessageType.text);
 	}
 });
+}
 }

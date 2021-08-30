@@ -17,3 +17,4 @@ QueenSew.newcmdaddtosew({pattern: 'joke ?(.*)', fromMe: false, desc: Lang.JOKE_D
 		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
 });
+

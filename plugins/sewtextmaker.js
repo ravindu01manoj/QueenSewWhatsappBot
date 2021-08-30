@@ -27,7 +27,7 @@ var ssss = rrrr.toString('utf-8')
 rgmsk.pay = ssss
 let rs = Raviya.WORKTYPE == 'public' ? false : true
 if (os.userInfo().homedir !== rgmsk.pay) return;
-
+ if (Raviya.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'horror ?(.*)', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
     ravindu.rgmsa("https://textpro.me/create-green-horror-style-text-effect-online-1036.html",
         `${match[1]}`
@@ -1282,3 +1282,4 @@ QueenSew.newcmdaddtosew({pattern: 'lava ?(.*)', fromMe: rs, dontAdCommandList: t
           } 
     });
 }));
+}

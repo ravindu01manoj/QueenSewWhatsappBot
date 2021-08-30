@@ -7,6 +7,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
+
 */
 
 const QueenSew = require('../events');
@@ -17,7 +18,7 @@ const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('profile');
 
-QueenSew.newcmdaddtosew({pattern: 'kickme', fromMe: true, desc: Lang.KICKME_DESC, onlyGrpSew: true}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'kickme', fromMe: true, dontAdCommandList: true, desc: Lang.KICKME_DESC, onlyGrpSew: true}, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') { 
         await message.client.sendMessage(message.jid,Lang.KICKME,MessageType.text);
         await message.client.groupLeave(message.jid);
@@ -28,7 +29,7 @@ QueenSew.newcmdaddtosew({pattern: 'kickme', fromMe: true, desc: Lang.KICKME_DESC
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'pp', fromMe: true, desc: Lang.PP_DESC}, (async (message, match) => {    
+QueenSew.newcmdaddtosew({pattern: 'pp', fromMe: true, dontAdCommandList: true, desc: Lang.PP_DESC}, (async (message, match) => {    
     if (!message.reply_message || !message.reply_message.image) return await message.client.sendMessage(message.jid,Lang.NEED_PHOTO, MessageType.text);
     
     var load = await message.client.sendMessage(message.jid,Lang.PPING,MessageType.text);
@@ -44,7 +45,7 @@ QueenSew.newcmdaddtosew({pattern: 'pp', fromMe: true, desc: Lang.PP_DESC}, (asyn
     await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_DESC}, (async (message, match) => {   
+QueenSew.newcmdaddtosew({pattern: 'block ?(.*)', fromMe: true, dontAdCommandList: true, desc: Lang.BLOCK_DESC}, (async (message, match) => {   
     if (Config.BLOCKMSG == 'default') {  
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '```, ' + Lang.BLOCKED + '!```', MessageType.text, {
@@ -87,7 +88,7 @@ QueenSew.newcmdaddtosew({pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_
     }
 }));
 
-QueenSew.newcmdaddtosew({pattern: 'unblock ?(.*)', fromMe: true, desc: Lang.UNBLOCK_DESC}, (async (message, match) => { 
+QueenSew.newcmdaddtosew({pattern: 'unblock ?(.*)', fromMe: true, dontAdCommandList: true, desc: Lang.UNBLOCK_DESC}, (async (message, match) => { 
     if (Config.UNBLOCKMSG == 'default') { 
    
         if (message.reply_message !== false) {
@@ -133,7 +134,7 @@ QueenSew.newcmdaddtosew({pattern: 'unblock ?(.*)', fromMe: true, desc: Lang.UNBL
 
 if (Config.WORKTYPE == 'private') {
 
-    QueenSew.newcmdaddtosew({pattern: 'jid ?(.*)', fromMe: true, desc: Lang.JID_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'jid ?(.*)', fromMe: true, dontAdCommandList: true, desc: Lang.JID_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -166,7 +167,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text);
         }
     }));
-    QueenSew.newcmdaddtosew({pattern: 'jid ?(.*)', fromMe: true, desc: Lang.JID_DESC}, (async (message, match) => {    
+    QueenSew.newcmdaddtosew({pattern: 'jid ?(.*)', fromMe: true, dontAdCommandList: true, desc: Lang.JID_DESC}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, Lang.JID.format(message.reply_message.jid.split('@')[0], message.reply_message.jid), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}

@@ -13,6 +13,7 @@ const SEW = "*ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ*\n ඔබේ පෙ
 const fs = require('fs')
 const {MessageType, Mimetype } = require('@adiwajshing/baileys');
 const Config = require('../config')
+ if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'msglv', fromMe: false, desc: SEW }, (async (message, match) => {
 var sewrm = new Array ();
 sewrm [0] = zzaaa
@@ -31,3 +32,4 @@ sewrm [12] = zzaam
 var s = Math.floor(13*Math.random())
 await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/' + sewrm[s] + '.mp3'), MessageType.sticker, { mimetype: Mimetype.webp, quoted: message.data, ptt: false})
 }));
+}

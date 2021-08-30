@@ -7,6 +7,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
+
 */
 
 const QueenSew = require('../events');
@@ -16,7 +17,7 @@ const tesseract = require("node-tesseract-ocr")
 const langs = require('langs');
 const Language = require('../language');
 const Lang = Language.getString('ocr');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'ocr ?(.*)', fromMe: true, desc: Lang.OCR_DESC}, (async (message, match) => { 
@@ -124,4 +125,5 @@ else if (Config.WORKTYPE == 'public') {
 
         return await message.reply(Lang.RESULT.format(dil[2], result));
     }));
+}
 }

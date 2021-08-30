@@ -17,7 +17,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('weather');
-
+if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: true}, async (message, match) => {
@@ -75,4 +75,5 @@ if (Config.WORKTYPE == 'public') {
 	    }
     });
 
+}
 }

@@ -23,6 +23,7 @@ const pipeline = promisify(stream.pipeline);
 const Language = require('../language');
 const Lang = Language.getString('removebg');
 
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC}, (async (message, match) => {    
@@ -99,4 +100,5 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid,fs.readFileSync('rbg.png'), MessageType.document, {filename: '👑Queen👑Sew👑.png', mimetype: Mimetype.png});
         await load.delete();
     }));
+}
 }

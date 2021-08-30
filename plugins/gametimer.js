@@ -12,7 +12,7 @@ Whats bot - Ravindu Manoj
 const QueenSew = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
-
+ if (Config.PSW !== 'kingraviya') {
 function editDistance(comm, wr) {
   comm = comm.toLowerCase();
   wr = wr.toLowerCase();
@@ -103,6 +103,7 @@ var OYUN = {
         }
     }
 }
+
 QueenSew.newcmdaddtosew({pattern: 'wordgame$', fromMe: false, desc: OYUN.description, warn: OYUN.caution}, (async (message, match) => {
     const id = message.jid
     const txt = MessageType.text
@@ -382,7 +383,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: true, dontAdCommandList: true, delo
         }
     }
 }));
-
+ }
 /* Codded by @Ravindu Manoj
 
 Telegram: t.me/RavinduManoj

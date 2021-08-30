@@ -19,7 +19,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('conventer');
-
+if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {    
@@ -778,4 +778,5 @@ else if (Config.WORKTYPE == 'public') {
             return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
         }
     }));
+}
 }

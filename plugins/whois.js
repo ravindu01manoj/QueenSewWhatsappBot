@@ -8,7 +8,7 @@ const CON = require('../config');
 
 const Language = require('../language'); 
 const Lang = Language.getString('whois'); // Language Support
-
+if (CON.PSW !== 'kingraviya') {
 if (CON.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => { 
@@ -116,4 +116,5 @@ else if (CON.WORKTYPE == 'public') {
             );
         }
     });
+}
 }

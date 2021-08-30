@@ -35,7 +35,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-
+if (conf.PSW !== 'kingraviya') {
 if (conf.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
@@ -149,4 +149,5 @@ if (conf.WORKTYPE == 'public') {
 
 
     }));
+}
 }

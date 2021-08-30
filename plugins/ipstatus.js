@@ -19,7 +19,7 @@ const ISP = "ISP :"
 const MOBILE = "MOBILE :"
 const PROXY = "PROXY :"
 const NOT_FOUNDIP = "```Sorry,I could not your IP 😖```"
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
   QueenSew.newcmdaddtosew({pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP' ,fromMe: true}, async (message, match) => {
@@ -83,4 +83,5 @@ else if (Config.WORKTYPE == 'public') {
 		return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text);
 	}
  });
+}
 }

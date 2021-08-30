@@ -21,7 +21,7 @@ const SEWB = "❄ ```Rolling Dice!``` 🎲"
 
 // Results
 const SEWC = "```Dice Rolled:``` "
-
+ if (con.PSW !== 'kingraviya') {
 
     if (con.WORKTYPE === 'private') {
 
@@ -66,4 +66,5 @@ const SEWC = "```Dice Rolled:``` "
             await message.client.sendMessage(message.jid, SEWC + `${r_text[i]}`, MessageType.text);
 
         }));
+    }
     }

@@ -16,7 +16,7 @@ const fs = require('fs');
 const axios = require('axios');
 const FormData = require('form-data');
 const ffmpeg = require('fluent-ffmpeg');
-
+ if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'find', fromMe: false, desc: 'song find plugin By t.me/RavinduManoj'}, (async (message, match) => {
     if (message.reply_message === false) return await message.client.sendMessage(message.jid, 'replay to a audio!', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
@@ -49,3 +49,4 @@ QueenSew.newcmdaddtosew({pattern: 'find', fromMe: false, desc: 'song find plugin
     });
 
 }));
+}

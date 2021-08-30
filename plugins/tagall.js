@@ -16,7 +16,7 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('tagall');
 
-
+if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'tag ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     if (match[1] !== '') {
@@ -56,3 +56,4 @@ QueenSew.newcmdaddtosew({pattern: 'tag ?(.*)', fromMe: true, desc: Lang.TAGALL_D
         await message.client.sendMessage(message.jid,message.reply_message.text, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
     }
 }));
+}

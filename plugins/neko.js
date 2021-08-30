@@ -16,7 +16,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('nekobin');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'neko', fromMe: true, desc: Lang.NEKO_DESC}, (async (message, match) => {
@@ -70,4 +70,5 @@ else if (Config.WORKTYPE == 'public') {
         }
        
     }));
+}
 }

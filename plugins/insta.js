@@ -11,7 +11,7 @@ const { errorMessage, infoMessage } = require('../helpers')
 const Language = require('../language');
 const Lang = Language.getString('instagram')
 
-
+ 
 QueenSew.newcmdaddtosew({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
 
     const userName = match[1]
@@ -124,3 +124,4 @@ QueenSew.newcmdaddtosew({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DES
         });
 
 }));
+

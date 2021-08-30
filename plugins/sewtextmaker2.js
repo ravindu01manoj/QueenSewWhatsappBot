@@ -31,7 +31,7 @@ const TEXTMAKE = require('../textsew');
 const SLINK = TEXTMAKE.getrule('slink');
 const FILE = TEXTMAKE.getrule('sfile');
 const SDISC = TEXTMAKE.getrule('sewdisc');
-
+ if (Raviya.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: '5text', fromMe: rs, dontAdCommandList: true}, (async (message, match) => {
 
     var r_text = new Array ();
@@ -1562,3 +1562,4 @@ QueenSew.newcmdaddtosew({pattern: 'penta ?(.*)', fromMe: rs, dontAdCommandList: 
           } 
     });
 }));
+}

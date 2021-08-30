@@ -18,12 +18,13 @@ const exec = require('child_process').exec;
 const Heroku = require('heroku-client');
 const { PassThrough } = require('stream');
 const heroku = new Heroku({ token: Config.HEROKU.API_KEY })
-
+const Pach = require('sewqueen-rs');
 const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-QueenSew.newcmdaddtosew({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'update$', fromMe: true, dontAdCommandList: true, desc: Lang.UPDATER_DESC}, (async (message, match) => {
+    await Pach.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -35,7 +36,7 @@ QueenSew.newcmdaddtosew({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DE
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '💠 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' 👑' + commit.author_name + '👑\n\n';
+                degisiklikler += '▫️ ' + commit.date.substring(0, 10) + '\n: ' + commit.message + '\n ➳' + commit.author_name + '➣\n\n';
             }
         );
         
@@ -45,8 +46,12 @@ QueenSew.newcmdaddtosew({pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DE
         ); 
     }
 }));
+var Action = ''
+if (Config.LANG == 'SI') Action = '*✨SEW QUEEN✨ අප්ඩේට්වෙමින් පවතියි!*'
+if (Config.LANG == 'EN') Action = '*✨Sew Queen✨ is Updating!*'
 
-QueenSew.newcmdaddtosew({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+QueenSew.newcmdaddtosew({pattern: 'update now$', fromMe: true, dontAdCommandList: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+    await Pach.startwhatsasena()
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -55,6 +60,8 @@ QueenSew.newcmdaddtosew({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE
             Lang.UPDATE, MessageType.text
         );    
     } else {
+        var on_progress = false
+        if (on_progress) return await message.client.sendMessage(message.jid,Action,MessageType.text)
         var guncelleme = await message.reply(Lang.UPDATING);
         if (Config.HEROKU.HEROKU) {
             try {
@@ -73,7 +80,7 @@ QueenSew.newcmdaddtosew({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE
             var git_url = app.git_url.replace(
                 "https://", "https://api:" + Config.HEROKU.API_KEY + "@"
             )
-            
+            on_progress = true
             try {
                 await git.addRemote('heroku', git_url);
             } catch { console.log('heroku remote ekli'); }
@@ -92,7 +99,7 @@ QueenSew.newcmdaddtosew({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid,'*❌ Güncelleme başarısız oldu!*\n*Hata:* ```' + err + '```', MessageType.text);
+                        message.jid,'*❌ Unsuccessful!*\n*why:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();

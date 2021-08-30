@@ -15,7 +15,7 @@ const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
 const need = "*type some word after command*"
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({ pattern: 'logogalaxy ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
@@ -77,4 +77,5 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
     
+}
 }

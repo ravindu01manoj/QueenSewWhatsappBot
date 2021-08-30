@@ -21,3 +21,4 @@ QueenSew.newcmdaddtosew({pattern: 'quote ?(.*)', fromMe: false, desc: QUOTE_DESC
 		return await message.client.sendMessage(message.jid, NOT_FOUNDA, MessageType.text);
 	}
 });
+

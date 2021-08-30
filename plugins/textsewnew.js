@@ -24,7 +24,7 @@ if (Config.LANG == 'SI') desc_msg = 'ටෙක්ස්ට් මේකර් �
 if (Config.LANG == 'EN') desc_msg = 'Shows textmaker tools with unlimited access.'
 
 let wk = Config.WORKTYPE == 'public' ? false : true
-
+if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: '1text$', fromMe: wk, desc: desc_msg}, (async (message, match) => {
     var t1 = ''
     var t2 = ''
@@ -791,4 +791,4 @@ QueenSew.newcmdaddtosew({pattern: 'sewcup ?(.*)', fromMe: wk, dontAdCommandList:
           } 
     });
 }));
-
+}

@@ -15,7 +15,7 @@ const fs = require('fs');
 const axios = require('axios');
 const Config = require('../config');
 const need = "*type some word after command"
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({ pattern: 'freefire ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
@@ -27,6 +27,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
     }));
+    /*
     QueenSew.newcmdaddtosew({ pattern: 'hacker ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
@@ -36,6 +37,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
     }));
+    */
     QueenSew.newcmdaddtosew({ pattern: 'mail ?(.*)', fromMe: true,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
@@ -58,6 +60,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
     }));
+    /*
     QueenSew.newcmdaddtosew({ pattern: 'hacker ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
@@ -67,6 +70,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*' + Config.CPK + '*' })
 
     }));
+    */
     QueenSew.newcmdaddtosew({ pattern: 'mail ?(.*)', fromMe: false,dontAdCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
@@ -79,3 +83,4 @@ else if (Config.WORKTYPE == 'public') {
     
 }
 
+}

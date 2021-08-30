@@ -17,7 +17,7 @@ const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('memes');
-
+ if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
 
     QueenSew.newcmdaddtosew({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
@@ -46,12 +46,12 @@ if (Config.WORKTYPE == 'private') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'sew-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('sew-meme.png'), MessageType.image, {filename: 'sew-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
             await info.delete();    
         });
     }));
@@ -84,12 +84,12 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'sew-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('sew-meme.png'), MessageType.image, {filename: 'sew-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
             await info.delete();    
         });
     }));
@@ -119,13 +119,14 @@ else if (Config.WORKTYPE == 'public') {
     
 	    memeMaker({
             image: location,         
-            outfile: 'asena-meme.png',
+            outfile: 'sew-meme.png',
             topText: topText,
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
+            await message.client.sendMessage(message.jid, fs.readFileSync('sew-meme.png'), MessageType.image, {filename: 'sew-meme.png', mimetype: Mimetype.png, caption: '*' + Config.CPK + '*'});
             await info.delete();    
         });
     }));
+}
 }
