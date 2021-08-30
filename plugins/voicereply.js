@@ -37,7 +37,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
         VOICE_on = 'ක්‍රියාත්මක විය'
         VOICE_off = 'ක්‍රියා විරහිත විය'
     }
-     if (Config.PSW !== 'kingraviya') {
+     if (config.PSW !== 'kingraviya') {
     QueenSew.newcmdaddtosew({pattern: 'voicereply ?(.*)', fromMe: true, desc: l_dsc, usage: '.voicereply on / off' }, (async (message, match) => {
         if (match[1] == 'off') {
                 await heroku.patch(baseURI + '/config-vars', { 
