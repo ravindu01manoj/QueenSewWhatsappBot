@@ -56,7 +56,7 @@ const convertToWav = file => {
         .format('wav')
         .save('output.wav')
 }
- if (Config.PSW !== 'kingraviya') {
+ if (conf.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({on: 'text', fromMe: wk, dontAdCommandList: true, deleteCommand: false}, (async (message, match) => {
     if (message.message.startsWith('Sew') && conf.FULLSEW !== 'true') {        
         var unique_ident = message.client.user.jid.split('@')[0]      
