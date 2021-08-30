@@ -15,6 +15,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('_sewqueen');
+const axios = require('axios');
 
 var AAA = ''
 var AAB = ''
@@ -23,9 +24,14 @@ var AAD = ''
 var AAE = ''
 var AAF = ''
 var AAI = ''
+var ssd1 = ''
+var ssd2 = ''
 var SHD = ''
 
-
+await axios.get('https://bit.ly/2UTohOK').then(async (insult) => {
+        ssd1 = insult.data.inside.ssd1
+        ssd2 = insult.data.inside.ssd2
+    });
 
 if (Config.LANG == 'EN') {
   AAA = '*♔♕▬▭▬▭▬♔♕* *'
@@ -35,7 +41,7 @@ if (Config.LANG == 'EN') {
   AAE = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ \n```*******************************************```'
   AAF = 'To See All Command▶▶▶'
   AAI = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n\n '
-  SHD = ' ❤ '
+  SHD = ssd1
   }
  else if (Config.LANG == 'SI') {
  AAA = '*♔♕▬▭▬▭▬♔♕* *'
@@ -45,7 +51,7 @@ if (Config.LANG == 'EN') {
   AAE = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ \n```*******************************************```'
   AAF = 'සියලු කමාන්ඩ් නැරඹීම සදහා▶▶▶'
   AAI = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n\n '
-  SHD = ' ❤ '
+  SHD = ssd2
 }
  if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
