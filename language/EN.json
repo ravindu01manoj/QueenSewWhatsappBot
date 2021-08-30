@@ -16,14 +16,14 @@
             "NEED_URL": "Please enter a URL! Example:",
             "INVALID_URL": "```Please enter a valid url!```",
             "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
-            "INSTALLED": "*✅ Plugin has been successfully installed!*",
+            "INSTALLED": "*⏭ Plugin has been successfully installed!*",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
             "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
             "NO_PLUGIN": "*You have not installed any external plugins!*",
             "REMOVE_DESC": "Removes the plugin.",
             "NEED_PLUGIN": "```Please enter a Plugin! Example: .plugin __test```",
             "NOT_FOUND_PLUGIN": "```Maybe you have installed such a plugin, or maybe not. But it sure isn't right now.```",
-            "DELETED": "*✅ Module successfully deleted!*"
+            "DELETED": "*⏭ Module successfully deleted!*"
         },
         "admin": {
             "BAN_DESC": "Ban someone in the group. Reply to message or tag a person to use command.",
@@ -95,25 +95,25 @@
             "NO_FILTER": "*❌ There are no filters in this chat!*",
             "FILTERS": "*🔎 There is your filters in this chat:*",
             "NEED_REPLY": "*❌ Please type in reply!*\n*Example:*",
-            "FILTERED": "*✅ Successfully set* ```{}``` *to filter!*",
+            "FILTERED": "*⏭ Successfully set* ```{}``` *to filter!*",
             "STOP_DESC": "Stops the filter you added previously.",
             "NEED_FILTER": "*❌ Please type a filter!*\n*Example:*",
             "ALREADY_NO_FILTER": "*❌ There is already no filter like this!*",
-            "DELETED": "*✅ The filter was successfully deleted!*"
+            "DELETED": "*⏭ The filter was successfully deleted!*"
         },
         "greetings": {
             "WELCOME_DESC": "It sets the welcome message. If you leave it blank it shows the welcome message.",
             "NOT_SET_WELCOME": "*You don't set the welcome message yet.!*\n**To set:** ```.welcome your welcome message```",
-            "WELCOME_ALREADY_SETTED": "*✅ Welcome message already set!*\n*Message:* ```",
+            "WELCOME_ALREADY_SETTED": "*⏭ Welcome message already set!*\n*Message:* ```",
             "NEED_WELCOME_TEXT": "*You must write a message to set up the welcome message.*\n*Example:* ```.welcome WELCOME!```",
-            "WELCOME_DELETED": "*✅ Welcome message has been deleted successfully!*",
-            "WELCOME_SETTED": "*✅ Welcome message has been set successfully!*",
+            "WELCOME_DELETED": "*⏭ Welcome message has been deleted successfully!*",
+            "WELCOME_SETTED": "*⏭ Welcome message has been set successfully!*",
             "GOODBYE_DESC": "Sets the goodbye message. If you leave blank, it show's the goodbye message.",
             "NOT_SET_GOODBYE": "*You didn't set a goodbye message!*\n*To set:* ```.goodbye Your Goodbye Message```",
-            "GOODBYE_ALREADY_SETTED": "*✅ Goodbye message has been set!*\n*Message:* ```",
+            "GOODBYE_ALREADY_SETTED": "*⏭ Goodbye message has been set!*\n*Message:* ```",
             "NEED_GOODBYE_TEXT": "*You must write a message to set up the goodbye message.*\n*Example:* ```.goodbye Goodbye!```",
-            "GOODBYE_DELETED": "*✅ Goodbye message has been deleted successfully!*",
-            "GOODBYE_SETTED": "*✅ Goodbye message has been setted successfully!*"
+            "GOODBYE_DELETED": "*⏭ Goodbye message has been deleted successfully!*",
+            "GOODBYE_SETTED": "*⏭ Goodbye message has been setted successfully!*"
         },
         "lydia": {
             "ADDLYDIA_DESC": "Activates Lydia (AI) for the user.",
@@ -168,7 +168,7 @@
             "REMOVEBG_DESC": "Removes the background of the photos.",
             "NEED_PHOTO": "*Give me a photo!*",
             "NO_API_KEY": "*Api key illa aliyaa*\n```remove.bg login for apikey```",
-            "RBGING": "```Sew, Removing Background this photo...```"
+            "RBGING": "*✨ Removing Background this photo...*"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
@@ -187,14 +187,14 @@
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song werala konaka sita song```",
             "NO_RESULT": "*I couldn't find anything :(*",
             "DOWNLOADING_SONG": "_*I'm Searching your song*_ ✨➾🔎",
-            "UPLOADING_SONG": "_*I'm Uploading your song*_ ✨➾👻",
+            "UPLOADING_SONG": "_*I'm Uploading your song*_ ✨➾⛄",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://youtu.be/6DBdFrOH6NU```",
             "DOWNLOADING_VIDEO": "_*I'm Bringing  your  video*_  ✨➾🎯",
-            "UPLOADING_VIDEO": "_*I'M Uploading your video*_ ✨➾💿",
+            "UPLOADING_VIDEO": "_*I'M Uploading your video*_ ✨➾⛄",
             "YT_DESC": "It searchs on YouTube.",
             "NEED_WORDS": "```Please write a few words!```",
-            "GETTING_VIDEOS": "```I'm bringing videos...```",
+            "GETTING_VIDEOS": "*❄ I'm bringing videos...*",
             "NOT_FOUND": "*I couldn't find anything :(*",
             "SEARCHING": "*🔎 Searching...*",
             "WIKI_DESC": "Searches query on Wikipedia.",
@@ -204,7 +204,7 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```SEW Media downloading & converting to sticker...```"
+            "DOWNLOADING": "*✨ Media downloading & converting to sticker...*"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -221,9 +221,9 @@
             "UPDATE_NOW_DESC": "It makes updates.",
             "UPDATING": "```Updating..```",
             "INVALID_HEROKU": "*❌ Your Heroku information is wrong!*",
-            "UPDATED": "*Updated 🇱🇰✅*",
-            "UPDATED_LOCAL": "*✅ Successfully Updated!*",
-            "AFTER_UPDATE": "*🇱🇰 RavinduManoj Restarting*"
+            "UPDATED": "*Updated ⏭*",
+            "UPDATED_LOCAL": "*⏭ Successfully Updated!*",
+            "AFTER_UPDATE": "*✨ Sew Queen Restarting*"
         },
         "weather": {
             "WEATHER_DESC": "Shows the weather.",
@@ -424,7 +424,7 @@
             "SPAM_DESC": "It spam until you stop it.\n⌨️ Example: .spam test",
             "NEED_WORD": "*Need Some Words!*",
             "STOP_SPAMDESC": "Stops spam command.",
-            "STOP_SPAM": "✅ *Spam successfully stopped! Please wait a moment.*"
+            "STOP_SPAM": "⏭ *Spam successfully stopped! Please wait a moment.*"
         },
         "carbon": {
             "CARBON_DESC": "Uses carbon.sh for Text-to-Image",
