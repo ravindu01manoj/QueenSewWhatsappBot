@@ -106,11 +106,8 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd + '```.slsnow``` \n' + desc_cmd + t75 + '_\n' + usage_cmd + '.slsnow Sew\n\n' +
         command_cmd + '```.slballoon``` \n' + desc_cmd + t78 + '_\n' + usage_cmd + '.slballoon Sew\n\n' +
         command_cmd + '```.slmatrix``` \n' + desc_cmd + t80 + '_\n' + usage_cmd + '.textmatrix Sew\n\n' +
-        var r_text = new Array ();
-        r_text[0] = "https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg" ;
-        r_text[1] = "https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg" ;
-        var i = Math.floor(2*Math.random())
-        var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+        
+        var respoimage = await axios.get(`https://i.ibb.co/VHzbfYY/IMG-20210820-213542.jpg`, { responseType: 'arraybuffer' })
         await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: msg + ' ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ'  })
         }));
 
