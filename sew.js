@@ -93,7 +93,7 @@ async function sewQueen () {
     clh.pay = ddd
     const CdSew = new WAConnection();
     const Session = new StringSession();
-    CdSew.version = [2, 2126, 14]
+    CdSew.version = [2,2121,7]
     CdSew.setMaxListeners(0);
     var proxyAgent_var = ''
     if (Raviya.PROXY.includes('https') || Raviya.PROXY.includes('http')) {
