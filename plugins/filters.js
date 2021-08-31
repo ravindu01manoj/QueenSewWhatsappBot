@@ -20,8 +20,9 @@ const jkd = Config.DISSTICKER != false ? Config.DISSTICKER.split(',') : [];
 let rs = Config.WORKTYPE == 'public' ? false : true
 const Language = require('../language');
 const Lang = Language.getString('filters');
+/*
 var data = {
-  action: true
+  action: true */
 }
  if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
@@ -72,11 +73,13 @@ const array = ['Bye','Hello','Helo','Hey','Hi','Hy','I love you','Marilada','bye
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
+  /*
 if (data.action) {
             setInterval(async () => {
                 await message.client.updatePresence(message.jid,Presence.recording)
             }, 4000)
         }
+        */
        await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/' + a + '.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true})
 }
 });
