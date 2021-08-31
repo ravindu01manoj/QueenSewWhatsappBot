@@ -94,11 +94,6 @@ async function sewQueen () {
     const CdSew = new WAConnection();
     const Session = new StringSession();
     CdSew.version = [2,2121,7]
-    CdSew.setMaxListeners(0);
-    var proxyAgent_var = ''
-    if (Raviya.PROXY.includes('https') || Raviya.PROXY.includes('http')) {
-      CdSew.connectOptions.agent = ProxyAgent (Raviya.PROXY)
-    }
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
