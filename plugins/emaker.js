@@ -83,8 +83,7 @@ QueenSew.newcmdaddtosew({pattern: '1best$', fromMe: sk, dontAdCommandList: true}
         command_cmd = '⛄ *Command:* '
         desc_cmd = '❄ *Description:* _'
     }
-    const msg =command_cmd + '```.slhacker``` \n' + desc_cmd + t10 + '_\n' + usage_cmd + '.slhacker Sew\n\n' +
-        command_cmd + '```.sl6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.sl6neon Sew\n\n' +
+    const msg =command_cmd + '```.sl6neon``` \n' + desc_cmd + t77 + '_\n' + usage_cmd + '.sl6neon Sew\n\n' +
         command_cmd + '```.sl4graf``` \n' + desc_cmd + t67 + '_\n' + usage_cmd + '.sl4graf Sew\n\n' +
         command_cmd + '```.sl5graf``` \n' + desc_cmd + t74 + '_\n' + usage_cmd + '.sl5graf Sew\n\n' +
         command_cmd + '```.sl2space``` \n' + desc_cmd + t68 + '_\n' + usage_cmd + '.sl2space Sew\n\n' +
@@ -184,7 +183,7 @@ QueenSew.newcmdaddtosew({pattern: 'sl2pink ?(.*)', fromMe: sk, dontAdCommandList
 QueenSew.newcmdaddtosew({pattern: 'slabear ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-funny-animations-of-a-traveling-bear-701.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { caption: Raviya.CPK, mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.gif })
 }));
 QueenSew.newcmdaddtosew({pattern: 'sl6neon ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-light-effects-green-neon-online-429.html')
@@ -194,7 +193,7 @@ QueenSew.newcmdaddtosew({pattern: 'sl6neon ?(.*)', fromMe: sk, dontAdCommandList
 QueenSew.newcmdaddtosew({pattern: 'slheart ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/write-name-on-heart-with-wings-gifs-430.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { caption: Raviya.CPK, mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.gif })
 }));
 QueenSew.newcmdaddtosew({pattern: 'sl4graf ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/text-graffiti-3d-208.html')
@@ -204,7 +203,7 @@ QueenSew.newcmdaddtosew({pattern: 'sl4graf ?(.*)', fromMe: sk, dontAdCommandList
 QueenSew.newcmdaddtosew({pattern: 'slpuppy ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-puppy-cute-animated-online-478.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { caption: Raviya.CPK, mimetype: Mimetype.gif })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.gif })
 }));
 QueenSew.newcmdaddtosew({pattern: 'slroad ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-glowing-text-effects-online-706.html')
@@ -224,17 +223,18 @@ QueenSew.newcmdaddtosew({pattern: 'sl3pubg ?(.*)', fromMe: sk, dontAdCommandList
 QueenSew.newcmdaddtosew({pattern: 'slpubg ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var vid = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-pubg-style-glitch-video-avatar-554.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { caption: Raviya.CPK, mimetype: Mimetype.mp4 })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.mp4 })
 }));
 QueenSew.newcmdaddtosew({pattern: 'sl2pubg ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var vid = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/lightning-pubg-video-logo-maker-online-615.html')
     var buffer_data = await axios.get(vid.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { caption: Raviya.CPK, mimetype: Mimetype.mp4 })
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.video, { mimetype: Mimetype.mp4 })
 }));
+
 QueenSew.newcmdaddtosew({pattern: 'slhacker ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
     var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-anonymous-hacker-avatars-cyan-neon-677.html')
     var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
-    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK})
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
 }));
 
 
