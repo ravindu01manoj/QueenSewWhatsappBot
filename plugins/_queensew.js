@@ -78,7 +78,7 @@ if (Config.WORKTYPE == 'private') {
         );
         
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text ,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text ,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -109,7 +109,7 @@ if (Config.WORKTYPE == 'private') {
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
@@ -145,7 +145,7 @@ if (Config.WORKTYPE == 'private') {
         );
         
         await message.client.sendMessage(
-             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -176,7 +176,7 @@ if (Config.WORKTYPE == 'private') {
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
@@ -209,7 +209,7 @@ QueenSew.newcmdaddtosew({pattern: 'help ?(.*)', fromMe: false, dontAdCommandList
         );
         
         await message.client.sendMessage(
-             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -240,7 +240,7 @@ QueenSew.newcmdaddtosew({pattern: 'help ?(.*)', fromMe: false, dontAdCommandList
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
@@ -273,7 +273,7 @@ QueenSew.newcmdaddtosew({pattern: 'list ?(.*)', fromMe: false, dontAdCommandList
         );
         
         await message.client.sendMessage(
-             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -304,7 +304,7 @@ QueenSew.newcmdaddtosew({pattern: 'list ?(.*)', fromMe: false, dontAdCommandList
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
@@ -337,7 +337,7 @@ QueenSew.newcmdaddtosew({pattern: 'menu ?(.*)', fromMe: false, dontAdCommandList
         );
         
         await message.client.sendMessage(
-             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -368,7 +368,7 @@ QueenSew.newcmdaddtosew({pattern: 'menu ?(.*)', fromMe: false, dontAdCommandList
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
@@ -401,7 +401,7 @@ QueenSew.newcmdaddtosew({pattern: 'cmd ?(.*)', fromMe: false, dontAdCommandList:
         );
         
         await message.client.sendMessage(
-             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+             message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );    
     } else {
         var CMD_HELP = '';
@@ -432,7 +432,7 @@ QueenSew.newcmdaddtosew({pattern: 'cmd ?(.*)', fromMe: false, dontAdCommandList:
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
+            message.jid,  AAA + Config.BOTNAME + AAB + AAC + Config.OWNERSHIP + AAE + AAA + Config.BOTNAME + AAB + AAD + SHD + CMD_HELP + AAI, MessageType.text,{quoted: message.data}
         );
     }
 }));
