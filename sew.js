@@ -338,7 +338,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
                 }
             );
             var up_ch = await Pach.update_rs(Raviya.LANG)
-            await CdSew.sendMessage(CdSew.user.jid, up_ch, MessageType.text)
+            await CdSew.sendMessage(CdSew.user.jid, up_ch + degisiklikler , MessageType.text)
         }
     })
     CdSew.on('message-new', async msg => {
