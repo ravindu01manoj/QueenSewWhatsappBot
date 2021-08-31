@@ -227,20 +227,20 @@ async function sewQueen () {
         console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold('Sew')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(Raviya.VERSION)}
 
-${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
+${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
     });
     CdSew.on('credentials-updated', async () => {
         console.log(
-            chalk.green.bold('🚀 Login successful!')
+            chalk.green.bold('⚛ Login successful!')
         );
         console.log(
-            chalk.blueBright.italic('💕 Installing External Commands...')
+            chalk.blueBright.italic('✧✧ Installing External Commands...')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         asynchronous_ch()
         // ==================== Password Checking ====================
         console.log(
-            chalk.blueBright.italic('✨PASSWORD CHECKING✨')
+            chalk.blueBright.italic('❯❯❯PASSWORD CHECKING❮❮❮')
         );
         if (Raviya.SEWRR == ppw) {
         
@@ -287,7 +287,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End External Plugins ====================
 
         console.log(
-            chalk.blueBright.italic('💕  Installing commands...')
+            chalk.blueBright.italic('❯❯❯  Installing commands...')
         );
 
         // ==================== Internal Plugins ====================
@@ -299,13 +299,13 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
         // ==================== End Internal Plugins ====================
 
         console.log(
-            chalk.green.bold('🚀 Command Installed!')
+            chalk.green.bold('⚛ Command Installed!')
         );
         if (os.userInfo().homedir !== clh.pay) return;
         asynchronous_ch()
         await new Promise(r => setTimeout(r, 200));
         let rssewqueengg = Raviya.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('👑 Sew Queen is' + rssewqueengg));
+        console.log(chalk.bgGreen('⛄ Sew Queen is' + rssewqueengg + ' ⛄'));
         await new Promise(r => setTimeout(r, 500));
         if (CdSew.user.jid == one || CdSew.user.jid == two || CdSew.user.jid == three || CdSew.user.jid == four || CdSew.user.jid == five || CdSew.user.jid == six || CdSew.user.jid == seven || CdSew.user.jid == eight) {
             await CdSew.sendMessage(CdSew.user.jid,nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
@@ -334,7 +334,7 @@ ${chalk.blue.italic('📲 Try To Login WhatsApp... Please Wait...')}`);
             var degisiklikler = Lang.NEW_UPDATE;
             commits['all'].map(
                 (commit) => {
-                    degisiklikler += '✨ ' + commit.date.substring(0, 10) + '⏭\n *' + commit.message + '*\n ' + commit.author_name + '\n\n';
+                    degisiklikler += '⛄ ' + commit.date.substring(0, 10) + '⏭\n *' + commit.message + '*\n ' + commit.author_name + '\n\n';
                 }
             );
             var up_ch = await Pach.update_rs(Raviya.LANG)
