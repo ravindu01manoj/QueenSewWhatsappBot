@@ -35,7 +35,7 @@ if (Config.LANG == 'EN') {
   AAE = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ \n```*******************************************```'
   AAF = 'To See All Command▶▶▶'
   AAI = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n\n '
-  SHD = '❤'
+  SHD = '\n\n*LOGO MAKING CMD LIST*\n\n⛄ *.sewmaker*\n⛄ *.sew2maker*\n⛄ *.sew3maker*\n\n*Admin ==> .admin*\n\n*New Added Cmd And Fixed Cmd*\n        *SNOW EDITION*\n\n❯❯❯added new ttp list ==> .sewttp\n\n❯❯❯new unit convart system ==> .unit 1 kg g / .bitunit 1 Gb Mb\n\n❯❯❯site to pdf ==> .sitepdf\n\n❯❯❯inbox block system\n\n❯❯❯anime image and gif download 100000+ ==> .anime pic / .anime gif\n\n❯❯❯carbon image make upgaded ==> .carbon\n\n❯❯❯fixed some bot bugs and antispam system\n\n❯❯❯try to fix facebook download error ==> .fb\n\n❯❯❯adding mediafire Download ==> .mapk / .mzip\n\n❯❯❯spotify download ==> .spotyfi \n\n❯❯❯new text maker list ==> .sew3maker (adding 100+ new text to image soonly)\n\n\n*⛄✧All List✧⛄*\n\n'
   }
  else if (Config.LANG == 'SI') {
  AAA = '*♔♕▬▭▬▭▬♔♕* *'
@@ -45,7 +45,7 @@ if (Config.LANG == 'EN') {
   AAE = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ \n```*******************************************```'
   AAF = 'සියලු කමාන්ඩ් නැරඹීම සදහා▶▶▶'
   AAI = '\n\n┈┈╭━╱▔▔▔▔╲━╮┈┈┈ꜱ\n┈┈╰╱╭▅╮╭▅╮╲╯┈┈┈ᴇ\n╳┈┈▏╰┈▅▅┈╯▕┈┈┈┈ᴡ\n┈┈┈╲┈╰━━╯┈╱┈┈╳┈ǫ\n┈┈┈╱╱▔╲╱▔╲╲┈┈┈┈ᴜ\n┈╭━╮▔▏┊┊▕▔╭━╮┈╳ᴇ\n┈┃┊┣▔╲┊┊╱▔┫┊┃┈┈ᴇ\n┈╰━━━━╲╱━━━━╯┈╳ɴ\n  ᴘᴏᴡᴇʀᴅ ʙʏ ꜱᴇᴡ ǫᴜᴇᴇɴ\n\n '
-  SHD = '❤'
+  SHD = '*ලෝගො මේකින් ලිස්ට්*\n\n⛄ *.sewmaker*\n⛄ *.sew2maker*\n⛄ *.sew3maker*\n\n*ඇඩ්මින් ==> .admin*\n\n*අලුත් කමාන්ඩ් හා ෆික්ස් උනු කමාම්ඩ්*\n        *SNOW EDITION *\n\n❯❯❯නව ttp ලැයිස්තුව එකතු කරන ලදි ==> .sewttp\n\n❯❯❯නව ඒකක පරිවර්තන ගැන්වීමේ පද්ධතිය ==> .unit 1 kg  g / .bitunit 1 Gb Mb\n\n❯❯❯වෙබ් අඩවිය pdf බවට ==> .sitepdf\n\n❯❯❯ඉන්බොක්ස් පැමිනෙන අය බ්ලොක් කිරීමේ පද්දතිය \n\n❯❯❯ඇනිමෙ ප්‍රතිරූපය සහ ගිෆ් බාගැනීම් 100000+ ==> .anime pic / .anime gif\n\n❯❯❯carbon image ඉහළ නංවා ඇත ==> .carbon\n\n❯❯❯සමහර බොට් bug  සහ ඇන්ටිස්පෑම් පද්ධතිය upgrade කර ඇත\n\n❯❯❯ෆේස්බුක් බාගැනීමේ දෝෂය නිවැරදි කිරීමට උත්සාහ කරමින් ==> .fb\n\n❯❯❯මීඩියාෆයර් ලින්ක් ඩදුන්ලෝඩ් එකතු කිරීම ==> .mapk / .mzip\n\n❯❯❯spotify බාගැනීම ==> .spotyfi\n\n❯❯❯නව ලෝගො මේකර් ලැයිස්තුව ==> .sew3maker (ඉක්මනින් පින්තූරයට නව පෙළ 100+ එකතු කිරීම)\n\n ⛄✧සියලු කමාන්ඩ්ස්✧⛄\n\n'
 }
  if (Config.PSW !== 'kingraviya') {
 if (Config.WORKTYPE == 'private') {
