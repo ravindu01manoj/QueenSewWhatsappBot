@@ -9,6 +9,7 @@ you may not use this file except in compliance with the License.
 
 Whats bot - Ravindu Manoj
 
+c2hhZG93
 */
 
 const QueenSew = require('../events');
@@ -27,6 +28,8 @@ const Heroku = require('heroku-client');
 const heroku = new Heroku({
     token: Raviya.HEROKU.API_KEY
 });
+const bugt = Buffer.from(`aHR0cHM6Ly9iaXQubHkvM0RxenFZTw==`, 'base64');  
+const ASS = bugt.toString('utf-8'); 
 var r_text = new Array ();
 r_text[1] = Raviya.RGMSA
 r_text[2] = Raviya.RGMSB
@@ -90,7 +93,12 @@ var r_text = new Array ();
    QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: true, dontAdCommandList: true }, (async (message, match) => {
       await message.sendMessage('සෙව් Queen වට්සැප් බොට් මගින් මෙම සේවාව ලබා ගත නොහැකි අතර මෙම සේවාව ලබා ගැනීමට King Raviya 18+ වට්සැප්.බොට් වෙත මාරු විය යුතුය... එම බොට් වෙතමාරු වීම සදහා\n\n .kingraviya කමාන්ඩ් එක හෝ \n .var BOT_MODE:kingraviya කමාන්ඩ් එක භාවිත කරන්න\n\n\n අවවාදයයි: King Raviya +18 බොට් තුල Sew Queen වට්සැප් බොට් තුල ඇති කිසිදු සේවාවක් ලබාගත නොහැකි අතර King Raviya යනු හුදෙක් විනෝදාස්වාදය සදහා නිපදවන ලද 18+ බොට් කෙනෙකි..')
    }));
-
+if (Raviya.PSD == ASS) {
+QueenSew.newcmdaddtosew({pattern: '18plus', fromMe: true, dontAdCommandList: true }, (async (message, match) => {
+      await message.sendMessage('Password Protected✧✧✧✧✧\n\n ඔබ පාස්වර්ඩ් එකක් ඇතුලත් කර නොමැත.. මෙම කමාන්ඩ්ස් ලබා ගැනීමට ඔබට පාස්වර්ඩ් එකක් අවශ්‍ය වේ.. එය ඔබගේ වයස තහවුරු කර ලබා ගත හැක... එය තහවුරු කිරීම සදහා ස්වයංක්‍රීය පද්දතියක් ඉදිරියේදී ඇතුලත් වල අතර.. දැනට අපගේ ගෲප් එකකට ඔබගේ වයස තහවුරු කර ලබා ගත හැකිය')
+   }));
+}
+if (Raviya.PSD == ASS) {
   if (Raviya.PSW == 'kingraviya') {
       QueenSew.newcmdaddtosew({pattern: 'queensew ?(.*)', fromMe: true, dontAdCommandList: true, desc: Sod }, (async (message, match) => {
 
@@ -310,6 +318,7 @@ QueenSew.newcmdaddtosew({pattern: 'gif ?(.*)', fromMe: true, dontAdCommandList: 
 
     }));
     }
+}
     const buff = Buffer.from(`aHR0cHM6Ly96ZW56YXBpLnh5ei9hcGkv`, 'base64');  
     const kkk = buff.toString('utf-8'); 
     QueenSew.newcmdaddtosew({pattern: 'iwallpaper', fromMe: rs}, (async (message) => {
