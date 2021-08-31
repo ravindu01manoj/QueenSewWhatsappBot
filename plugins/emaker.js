@@ -238,5 +238,14 @@ QueenSew.newcmdaddtosew({pattern: 'slhacker ?(.*)', fromMe: sk, dontAdCommandLis
 }));
 
 
-
+QueenSew.newcmdaddtosew({pattern: 'sl1test ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
+    var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-cute-girl-gamer-mascot-logo-online-687.html')
+    var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
+}));
+QueenSew.newcmdaddtosew({pattern: 'sl2test ?(.*)', fromMe: sk, dontAdCommandList: true}, (async (message, match) => {
+    var img = await Pach.rgmsd(match[1], 'https://en.ephoto360.com/create-a-blackpink-neon-logo-text-effect-online-710.html')
+    var buffer_data = await axios.get(img.image, { responseType: 'arraybuffer'})
+    await message.sendMessage(Buffer.from(buffer_data.data), MessageType.image, { caption: Raviya.CPK })
+}));
 }
