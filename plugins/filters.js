@@ -22,8 +22,8 @@ const Language = require('../language');
 const Lang = Language.getString('filters');
 /*
 var data = {
-  action: true */
-}
+  action: true 
+} */
  if (Config.PSW !== 'kingraviya') {
 QueenSew.newcmdaddtosew({pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontAddCommandList: true}, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
