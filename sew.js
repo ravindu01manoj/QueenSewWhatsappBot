@@ -524,12 +524,7 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
                         } else {
                             whats = new Message(CdSew, msg);
                         }
-                        if (msg.key.fromMe && command.delownsewcmd) {
-                            var wrs = CdSew.user.phone.wa_version.split('.')[2]
-                            if (wrs < 11 && !msg.key.remoteJid.includes('-')) {
-                                await whats.delete() 
-                            }
-                        } 
+                       
                         // ==================== End Message Catcher ====================
 
                         // ==================== Error Message ====================
