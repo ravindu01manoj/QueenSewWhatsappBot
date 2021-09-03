@@ -1,13 +1,9 @@
 /* Codded by @Ravindu Manoj
-
 Telegram: t.me/RavinduManoj
 Facebook: https://www.facebook.com/ravindu.manoj.79
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 Whats bot - Ravindu Manoj
-
 */
 
 const fs = require('fs')
@@ -66,7 +62,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => 
         if(Config.VOICEFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention) {
+        if (!!message.mention && message.mention[0] == '94785457519@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./VoiceClip/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
 const array = ['Bye','Hello','Helo','Hey','Hi','Hy','I love you','Marilada','bye','hello','hey','helo','hi','hy','i love you','marilada','sewmaker','bitch','sapak','Sapak','Bich','y ban','Y ban','Y bn','y bn','Why ban','why ban','uddika','Uddika','sindu','Sindu','Seen','seen','Raviya','raviya','notes','Pinnaya','Paraya','Pala','pinnaya','paraya','pala','natanna','Natanna','Natahan','natahan','Nah','nah','na na','Na na','mokek','Mokek','Mk','mk','Kohomd','kohomada','kohomd','Kohomd','hum','Hum','Hmm','hmm','Hako','hako','ha ha','Ha ha','Guti','guti','Gothaya','gothaya','Good night','good night','good morning','Good Morning','Gn','gn','Gm','gm','Gahano','gahano','Gahanawa','gahanawa','Fuck','fuck','Esawa','esawa','Ep wel','ep wel','epa wela','Epa wela','En nane','en nane','Bitch','bich','Bb ek','bb ek','balagena','Balagena','balaganin','Balaganin','baba eka','Baba eka','Adarey','adarey','Adarei','adarei','Akke','akke','Baduwa','baduwa','Balli','balli','Denawada','denawada','Hukanna','hukanna','Hukanni','hukanni','Huththa','huththa','Huththi','huththi','Kariya','kariya','Kellekda','kellekda','Love','love','Namaskaram','namaskaram','Namasthe','namasthe','Namgi','namgi','Pakaya','pakaya','Ponnaya','ponnaya','ponni','Ponni','U girl','u girl','Umma','umma','Ummah','ummah','Ummma','ummma','Vesawi','vesawi','Vesavi','vesavi','Wesi','wesi','You girl','you girl']
@@ -100,7 +96,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => 
     if(Config.AUTOSTICKER){
     let banned = jkd.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
-    if (!!message.mention) {
+    if (!!message.mention && message.mention[0] == '94785457519@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./SewStickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
 const array = ['gm','love','adarey','morning','Gm','Love','Adarey','Morning','hi','Hi','hlo','Hlo','Hello','hello','ok','Ok','alive','sorry','Sorry']
