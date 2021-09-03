@@ -1,6 +1,6 @@
 {
   "name": "sew-queen",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "Sew Queen project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./QueenSewWhatsappBot/sew.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/ravindu01manoj/QueenSewWhatsappBot#readme",
   "dependencies": {
-    "sewqueen-rs": "1.2.6"
+    "sewqueen-rs": "1.2.8"
   }
 }
