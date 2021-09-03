@@ -62,7 +62,7 @@ QueenSew.newcmdaddtosew({pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DE
 }));
 
 
-QueenSew.newcmdaddtosew({on: 'text', fromMe: rs}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.VOICEFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
@@ -96,7 +96,7 @@ if (data.action) {
     );
 }));
 
-QueenSew.newcmdaddtosew({on: 'text', fromMe: rs}, (async (message, match) => {
+QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => {
     if(Config.AUTOSTICKER){
     let banned = jkd.find( Jid => Jid === message.jid);
     if(banned !== undefined) return
