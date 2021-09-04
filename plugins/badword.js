@@ -3568,6 +3568,7 @@ var baduse = await Pach.badon(Config.LANG)
         let regexa1sew = new RegExp(baduse.one)
         let regexa2sew = new RegExp(baduse.two)
         let regexa3sew = new RegExp(baduse.four)
+/*
         let regex4sew = new RegExp(baduse.aa1a)
         let regex5sew = new RegExp(baduse.aa2a)
         let regex6sew = new RegExp(baduse.aa3a)
@@ -3578,6 +3579,7 @@ var baduse = await Pach.badon(Config.LANG)
         let regex11sew = new RegExp(baduse.aa8a)
         let regex12sew = new RegExp(baduse.aa9a)
         let regex13sew = new RegExp(baduse.aa10a)
+*/
 
                 if (regexa1sew.test(message.message)) {
                 await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
@@ -3591,20 +3593,21 @@ var baduse = await Pach.badon(Config.LANG)
             if (!im) return;
            await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
-        
+        /*
          else if (regexa4sew.test(message.message)) {
          await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
-        
+        */
         else if (regexa3sew.test(message.message)) {
         await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
+      /*
         else if (regexa5sew.test(message.message)) {
         await message.client.sendMessage(message.jid,baduse.three, MessageType.text )
             var im = await checkImAdmin(message)
@@ -3665,6 +3668,7 @@ var baduse = await Pach.badon(Config.LANG)
             if (!im) return;
             await message.client.groupRemove(message.jid, [message.data.participant]);         
         }
+*/
 }));
 
 // Inbox Block System
