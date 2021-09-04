@@ -464,8 +464,6 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false, delownsewcmd: false}, (async
         let regex20aasew = new RegExp('ค')
         let regex21aasew = new RegExp('Ꮛ')
         
-var supr = ADD.split(',');                            
-if(msg.key.remoteJid.includes('-') ? supr.includes(msg.key.remoteJid.split('@')[0]) : supr.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         if (regex1aasew.test(message.message)) {
             var im = await checkImAdmin(message)
             if (!im) return;
