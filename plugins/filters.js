@@ -99,7 +99,7 @@ QueenSew.newcmdaddtosew({on: 'text', fromMe: false}, (async (message, match) => 
     if (!!message.mention && message.mention[0] == '94785457519@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./SewStickers/mention.webp'), MessageType.sticker, { mimetype: Mimetype.webp, quoted : message.data, ptt: false})
     }
-const array = ['gm','love','adarey','morning','Gm','Love','Adarey','Morning','hi','Hi','hlo','Hlo','Hello','hello','ok','Ok','alive','sorry','Sorry']
+const array = ['gm','morning','Gm','Morning','alive']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
