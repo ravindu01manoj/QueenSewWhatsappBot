@@ -39,7 +39,7 @@ let id = match[1];
         .on('end', async () => {
             await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
-
+/*
     QueenSew.newcmdaddtosew({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
@@ -60,6 +60,7 @@ let id = match[1];
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
+    */
 }
 else if (Config.WORKTYPE == 'public') {
 
@@ -83,7 +84,7 @@ else if (Config.WORKTYPE == 'public') {
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
-
+/*
     QueenSew.newcmdaddtosew({pattern: 'unvoice ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
@@ -121,6 +122,7 @@ let id = match[1];
             });
         return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
     }));
+    */
 }
 
 }
