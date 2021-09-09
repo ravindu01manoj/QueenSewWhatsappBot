@@ -38,7 +38,8 @@ let id = match[1];
         .save('output.mp3')
         .on('end', async () => {
             await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
-});}));
+});
+    }));
 /*
     QueenSew.newcmdaddtosew({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
 
