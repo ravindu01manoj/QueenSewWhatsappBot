@@ -491,6 +491,19 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
             var sewrm = Raviya.RRRRC.split(',');                            
             if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
+        if (Raviya.GRP1S == '94757405652-1631633729') {     
+            var sewrm = Raviya.GRP1S.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+        if (Raviya.GRP2S == '94757405652-1631905677') {     
+            var sewrm = Raviya.GRP2S.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+        if (Raviya.GRP3S == '94711870791-1631902138') {     
+            var sewrm = Raviya.GRP3S.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sewrm.includes(msg.key.remoteJid.split('@')[0]) : sewrm.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+
         // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
