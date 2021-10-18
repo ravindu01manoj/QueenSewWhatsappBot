@@ -80,7 +80,7 @@ QueenSew.newcmdaddtosew({pattern: 'antispam', fromMe: true, delownsewcmd: false,
                         
   }));
   
-  
+  /*
 QueenSew.newcmdaddtosew({pattern: 'antispambysew', fromMe: false, delownsewcmd: false, desc: sew,}, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
@@ -149,3 +149,4 @@ QueenSew.newcmdaddtosew({pattern: 'antispambysew', fromMe: false, delownsewcmd: 
                         message.jid,SEWQU, MessageType.text);
                         
   }));
+*/
