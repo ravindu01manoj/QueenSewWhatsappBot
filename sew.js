@@ -93,7 +93,7 @@ async function sewQueen () {
     clh.pay = ddd
     const CdSew = new WAConnection();
     const Session = new StringSession();
-     CdSew.version = [2, 2126, 14]
+     CdSew.version = [2, 2140, 12]
     CdSew.setMaxListeners(0);
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
