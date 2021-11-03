@@ -1,4 +1,4 @@
-FROM ravindu01manoj/sewqueen:lovegift
+FROM fusuf/whatsasena:latest
 
 RUN git clone https://github.com/ravindu01manoj/QueenSewWhatsappBot /root/QueenSewWhatsappBot
 WORKDIR /root/QueenSewWhatsappBot/
