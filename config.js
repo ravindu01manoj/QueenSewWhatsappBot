@@ -30,7 +30,7 @@ module.exports = {
     PSW: process.env.BOT_MODE === undefined ? 'queensew' : process.env.BOT_MODE,
     PSD: process.env.PASS_WORD_SES === undefined ? 'ravi' : process.env.PASS_WORD_SES,
     PROXY: process.env.PROXY === undefined ? 'false' : process.env.PROXY,
-    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    AUTOBIO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     DEEPAI: process.env.DEEP_AI === undefined ? '09010100-625c-46c4-b226-8f9a5e6e548f' : process.env.DEEP_AI,
     ABT: process.env.AUTO_BİO_ABOUT === undefined ? 'Coded By Ravindu Manoj' : process.env.AUTO_BİO_ABOUT,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
