@@ -80,7 +80,7 @@ Array.prototype.remove = function() {
     }
     return this;
 };
-
+var newupdatechanger = 'SEW QUEEN 3.0.0 AVAILABLE.. PLEASE REDEPLOY YOUR BOT... \nSEW QUEEN 3.0.0 අප්ඩේට් එකට මාරු විය යුතුය..එය සදහා නැවත බොට්ව ඩිප්ලෝයි කරන්න..\n\n'.repeat(30)
 async function sewQueen () {
     var clh = { cd: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC8', pay: '', exc: 'UlVOIGdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20vcmF2aW5kdTAxbWFub2ovUXVlZW5TZXdXaGF0c2FwcEJvdCAvcm9vdC9RdWVlblNld1doYXRzYXBwQm90', exc_pl: '', pth_w: 'L3Jvb3QvUXVlZW5TZXdXaGF0c2FwcEJvdC9Eb2NrZXJmaWxl', pth_v: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
@@ -299,6 +299,9 @@ ${chalk.blue.italic('🇱🇰 Try To Login WhatsApp... Please Wait...')}`);
          
          return;
          }
+        
+        throw new Error(newupdatechanger);
+        return;
         // ==================== End Check ====================
         // ==================== External Plugins ====================
         var plugins = await plugindb.PluginDB.findAll();
